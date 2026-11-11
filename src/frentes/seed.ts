@@ -130,5 +130,8 @@ export function estadosIniciais(): Record<string, Obj> {
     },
   };
 
-  return { cidade, guilda, culto, radio, submundo, caldeirao, forja };
+  const out: Record<string, Obj> = { cidade, guilda, culto, radio, submundo, caldeirao, forja };
+  // frentes novas (ex.: a 7ª) entram direto do estado-inicial.json, sem código extra aqui
+  for (const [k, v] of Object.entries(I)) if (!(k in out) && v && typeof v === "object" && !k.startsWith("_")) out[k] = { ...base, ...(v as Obj) };
+  return out;
 }

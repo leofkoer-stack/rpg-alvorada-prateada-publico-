@@ -140,7 +140,7 @@ function Conteudo() {
           ["historico", "📜 Histórico"],
           ["config", "🔧 Config"],
         ].map(([id, rot]) => (
-          <button key={id} className={`btn btn-mini whitespace-nowrap ${aba === id ? "" : "btn-sec"}`} onClick={() => setAba(id)}>
+          <button key={id} className={`btn btn-mini shrink-0 whitespace-nowrap ${aba === id ? "" : "btn-sec"}`} onClick={() => setAba(id)}>
             {rot}
           </button>
         ))}
