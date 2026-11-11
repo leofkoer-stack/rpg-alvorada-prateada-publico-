@@ -1,0 +1,35 @@
+{
+ "_leia": "Efeitos de uma frente em outra. Cada gatilho gera um EFEITO PENDENTE na caixa de entrada do Mestre; ele aprova ou recusa. 'periodico' = conta semanas enquanto a condição vale e dispara a cada N. 'texto' é a frase original do PDF.",
+ "ligacoes": [
+  {"id": "radio-grade-completa", "origem": "radio", "gatilho": "Grade completa na semana", "efeitos": [{"alvo": "cidade.notoriedade", "marcas": 1}], "texto": "+1 marca em Notoriedade de Draetyr"},
+  {"id": "radio-musico-se-instala", "origem": "radio", "gatilho": "Músico de fora se instala", "limite": "1 por semana", "efeitos": [{"alvo": "cidade.populacao", "marcas": 1}], "texto": "+1 marca em População (1 vez por semana)"},
+  {"id": "radio-torre-concluida", "origem": "radio", "gatilho": "Torre de Draetyr concluída", "efeitos": [{"alvo": "cidade.notoriedade", "marcas": 2}, {"alvo": "cidade.projeto", "projeto": "Torre de rádio e gravadora", "acao": "concluir"}], "texto": "Projeto Torre de rádio e gravadora: +2 marcas em Notoriedade; depois, Divulgar com vantagem"},
+  {"id": "radio-pressao-cheia", "origem": "radio", "gatilho": "Relógio Pressão cheio", "automatico_ao": "relogio_cheio:radio.pressao", "efeitos": [{"alvo": "cidade.relogio.desconfianca_da_capital", "valor": 1}], "texto": "Desconfiança da capital +1"},
+  {"id": "radio-desdobramento-pista", "origem": "radio", "gatilho": "Desdobramento de pista", "efeitos": [{"alvo": "guilda.quadro", "acao": "nova_missao"}], "texto": "Missão nova no quadro da guilda"},
+
+  {"id": "submundo-sussurro-radio", "origem": "submundo", "gatilho": "Sussurro dado à rádio", "efeitos": [{"alvo": "radio.pautas", "acao": "nova_pauta"}], "texto": "Pauta ou desdobramento da Mandy"},
+  {"id": "submundo-plano-golpe", "origem": "submundo", "gatilho": "Plano de golpe ou atentado descoberto", "efeitos": [{"alvo": "guilda.quadro", "acao": "nova_missao"}], "texto": "Missão no quadro da guilda"},
+  {"id": "submundo-rede-rival", "origem": "submundo", "gatilho": "Desmontar uma rede rival em Draetyr", "efeitos": [{"alvo": "cidade.relogio.oposicao", "valor": -1}, {"alvo": "cidade.seguranca", "marcas": 1}], "texto": "Oposição −1 e +1 marca em Segurança da cidade"},
+  {"id": "submundo-contrabando", "origem": "submundo", "gatilho": "Contrabando que passa por Draetyr", "efeitos": [{"alvo": "cidade.economia", "marcas": 1}, {"alvo": "submundo.relogio.exposicao", "valor": 1}], "texto": "+1 marca em Economia da cidade; Exposição +1"},
+  {"id": "submundo-exposicao-cheia", "origem": "submundo", "gatilho": "Exposição cheia em Draetyr", "automatico_ao": "relogio_cheio:submundo.exposicao", "efeitos": [{"alvo": "cidade.relogio.desconfianca_da_capital", "valor": 1}], "texto": "Desconfiança da capital +1"},
+
+  {"id": "caldeirao-portas-abertas", "origem": "caldeirao", "gatilho": "Caldeirão chega ao Estágio 2 (portas abertas)", "automatico_ao": "estagio:caldeirao>=2", "efeitos": [{"alvo": "cidade.moral", "marcas": 2}, {"alvo": "cidade.projeto", "projeto": "Restaurante Caldeirão Trovejante", "acao": "concluir"}], "texto": "Projeto Caldeirão Trovejante da cidade: +2 marcas em Moral"},
+  {"id": "caldeirao-pertencimento-3", "origem": "caldeirao", "gatilho": "Pertencimento 3 ou mais", "periodico": {"a_cada_semanas": 4, "condicao": "caldeirao.pertencimento>=3"}, "efeitos": [{"alvo": "cidade.moral", "marcas": 1}], "texto": "+1 marca em Moral a cada 4 semanas"},
+  {"id": "caldeirao-fama-3", "origem": "caldeirao", "gatilho": "Fama 3 ou mais", "periodico": {"a_cada_semanas": 4, "condicao": "caldeirao.fama>=3"}, "efeitos": [{"alvo": "cidade.notoriedade", "marcas": 1}], "texto": "+1 marca em Notoriedade a cada 4 semanas"},
+  {"id": "caldeirao-mesa-refugiados", "origem": "caldeirao", "gatilho": "Mesa para todos com refugiados", "efeitos": [{"alvo": "cidade.moral", "marcas": 1}], "texto": "+1 marca em Moral"},
+  {"id": "caldeirao-encomenda-fora", "origem": "caldeirao", "gatilho": "Encomenda para outra cidade", "efeitos": [{"alvo": "cidade.rotas", "marcas": 1}], "texto": "+1 marca em Rotas"},
+  {"id": "caldeirao-coma-primeiro", "origem": "caldeirao", "gatilho": "Grupo da guilda come antes de sair", "limite": "1 grupo por semana", "efeitos": [{"alvo": "guilda.missao", "bonus": 1}], "texto": "+1 na missão (1 por semana)"},
+  {"id": "caldeirao-show-radio", "origem": "radio", "gatilho": "Show ao vivo da rádio no salão do Caldeirão", "efeitos": [{"alvo": "caldeirao.fama", "marcas": 1}], "texto": "+1 marca em Fama do Caldeirão"},
+
+  {"id": "forja-industria", "origem": "forja", "gatilho": "Oficina chega ao Estágio 4 · Indústria", "automatico_ao": "estagio:forja>=4", "efeitos": [{"alvo": "cidade.economia", "marcas": 2}, {"alvo": "cidade.projeto", "projeto": "Rodas e Engrenagens e indústria", "acao": "concluir"}], "periodico_depois": {"a_cada_semanas": 4, "efeitos": [{"alvo": "cidade.economia", "marcas": 1}]}, "texto": "Projeto concluído: +2 marcas em Economia; depois, +1 a cada 4 semanas"},
+  {"id": "forja-ferramentas-cidade", "origem": "forja", "gatilho": "Ação Ferramentas para a cidade", "escolha": ["cidade.economia", "cidade.moral (se for para os refugiados)"], "efeitos": [{"alvo": "escolha", "marcas": 1}, {"alvo": "forja.palavra", "marcas": 1}], "texto": "+1 marca em Economia, ou em Moral com os refugiados; +1 marca em Palavra"},
+  {"id": "forja-renome-3", "origem": "forja", "gatilho": "Renome 3 ou mais", "periodico": {"a_cada_semanas": 4, "condicao": "forja.renome>=3"}, "efeitos": [{"alvo": "cidade.notoriedade", "marcas": 1}], "texto": "+1 marca em Notoriedade a cada 4 semanas"},
+  {"id": "forja-entrega-fora", "origem": "forja", "gatilho": "Pedido entregue em outra zona", "efeitos": [{"alvo": "cidade.rotas", "marcas": 1}], "texto": "+1 marca em Rotas"},
+  {"id": "forja-equipar-grupo", "origem": "forja", "gatilho": "Equipar um grupo da guilda (2 jornadas)", "limite": "1 grupo por semana", "efeitos": [{"alvo": "guilda.missao", "bonus": 1}], "texto": "+1 na missão"},
+  {"id": "forja-pedras-radio", "origem": "forja", "gatilho": "Pedras transmissoras e aparelhos entregues", "efeitos": [{"alvo": "radio.estagio", "acao": "liberar_estagio_1"}], "texto": "Abrem o Estágio 1 da rádio da Mandy (Distribuição), com o Koren"},
+  {"id": "forja-eclipse-solaris", "origem": "forja", "gatilho": "ECLIPSE e SOLARIS entregues", "efeitos": [{"alvo": "submundo", "acao": "nota", "texto": "O Felnun recebe o par de pistolas"}], "texto": "O par de pistolas do Felnun"},
+  {"id": "forja-utensilios-caldeirao", "origem": "forja", "gatilho": "Utensílios encantados entregues ao Caldeirão", "efeitos": [{"alvo": "caldeirao", "acao": "nota", "texto": "Utensílios encantados na cozinha"}], "texto": "Pedido ★★ para a cozinha do Caldeirão do Chopp"},
+  {"id": "submundo-ajuda-forja", "origem": "submundo", "gatilho": "Trabalho do Felnun para o Trazix", "escolha": ["forja.materiais.raros +1", "forja.relogio.cobica −2"], "efeitos": [{"alvo": "escolha"}], "texto": "1 raro de contrabando, ou Cobiça −2"},
+  {"id": "forja-anuncio-radio", "origem": "forja", "gatilho": "Anunciar na rádio (rádio no Estágio 2+)", "efeitos": [{"alvo": "forja.renome", "marcas": 1}], "texto": "+1 marca em Renome"}
+ ]
+}

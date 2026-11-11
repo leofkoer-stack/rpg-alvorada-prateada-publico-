@@ -1,0 +1,1264 @@
+{
+ "frente": "radio",
+ "nome": "Rádio e gravadora da Mandy",
+ "dono": "Leonardo (Mandy)",
+ "pdf": "referencia/Mandy_Radio_e_Gravadora.pdf",
+ "semana": [
+  "Caixa: entra a receita (Estágio 3+: Audiência × 100 PO; programas pagos); sai a manutenção (50 PO por torre; 25 PO por estúdio local).",
+  "Notícias do mundo: role as pautas da semana.",
+  "Ações: até o limite do estágio.",
+  "Programação: confira a grade normal e escolha os especiais.",
+  "Bastidores: role d12.",
+  "Relógios: Pressão e Bardos.",
+  "Fechamento: marcas viram níveis, respeitando o teto das zonas; some as ★ do Acervo; anote a Integridade."
+ ],
+ "tabelas": {
+  "fases": {
+   "titulo": "Estágios da rádio",
+   "colunas": [
+    "Estágio",
+    "O que é",
+    "Ações por semana",
+    "Programação",
+    "Para chegar aqui"
+   ],
+   "linhas": [
+    [
+     "0 · Microfone",
+     "Hoje. A Mandy grava com o microfone e faz fitas; não há torre.",
+     "2",
+     "—",
+     "—"
+    ],
+    [
+     "1 · Distribuição",
+     "Os primeiros aparelhos são dados a figuras influentes e lugares cheios de gente.",
+     "2",
+     "—",
+     "Pedras transmissoras e aparelhos"
+    ],
+    [
+     "2 · No ar",
+     "A torre de Draetyr cobre a região; a programação é só da Mandy.",
+     "3",
+     "grade + 2",
+     "Torre de Draetyr e Audiência 1"
+    ],
+    [
+     "3 · Mercado",
+     "Aparelhos à venda para casas e estabelecimentos.",
+     "3",
+     "grade + 3",
+     "Audiência 2 e oficina de aparelhos"
+    ],
+    [
+     "4 · Patrocínio",
+     "Anúncios, patrocínio e programas pagos; torres em outras regiões.",
+     "4",
+     "grade + 4",
+     "Influência 2 em dois poderes e Torre em outra zona"
+    ],
+    [
+     "5 · Voz do mundo",
+     "Torres em vários continentes.",
+     "4",
+     "grade + 5",
+     "Torre em zonas de três continentes e Audiência 4"
+    ]
+   ]
+  },
+  "zon": {
+   "titulo": "Zonas",
+   "colunas": [
+    "Zona",
+    "Onde",
+    "O que é",
+    "Poder dominante"
+   ],
+   "linhas": [
+    [
+     "Draetyr",
+     "Lykh · sul",
+     "A torre-mãe e a gravadora",
+     "Guildas (proposta)"
+    ],
+    [
+     "Svenya",
+     "Lykh · sul",
+     "Capital regional",
+     "a definir"
+    ],
+    [
+     "Jura",
+     "Lykh · sul",
+     "Capital regional",
+     "a definir"
+    ],
+    [
+     "Jyviro",
+     "Lykh · sul",
+     "Capital regional",
+     "a definir"
+    ],
+    [
+     "Lavenya",
+     "Lykh · centro",
+     "A capital do reino e o portal",
+     "Nobreza (proposta)"
+    ],
+    [
+     "Khaev",
+     "Lykh · norte",
+     "Capital regional",
+     "a definir"
+    ],
+    [
+     "Raenya",
+     "Lykh · norte",
+     "Capital regional",
+     "a definir"
+    ],
+    [
+     "Tyra",
+     "Lykh · norte",
+     "Capital regional",
+     "a definir"
+    ],
+    [
+     "Kroka",
+     "continente",
+     "Uma zona até o Mestre dividir as regiões",
+     "a definir"
+    ],
+    [
+     "Yvril",
+     "continente",
+     "Uma zona até o Mestre dividir as regiões",
+     "a definir"
+    ],
+    [
+     "Núk",
+     "continente",
+     "Uma zona até o Mestre dividir as regiões",
+     "a definir"
+    ],
+    [
+     "Elduran",
+     "continente",
+     "Uma zona até o Mestre dividir as regiões",
+     "a definir"
+    ],
+    [
+     "Shakal",
+     "continente",
+     "Uma zona até o Mestre dividir as regiões",
+     "a definir"
+    ]
+   ]
+  },
+  "sinal": {
+   "titulo": "Sinal por zona",
+   "colunas": [
+    "Sinal",
+    "O que tem",
+    "Para abrir"
+   ],
+   "linhas": [
+    [
+     "0 · Silêncio",
+     "Nada. Notícias dali chegam só como boato.",
+     "—"
+    ],
+    [
+     "1 · Correspondente",
+     "Notícias e fitas por correio, na semana seguinte.",
+     "Recrutar uma fonte Notável dali e 200 PO"
+    ],
+    [
+     "2 · Torre",
+     "A região inteira ouve. Entrevistas à distância. Conta para o teto.",
+     "Estágio 2+; custo a confirmar"
+    ],
+    [
+     "3 · Estúdio local",
+     "Grava e transmite dali; +1 programa especial por semana voltado à zona.",
+     "5.000 PO"
+    ]
+   ]
+  },
+  "cont": {
+   "titulo": "Continentes",
+   "colunas": [
+    "Continente",
+    "Governo",
+    "Vive de",
+    "Pautas que rendem"
+   ],
+   "linhas": [
+    [
+     "Lykh",
+     "Monarquia; a Coroa em Lavenya e lordes regionais",
+     "Agropecuária; minérios no norte",
+     "Política, fé, a crise da capital"
+    ],
+    [
+     "Kroka",
+     "Conselho dos Anciões (anões)",
+     "Minerais e tecnologia",
+     "Guerra, reconstrução, invenção"
+    ],
+    [
+     "Yvril",
+     "Regência por mérito em lutas; instável",
+     "Caça a monstros",
+     "Monstros, força, sobrevivência"
+    ],
+    [
+     "Núk",
+     "Tradição druídica (governo a confirmar)",
+     "Plantas; companhia mercantil",
+     "Natureza, comércio, cura"
+    ],
+    [
+     "Elduran",
+     "República (gnomos e halflings)",
+     "Tecnologia mágica",
+     "Invenção, debate, ciência"
+    ],
+    [
+     "Shakal",
+     "Castas, governo tiefling",
+     "Recupera a flora; comércio com Elduran e Kroka",
+     "Desigualdade, comércio, poder"
+    ]
+   ]
+  },
+  "d6c": {
+   "titulo": "Continente (d6)",
+   "colunas": [
+    "d6",
+    "Continente"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Lykh (role d8 para a zona)"
+    ],
+    [
+     "2",
+     "Kroka"
+    ],
+    [
+     "3",
+     "Yvril"
+    ],
+    [
+     "4",
+     "Núk"
+    ],
+    [
+     "5",
+     "Elduran"
+    ],
+    [
+     "6",
+     "Shakal"
+    ]
+   ]
+  },
+  "d8z": {
+   "titulo": "Zona de Lykh (d8)",
+   "colunas": [
+    "d8",
+    "Zona de Lykh"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Draetyr"
+    ],
+    [
+     "2",
+     "Svenya"
+    ],
+    [
+     "3",
+     "Jura"
+    ],
+    [
+     "4",
+     "Jyviro"
+    ],
+    [
+     "5",
+     "Lavenya"
+    ],
+    [
+     "6",
+     "Khaev"
+    ],
+    [
+     "7",
+     "Raenya"
+    ],
+    [
+     "8",
+     "Tyra"
+    ]
+   ]
+  },
+  "pautas": {
+   "titulo": "Pautas (d20)",
+   "colunas": [
+    "d20",
+    "Pauta",
+    "Poder",
+    "Fonte"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Disputa de sucessão numa casa nobre",
+     "Nobreza",
+     "Influente"
+    ],
+    [
+     "2",
+     "Imposto novo revolta o povo",
+     "Povo",
+     "Comum"
+    ],
+    [
+     "3",
+     "Milagre anunciado num templo",
+     "Clero",
+     "Influente"
+    ],
+    [
+     "4",
+     "Caravana desaparecida numa rota",
+     "Guildas",
+     "Notável"
+    ],
+    [
+     "5",
+     "Monstro ameaça uma vila",
+     "Guildas",
+     "Notável"
+    ],
+    [
+     "6",
+     "Escândalo num conselho",
+     "Nobreza",
+     "Influente"
+    ],
+    [
+     "7",
+     "Festival ou torneio",
+     "Povo",
+     "Notável"
+    ],
+    [
+     "8",
+     "Doença numa cidade isolada",
+     "Povo",
+     "Comum"
+    ],
+    [
+     "9",
+     "Invenção mágica apresentada",
+     "Guildas",
+     "Notável"
+    ],
+    [
+     "10",
+     "Heresia ou cisma numa igreja",
+     "Clero",
+     "Influente"
+    ],
+    [
+     "11",
+     "Escaramuça de fronteira",
+     "Nobreza",
+     "Poderoso"
+    ],
+    [
+     "12",
+     "Descoberta numa ruína",
+     "Guildas",
+     "Notável"
+    ],
+    [
+     "13",
+     "Refugiados chegam a uma cidade",
+     "Povo",
+     "Comum"
+    ],
+    [
+     "14",
+     "Acordo comercial entre continentes",
+     "Guildas",
+     "Influente"
+    ],
+    [
+     "15",
+     "Execução pública polêmica",
+     "Nobreza",
+     "Influente"
+    ],
+    [
+     "16",
+     "Ataque demoníaco",
+     "Clero",
+     "Poderoso"
+    ],
+    [
+     "17",
+     "Músico desconhecido encanta uma cidade",
+     "Povo",
+     "Notável"
+    ],
+    [
+     "18",
+     "Homenagem a um herói",
+     "Nobreza",
+     "Poderoso"
+    ],
+    [
+     "19",
+     "Profecia ou sinal no céu",
+     "Clero",
+     "Influente"
+    ],
+    [
+     "20",
+     "Algo lendário se move",
+     "Mestre",
+     "Lendário"
+    ]
+   ]
+  },
+  "tier": {
+   "titulo": "Fontes por ★",
+   "colunas": [
+    "Fonte",
+    "Exemplos",
+    "CD de acesso",
+    "CD da conversa"
+   ],
+   "linhas": [
+    [
+     "★ Comum",
+     "Morador, viajante, músico de rua",
+     "8",
+     "10"
+    ],
+    [
+     "★★ Notável",
+     "Bardo, artesão, aventureiro, mercador",
+     "12",
+     "13"
+    ],
+    [
+     "★★★ Influente",
+     "Nobre menor, sacerdote, mestre de guilda",
+     "15",
+     "16"
+    ],
+    [
+     "★★★★ Poderoso",
+     "Lorde, santo, escolhido, campeão, demônio de título",
+     "19",
+     "19"
+    ],
+    [
+     "★★★★★ Lendário",
+     "Pilar, rei, entidade antiga",
+     "o Mestre decide",
+     "22"
+    ]
+   ]
+  },
+  "disp": {
+   "titulo": "Disposição da fonte (d6)",
+   "colunas": [
+    "d6",
+    "Disposição",
+    "CD"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Fechada",
+     "+4"
+    ],
+    [
+     "2",
+     "Cautelosa",
+     "+2"
+    ],
+    [
+     "3",
+     "Neutra",
+     "+0"
+    ],
+    [
+     "4",
+     "Vaidosa: fala muito de si",
+     "−2"
+    ],
+    [
+     "5",
+     "Aberta",
+     "−2"
+    ],
+    [
+     "6",
+     "Confessional: expõe algo até na falha",
+     "−4"
+    ]
+   ]
+  },
+  "traz": {
+   "titulo": "O que a fonte traz (d8)",
+   "colunas": [
+    "d8",
+    "O que a fonte traz"
+   ],
+   "linhas": [
+    [
+     "1",
+     "A própria história de vida"
+    ],
+    [
+     "2",
+     "Uma causa"
+    ],
+    [
+     "3",
+     "Uma denúncia"
+    ],
+    [
+     "4",
+     "Uma memória antiga"
+    ],
+    [
+     "5",
+     "Uma ideia ou invenção"
+    ],
+    [
+     "6",
+     "Um luto ou lamento"
+    ],
+    [
+     "7",
+     "Uma provocação a um poder"
+    ],
+    [
+     "8",
+     "Um pedido ao mundo"
+    ]
+   ]
+  },
+  "conv": {
+   "titulo": "Resultado da conversa",
+   "colunas": [
+    "Resultado",
+    "A gravação"
+   ],
+   "linhas": [
+    [
+     "Sucesso por 5+",
+     "★ da fonte + 1 · a conversa se desdobra (d10)"
+    ],
+    [
+     "Sucesso",
+     "★ da fonte"
+    ],
+    [
+     "Falha",
+     "★ da fonte − 1 (mínimo 1)"
+    ],
+    [
+     "Falha por 5+",
+     "A fonte se fecha: gravação sem uso · −1 marca de Influência no poder dela"
+    ],
+    [
+     "20 natural",
+     "A fonte se abre por inteiro: ★ + 1 e desdobramento de 7 ou mais"
+    ],
+    [
+     "1 natural",
+     "Incidente na gravação: Pressão +1"
+    ]
+   ]
+  },
+  "desd": {
+   "titulo": "Desdobramento",
+   "colunas": [
+    "d10",
+    "O que veio além"
+   ],
+   "linhas": [
+    [
+     "1–3",
+     "Uma história pessoal marcante: +1 marca no Povo quando vai ao ar"
+    ],
+    [
+     "4–6",
+     "Uma posição firme sobre um poder: rende Debate ou Denúncia"
+    ],
+    [
+     "7–8",
+     "Uma pista: vira missão no quadro da guilda"
+    ],
+    [
+     "9",
+     "Algo que incomoda os poderosos: ir ao ar dá Pressão +1"
+    ],
+    [
+     "10",
+     "Uma verdade do mundo: o Mestre conta algo real"
+    ]
+   ]
+  },
+  "uso": {
+   "titulo": "Usos da gravação",
+   "colunas": [
+    "Uso",
+    "O que faz"
+   ],
+   "linhas": [
+    [
+     "No ar",
+     "Vira programa"
+    ],
+    [
+     "Arquivo",
+     "Fica no portfólio e soma ★ no Acervo"
+    ],
+    [
+     "Fita",
+     "Cópia que passa o conhecimento a quem a absorve"
+    ],
+    [
+     "Guardada",
+     "O desdobramento fica guardado, para usar depois"
+    ]
+   ]
+  },
+  "mus": {
+   "titulo": "Tipos de canção",
+   "colunas": [
+    "Tipo de canção",
+    "Fala de",
+    "Poder que move"
+   ],
+   "linhas": [
+    [
+     "🥁 Hino ou marcha",
+     "Nação, exército, uma casa nobre",
+     "Nobreza"
+    ],
+    [
+     "🕯️ Canto sagrado",
+     "Fé, luto, milagre",
+     "Clero"
+    ],
+    [
+     "⚒️ Canção de ofício e estrada",
+     "Trabalho, viagem, comércio",
+     "Guildas"
+    ],
+    [
+     "🍻 Canção popular",
+     "Amor, festa, saudade",
+     "Povo"
+    ],
+    [
+     "🏔️ Canção de um povo",
+     "Uma raça, um lugar, uma diáspora",
+     "Povo · +1 marca de Audiência na zona de origem"
+    ],
+    [
+     "✊ Canção de protesto",
+     "Contra um poder",
+     "Povo · −1 marca no poder alvo · Pressão +1"
+    ]
+   ]
+  },
+  "mtier": {
+   "titulo": "Músicos por ★",
+   "colunas": [
+    "Músico",
+    "CD da gravação"
+   ],
+   "linhas": [
+    [
+     "★ Músico de rua",
+     "10"
+    ],
+    [
+     "★★ Bardo conhecido",
+     "13"
+    ],
+    [
+     "★★★ Bardo de corte ou mestre de coro",
+     "16"
+    ],
+    [
+     "★★★★ Lenda viva",
+     "19"
+    ],
+    [
+     "★★★★★ Canção de uma entidade",
+     "22"
+    ]
+   ]
+  },
+  "contr": {
+   "titulo": "Acordo com o bardo",
+   "colunas": [
+    "Acordo com o bardo",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "Paga e dá crédito",
+     "Bardos −1 a cada 4 gravações · o bardo pode ficar em Draetyr"
+    ],
+    [
+     "Só dá crédito",
+     "Nada muda"
+    ],
+    [
+     "Grava sem pagar nem dar crédito",
+     "Bardos +1"
+    ]
+   ]
+  },
+  "grade": {
+   "titulo": "Grade normal",
+   "colunas": [
+    "Faixa",
+    "Programa",
+    "O que toca"
+   ],
+   "linhas": [
+    [
+     "🌅 Manhã",
+     "Despertar",
+     "Música do acervo"
+    ],
+    [
+     "☀️ Meio-dia",
+     "Notícias do mundo",
+     "As pautas da semana"
+    ],
+    [
+     "🌇 Tarde",
+     "Pedidos",
+     "Música pedida por cartas de ouvintes"
+    ],
+    [
+     "🌙 Noite",
+     "A entrevista",
+     "O podcast da Mandy: uma entrevista nova ou uma reprise"
+    ],
+    [
+     "🌌 Madrugada",
+     "Reprises",
+     "O que já foi ao ar"
+    ]
+   ]
+  },
+  "prog": {
+   "titulo": "Programas especiais",
+   "colunas": [
+    "Especial",
+    "Precisa",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "Estreia",
+     "1 música nova ★★★+",
+     "+1 marca em Audiência e no poder da canção"
+    ],
+    [
+     "Show ao vivo",
+     "Um músico tocando em Draetyr",
+     "+2 marcas em Audiência; +1 em Notoriedade de Draetyr"
+    ],
+    [
+     "Entrevista especial",
+     "1 entrevista ★★+",
+     "+1 marca em Audiência; +1 no poder da fonte (★★★★+: +2)"
+    ],
+    [
+     "Debate",
+     "2 entrevistas de poderes diferentes",
+     "+1 marca em cada poder e em Audiência; Nobreza ou Clero: Pressão +1"
+    ],
+    [
+     "Sátira",
+     "Nada",
+     "+2 marcas em Povo; −1 no poder satirizado; Pressão +1"
+    ],
+    [
+     "Denúncia",
+     "1 desdobramento guardado",
+     "+2 marcas em Audiência e +1 em Povo; −2 no poder denunciado; Pressão +2"
+    ],
+    [
+     "Programa pago",
+     "Um patrocinador",
+     "300 PO × nível do patrocinador; Integridade −1; ele escolhe o tema"
+    ]
+   ]
+  },
+  "acoes": {
+   "titulo": "Ações da rádio",
+   "colunas": [
+    "Ação",
+    "Teste",
+    "Resultado"
+   ],
+   "linhas": [
+    [
+     "🎙️ Entrevistar",
+     "Acesso e conversa",
+     "Uma gravação de alguém"
+    ],
+    [
+     "👂 Ouvir o eco",
+     "Eco da Memória, sem teste e sem espaço de magia",
+     "Uma gravação de algo"
+    ],
+    [
+     "🎻 Gravar música",
+     "Atuação · CD do músico",
+     "Uma gravação de música"
+    ],
+    [
+     "📦 Distribuir aparelhos",
+     "Persuasão · CD 10 + 2 × Influência no poder",
+     "+1 marca nesse poder e +1 em Audiência; 1 aparelho (custo a confirmar)"
+    ],
+    [
+     "📡 Abrir Sinal",
+     "Persuasão ou Investigação · CD 10 + 2 × Sinal",
+     "+1 marca de Sinal numa zona"
+    ],
+    [
+     "🤝 Negociar patrocínio",
+     "Persuasão · CD 13",
+     "Contrato: programa pago por 4 semanas"
+    ],
+    [
+     "🗝️ Usar um desdobramento",
+     "Sem teste",
+     "−2 marcas num poder em troca de silêncio (chantagem: Integridade −2)"
+    ]
+   ]
+  },
+  "inf": {
+   "titulo": "Influência nos 4 poderes",
+   "colunas": [
+    "Nível",
+    "Guildas",
+    "Nobreza",
+    "Clero",
+    "Povo"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Contato numa guilda",
+     "Um nobre menor recebe a Mandy",
+     "Um padre ouve",
+     "Reconhecida na rua"
+    ],
+    [
+     "2",
+     "Mercadores distribuem aparelhos",
+     "Audiência com um lorde",
+     "Bênção a um programa",
+     "Cartas de ouvintes; voluntários"
+    ],
+    [
+     "3",
+     "Contratos e patrocínio",
+     "Voz num conselho",
+     "O púlpito repete a rádio",
+     "Uma multidão atende a um chamado"
+    ],
+    [
+     "4",
+     "Uma guilda inteira apoia",
+     "Pressão sobre um lorde",
+     "Proteção contra inquisidores",
+     "A opinião pública muda uma decisão"
+    ],
+    [
+     "5",
+     "Rede de guildas do continente",
+     "Voz na corte",
+     "Uma igreja aliada",
+     "A voz do povo é a da rádio"
+    ]
+   ]
+  },
+  "integ": {
+   "titulo": "Integridade",
+   "colunas": [
+    "Integridade",
+    "Estado",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "8 a 10",
+     "Confiável",
+     "Denúncia dá +1 marca a mais"
+    ],
+    [
+     "4 a 7",
+     "Normal",
+     "—"
+    ],
+    [
+     "1 a 3",
+     "Comprada",
+     "Entrevista e Denúncia dão 1 marca a menos"
+    ],
+    [
+     "0",
+     "Porta-voz",
+     "Um patrocinador escolhe um especial por semana"
+    ]
+   ]
+  },
+  "acervo": {
+   "titulo": "Acervo",
+   "colunas": [
+    "Acervo",
+    "Soma",
+    "Destrava"
+   ],
+   "linhas": [
+    [
+     "1",
+     "10 ★",
+     "Arquivo: reprises passam a contar na grade"
+    ],
+    [
+     "2",
+     "25 ★",
+     "Coletânea: fitas vendidas valem o dobro"
+    ],
+    [
+     "3",
+     "50 ★",
+     "Biblioteca de vozes: vantagem em testes sobre um continente com 5+ gravações dele"
+    ],
+    [
+     "4",
+     "100 ★",
+     "Memória do mundo: 1 vez por semana, pergunte ao Mestre algo que o acervo saberia"
+    ],
+    [
+     "5",
+     "200 ★",
+     "O arquivo é poder: +1 marca por semana no poder com mais gravações"
+    ]
+   ]
+  },
+  "fita": {
+   "titulo": "Fitas",
+   "colunas": [
+    "Gravação",
+    "Quem absorve a fita"
+   ],
+   "linhas": [
+    [
+     "★ e ★★",
+     "Quem absorve sabe tudo o que foi dito ou tocado"
+    ],
+    [
+     "★★★",
+     "Vantagem em testes sobre o assunto por 1 semana"
+    ],
+    [
+     "★★★★",
+     "Proficiência temporária numa perícia ligada, por 1 semana (Mestre)"
+    ],
+    [
+     "★★★★★",
+     "Uma verdade do Mestre sobre o assunto"
+    ]
+   ]
+  },
+  "ini": {
+   "titulo": "Portfólio inicial (fontes)",
+   "colunas": [
+    "Fonte",
+    "Quem é",
+    "★",
+    "De onde vem",
+    "Estado"
+   ],
+   "linhas": [
+    [
+     "Epitisontres",
+     "Pilar; um dos fundadores de Draetyr",
+     "★★★★★",
+     "Sessão 03: explicou à Mandy os guardiões da cidade",
+     "a confirmar"
+    ],
+    [
+     "Elizandra",
+     "Santa em Lavenya; heroína da jornada ao Inferno",
+     "★★★★",
+     "Sessão 04: conversa com a Mandy",
+     "a confirmar"
+    ],
+    [
+     "Lucas",
+     "Irmão da Mandy (Visão)",
+     "★★★★",
+     "Sessão 04: reencontro na cidade da ponte",
+     "a confirmar"
+    ],
+    [
+     "Daniel Gard",
+     "Campeão do continente; príncipe",
+     "★★★★",
+     "Sessão 05: guilda da capital",
+     "a confirmar"
+    ],
+    [
+     "Alberon",
+     "Mestre da guilda; herói lendário",
+     "★★★★",
+     "Conversas na guilda",
+     "a confirmar"
+    ],
+    [
+     "Hank",
+     "Demônio com três títulos; caçador",
+     "★★★★",
+     "A primeira entrevista idealizada; tem casa em Draetyr",
+     "convidado"
+    ],
+    [
+     "Mara",
+     "Escolhida da Vida",
+     "★★★★",
+     "Prometeu conversar com a Mandy depois do arco",
+     "convidada"
+    ],
+    [
+     "Elizandra (visita)",
+     "Visita Draetyr a cada alguns meses",
+     "★★★★",
+     "Entrevista no estúdio",
+     "convidada"
+    ],
+    [
+     "Capitão Jack",
+     "Pirata fantasma; guardião do porto",
+     "★★★★",
+     "Bar do Holandês",
+     "convidado"
+    ],
+    [
+     "Koren",
+     "Ferreiro lendário; fabricante previsto da rádio",
+     "★★★★",
+     "Em Draetyr",
+     "convidado"
+    ],
+    [
+     "Baldrek Martel",
+     "Mestre da Barba de Ferro, de Kroka",
+     "★★★",
+     "Viajou com o grupo até Draetyr",
+     "convidado"
+    ],
+    [
+     "Chico",
+     "Mercador de móveis de luxo de Svenya",
+     "★★",
+     "O primeiro fio comercial reaberto",
+     "convidado"
+    ],
+    [
+     "Refugiados anões",
+     "Quem chegou de Kroka depois da guerra",
+     "★★",
+     "Canções de um povo e relatos da guerra",
+     "convidados"
+    ]
+   ]
+  },
+  "rel": {
+   "titulo": "Relógios da rádio",
+   "colunas": [
+    "Relógio",
+    "Avança 1",
+    "Recua 1",
+    "Cheio"
+   ],
+   "linhas": [
+    [
+     "🔥 Pressão",
+     "Sátira ou Denúncia contra Nobreza ou Clero · Audiência sobe de nível · incidente",
+     "Gastar 2 marcas de Nobreza ou Clero",
+     "Censura: o Mestre escolhe entre torre atacada (−1 Sinal numa zona), inquisidores no estúdio ou proibição na capital"
+    ],
+    [
+     "🎻 Bardos",
+     "Estágio sobe · gravar sem pagar nem dar crédito",
+     "Pagar e dar crédito (a cada 4 gravações)",
+     "Boicote: Gravar música com desvantagem por 4 semanas"
+    ]
+   ]
+  },
+  "bast": {
+   "titulo": "Bastidores (d12)",
+   "colunas": [
+    "d12",
+    "Bastidor"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Pedra transmissora falha: a grade tem buraco nesta semana"
+    ],
+    [
+     "2",
+     "Bardo exige mais pelo crédito: 100 × (E + 1) PO, ou Bardos +1"
+    ],
+    [
+     "3",
+     "Carta de ouvinte com uma pista: nova pauta Comum"
+    ],
+    [
+     "4",
+     "Patrocinador oferece contrato: 500 × (E + 1) PO por 4 semanas; Integridade −1 por semana"
+    ],
+    [
+     "5",
+     "Gravação vaza: uma do arquivo vai ao ar; com desdobramento 9, Pressão +1"
+    ],
+    [
+     "6",
+     "Alguém imita a rádio: −1 marca em Audiência"
+    ],
+    [
+     "7",
+     "Visita de alguém Influente: entrevista sem teste de acesso"
+    ],
+    [
+     "8",
+     "Fita estragada: perca uma fita"
+    ],
+    [
+     "9",
+     "Voluntário quer trabalhar: +1 ação na próxima semana"
+    ],
+    [
+     "10",
+     "Músico de fora bate à porta: gravação de música ★★ sem teste"
+    ],
+    [
+     "11",
+     "Alguém quer comprar o arquivo: 200 × Acervo PO por uma gravação; Integridade −1"
+    ],
+    [
+     "12",
+     "Sinal limpo: cada especial da semana dá +1 marca a mais"
+    ]
+   ]
+  },
+  "liga": {
+   "titulo": "Ligações com a cidade",
+   "colunas": [
+    "Na rádio",
+    "Na cidade"
+   ],
+   "linhas": [
+    [
+     "Grade completa na semana",
+     "+1 marca em Notoriedade de Draetyr"
+    ],
+    [
+     "Músico de fora se instala",
+     "+1 marca em População (1 vez por semana)"
+    ],
+    [
+     "Torre de Draetyr concluída",
+     "Projeto \"Torre de rádio e gravadora\" da cidade: +2 marcas em Notoriedade"
+    ],
+    [
+     "Pressão cheia",
+     "Desconfiança da capital +1"
+    ],
+    [
+     "Desdobramento de pista",
+     "Missão nova no quadro da guilda"
+    ]
+   ]
+  },
+  "hoje": {
+   "titulo": "Estado de hoje (texto)",
+   "colunas": [
+    "Medida",
+    "Valor"
+   ],
+   "linhas": [
+    [
+     "Estágio",
+     "0 · Microfone"
+    ],
+    [
+     "Dona",
+     "A Mandy"
+    ],
+    [
+     "Portfólio",
+     "Portfólio inicial a confirmar"
+    ],
+    [
+     "Zonas",
+     "Todas em Silêncio; Draetyr espera a torre"
+    ],
+    [
+     "Audiência",
+     "0 (teto 1)"
+    ],
+    [
+     "Influência",
+     "Guildas 0 · Nobreza 0 · Clero 0 · Povo 0"
+    ],
+    [
+     "Integridade",
+     "8"
+    ],
+    [
+     "Pressão",
+     "0/6"
+    ],
+    [
+     "Bardos",
+     "0/6"
+    ],
+    [
+     "Caixa",
+     "a definir"
+    ]
+   ]
+  }
+ }
+}

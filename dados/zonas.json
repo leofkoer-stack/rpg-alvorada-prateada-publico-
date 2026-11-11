@@ -1,0 +1,20 @@
+{
+ "_leia": "As 13 zonas são as mesmas em todas as frentes: Sinal da rádio, Rede do submundo, Raízes do culto e origem dos pedidos da forja. Fora de Lykh, cada continente é uma zona só até o Mestre dividir as regiões.",
+ "zonas": [
+  {"id": "draetyr", "nome": "Draetyr", "onde": "Lykh · sul", "poder_dominante": "guildas", "d8_lykh": 1},
+  {"id": "svenya", "nome": "Svenya", "onde": "Lykh · sul", "poder_dominante": null, "d8_lykh": 2},
+  {"id": "jura", "nome": "Jura", "onde": "Lykh · sul", "poder_dominante": null, "d8_lykh": 3},
+  {"id": "jyviro", "nome": "Jyviro", "onde": "Lykh · sul", "poder_dominante": null, "d8_lykh": 4},
+  {"id": "lavenya", "nome": "Lavenya", "onde": "Lykh · centro (a capital)", "poder_dominante": "nobreza", "d8_lykh": 5},
+  {"id": "khaev", "nome": "Khaev", "onde": "Lykh · norte", "poder_dominante": null, "d8_lykh": 6},
+  {"id": "raenya", "nome": "Raenya", "onde": "Lykh · norte", "poder_dominante": null, "d8_lykh": 7},
+  {"id": "tyra", "nome": "Tyra", "onde": "Lykh · norte", "poder_dominante": null, "d8_lykh": 8},
+  {"id": "kroka", "nome": "Kroka", "onde": "continente", "poder_dominante": null, "d6_continente": 2},
+  {"id": "yvril", "nome": "Yvril", "onde": "continente", "poder_dominante": null, "d6_continente": 3},
+  {"id": "nuk", "nome": "Núk", "onde": "continente", "poder_dominante": null, "d6_continente": 4},
+  {"id": "elduran", "nome": "Elduran", "onde": "continente", "poder_dominante": null, "d6_continente": 5},
+  {"id": "shakal", "nome": "Shakal", "onde": "continente", "poder_dominante": null, "d6_continente": 6}
+ ],
+ "d6_continente": {"1": "Lykh (role d8 para a zona)", "2": "kroka", "3": "yvril", "4": "nuk", "5": "elduran", "6": "shakal"},
+ "poder_dominante_regra": "Quando null, o Mestre define ou rola d4 ao abrir a zona: 1 Guildas, 2 Nobreza, 3 Clero, 4 Povo. O de Draetyr e o de Lavenya são proposta."
+}

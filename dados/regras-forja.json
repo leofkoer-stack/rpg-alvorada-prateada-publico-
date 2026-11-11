@@ -1,0 +1,1108 @@
+{
+ "frente": "forja",
+ "nome": "Rodas e Engrenagens do Trazix",
+ "dono": "Bertran (Trazix)",
+ "pdf": "referencia/Trazix_Rodas_e_Engrenagens.pdf",
+ "semana": [
+  "Pedidos: chegam os novos; aceite ou recuse.",
+  "Jornadas: conte quem está na oficina e distribua entre pedidos e balcão.",
+  "Ações: até o limite do estágio.",
+  "Teste da forja: contra a CD do pedido mais difícil.",
+  "Entregas e caixa: pedidos prontos, vendas do balcão e salários.",
+  "Evento da forja: role d20.",
+  "Relógios: Faísca, Esquema e Cobiça.",
+  "Fechamento: marcas viram níveis; os prazos andam 1 semana."
+ ],
+ "tabelas": {
+  "est": {
+   "titulo": "Estágios da oficina",
+   "colunas": [
+    "Estágio",
+    "O que é",
+    "Ações por semana",
+    "Equipe máxima",
+    "Para chegar aqui"
+   ],
+   "linhas": [
+    [
+     "0 · Bancada",
+     "Só o Trazix e as ferramentas.",
+     "1",
+     "0",
+     "—"
+    ],
+    [
+     "1 · Oficina",
+     "Forja acesa e balcão; um aprendiz.",
+     "2",
+     "2",
+     "Forja e 1 pessoa"
+    ],
+    [
+     "2 · Rodas e Engrenagens",
+     "Loja aberta e fila de pedidos.",
+     "2",
+     "4",
+     "3 pedidos entregues e Palavra 1"
+    ],
+    [
+     "3 · Ateliê de Draetyr",
+     "Pedidos de Lykh; campo de testes fora da cidade.",
+     "3",
+     "6",
+     "Renome 2, 1 Avanço e 800 PO"
+    ],
+    [
+     "4 · Indústria",
+     "Produção para a cidade; balcão em dobro.",
+     "3",
+     "10",
+     "Renome 3, Palavra 3, um ★★★★ entregue e 3.000 PO"
+    ],
+    [
+     "5 · Forja lendária",
+     "Pedidos do mundo inteiro.",
+     "4",
+     "15",
+     "Renome 4, Palavra 4, um ★★★★★ entregue e 10.000 PO"
+    ]
+   ]
+  },
+  "jorn": {
+   "titulo": "Jornadas por semana",
+   "colunas": [
+    "Quem trabalha",
+    "Jornadas por semana",
+    "Limite"
+   ],
+   "linhas": [
+    [
+     "🐉 Trazix em Draetyr",
+     "5 jornadas",
+     "Faz qualquer ★"
+    ],
+    [
+     "🧒 Miguelito",
+     "2 a 4 jornadas, pela trilha",
+     "Sozinho, só até o ★ da trilha"
+    ],
+    [
+     "👷 Funcionário de Forja",
+     "+1 jornada cada",
+     "Só ★"
+    ],
+    [
+     "⛓️ Ex-bandido",
+     "+1 jornada cada",
+     "Só balcão"
+    ],
+    [
+     "👾 Invocação ajudante",
+     "+1 jornada",
+     "Só se o Ooze não estiver de guarda"
+    ]
+   ]
+  },
+  "tiers": {
+   "titulo": "Pedidos por ★",
+   "colunas": [
+    "★",
+    "Raridade em D&D",
+    "CD",
+    "Jornadas",
+    "Materiais",
+    "Valor de referência"
+   ],
+   "linhas": [
+    [
+     "★",
+     "Comum ou obra fina",
+     "10",
+     "2",
+     "1 comum",
+     "50–100 PO"
+    ],
+    [
+     "★★",
+     "Incomum",
+     "13",
+     "5",
+     "2 comuns",
+     "300–500 PO"
+    ],
+    [
+     "★★★",
+     "Raro",
+     "16",
+     "12",
+     "2 comuns e 1 raro",
+     "2.000–5.000 PO"
+    ],
+    [
+     "★★★★",
+     "Muito raro",
+     "19",
+     "25",
+     "3 comuns, 2 raros e 1 Avanço",
+     "10.000–30.000 PO"
+    ],
+    [
+     "★★★★★",
+     "Lendário",
+     "22",
+     "50",
+     "3 raros, 1 lendário e 1 Avanço",
+     "50.000 PO ou mais"
+    ]
+   ]
+  },
+  "pat": {
+   "titulo": "Patamar do pedido (d20 + Renome)",
+   "colunas": [
+    "d20 + Renome",
+    "Patamar"
+   ],
+   "linhas": [
+    [
+     "1–9",
+     "★"
+    ],
+    [
+     "10–14",
+     "★★"
+    ],
+    [
+     "15–19",
+     "★★★"
+    ],
+    [
+     "20–24",
+     "★★★★"
+    ],
+    [
+     "25+",
+     "★★★★★"
+    ]
+   ]
+  },
+  "orig": {
+   "titulo": "Origem do pedido",
+   "colunas": [
+    "Renome",
+    "De onde vem o pedido"
+   ],
+   "linhas": [
+    [
+     "Renome 0–1",
+     "Draetyr"
+    ],
+    [
+     "Renome 2",
+     "Lykh: role d8 para a zona"
+    ],
+    [
+     "Renome 3+",
+     "O mundo: role d6 para o continente"
+    ]
+   ]
+  },
+  "cli": {
+   "titulo": "Cliente (d20)",
+   "colunas": [
+    "d20",
+    "Cliente"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Vizinho com uma ferramenta quebrada"
+    ],
+    [
+     "2",
+     "Refugiado que precisa de ferramenta para trabalhar; paga em favor"
+    ],
+    [
+     "3",
+     "Guarda da cidade"
+    ],
+    [
+     "4",
+     "Aventureiro da Alvorada Prateada"
+    ],
+    [
+     "5",
+     "Fazendeiro: arado, rodas, moinho"
+    ],
+    [
+     "6",
+     "Pescador: anzóis, guinchos, redes com peso"
+    ],
+    [
+     "7",
+     "Mercador de caravana: rodas e eixos"
+    ],
+    [
+     "8",
+     "Construtor da reconstrução: guindastes e engrenagens"
+    ],
+    [
+     "9",
+     "Ferreiro de outra forja que terceiriza o que não sabe fazer"
+    ],
+    [
+     "10",
+     "Nobre de Lavenya: peça de ostentação"
+    ],
+    [
+     "11",
+     "Templo: relicário, sino ou fechadura sagrada"
+    ],
+    [
+     "12",
+     "Bardo: instrumento mecânico"
+    ],
+    [
+     "13",
+     "Estudante da Academia de Magia: componente"
+    ],
+    [
+     "14",
+     "Anão de Kroka: engrenagem de precisão"
+    ],
+    [
+     "15",
+     "Gnomo de Elduran: um desafio técnico"
+    ],
+    [
+     "16",
+     "Mercenário: arma; não diz para quê"
+    ],
+    [
+     "17",
+     "Cliente anônimo, por um intermediário"
+    ],
+    [
+     "18",
+     "Caçador de Yvril: armadilha ou arma contra monstro"
+    ],
+    [
+     "19",
+     "Lorde regional: encomenda oficial"
+    ],
+    [
+     "20",
+     "Alguém que ninguém esperava (Mestre)"
+    ]
+   ]
+  },
+  "peca": {
+   "titulo": "Peça (d12)",
+   "colunas": [
+    "d12",
+    "Peça"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Ferramenta ou utensílio"
+    ],
+    [
+     "2",
+     "Rodas, eixos e engrenagens"
+    ],
+    [
+     "3",
+     "Fechadura, cofre ou tranca"
+    ],
+    [
+     "4",
+     "Arma de lâmina"
+    ],
+    [
+     "5",
+     "Pistola, besta ou arma de disparo"
+    ],
+    [
+     "6",
+     "Armadura ou escudo"
+    ],
+    [
+     "7",
+     "Anel ou joia encantada"
+    ],
+    [
+     "8",
+     "Aparelho: som, luz ou medida"
+    ],
+    [
+     "9",
+     "Prótese ou implante"
+    ],
+    [
+     "10",
+     "Construto pequeno ou autômato"
+    ],
+    [
+     "11",
+     "Veículo ou peça de veículo"
+    ],
+    [
+     "12",
+     "Peça com um Avanço (Renome 3+; senão, role de novo)"
+    ]
+   ]
+  },
+  "alem": {
+   "titulo": "O que o cliente pede além (d8)",
+   "colunas": [
+    "d8",
+    "O que o cliente pede além"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Pressa: prazo pela metade, valor ×1,5"
+    ],
+    [
+     "2",
+     "Sigilo: ninguém pode saber; se vazar, Cobiça +1"
+    ],
+    [
+     "3",
+     "Paga em material: 1 lote raro e metade do valor"
+    ],
+    [
+     "4",
+     "Paga em favor: o Mestre diz qual"
+    ],
+    [
+     "5",
+     "Quer o selo do Koren: o Koren aprova a peça; valor ×2"
+    ],
+    [
+     "6",
+     "Personalizada: CD +2; +1 marca a mais em Renome na entrega"
+    ],
+    [
+     "7",
+     "Para algo injusto: aceitar dá valor ×2 e Cobiça +1; recusar dá +1 marca em Palavra"
+    ],
+    [
+     "8",
+     "Nada além da peça"
+    ]
+   ]
+  },
+  "res": {
+   "titulo": "Resultado do teste da forja",
+   "colunas": [
+    "Resultado",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "20 natural",
+     "Obra-prima: uma peça entregue nesta semana ganha 1 propriedade extra; +2 marcas em Renome"
+    ],
+    [
+     "Sucesso por 5+",
+     "+3 jornadas nesta semana"
+    ],
+    [
+     "Sucesso",
+     "As jornadas da semana valem normalmente"
+    ],
+    [
+     "Falha",
+     "−3 jornadas nesta semana"
+    ],
+    [
+     "Falha por 5+",
+     "Perde os materiais de um pedido; Faísca +1"
+    ],
+    [
+     "1 natural",
+     "Incidente: role o evento da forja de 1 a 6 (d6)"
+    ]
+   ]
+  },
+  "entrega": {
+   "titulo": "Entrega",
+   "colunas": [
+    "Entrega",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "No prazo",
+     "+1 marca em Palavra; ★★★ ou mais: também +1 marca em Renome"
+    ],
+    [
+     "Adiantado em 2 semanas ou mais",
+     "+2 marcas em Palavra"
+    ],
+    [
+     "Atrasado",
+     "−1 marca em Palavra por semana de atraso"
+    ],
+    [
+     "Desistir",
+     "−2 marcas em Palavra; devolve o que recebeu"
+    ]
+   ]
+  },
+  "mat": {
+   "titulo": "Materiais por continente",
+   "colunas": [
+    "De onde",
+    "O que vem",
+    "Tipo",
+    "Preço"
+   ],
+   "linhas": [
+    [
+     "Lykh",
+     "Ferro, carvão e couro; minérios no norte",
+     "Comum",
+     "10 PO o lote"
+    ],
+    [
+     "Kroka",
+     "Metais nobres e peças de engrenagem das forjas anãs",
+     "Raro",
+     "100 PO"
+    ],
+    [
+     "Yvril",
+     "Partes de monstro: escamas, ossos, glândulas",
+     "Raro",
+     "100 PO"
+    ],
+    [
+     "Núk",
+     "Madeiras, resinas e plantas que não existem em outro lugar",
+     "Raro",
+     "100 PO"
+    ],
+    [
+     "Elduran",
+     "Núcleos e componentes de tecnologia mágica",
+     "Raro",
+     "150 PO"
+    ],
+    [
+     "Shakal",
+     "Revende raros de Kroka e Elduran, sem expedição",
+     "Raro",
+     "preço +50%"
+    ],
+    [
+     "Lendário",
+     "Só por expedição, missão da guilda ou evento",
+     "Lendário",
+     "o Mestre diz"
+    ]
+   ]
+  },
+  "obter": {
+   "titulo": "Como obter materiais",
+   "colunas": [
+    "Como obter",
+    "Como funciona"
+   ],
+   "linhas": [
+    [
+     "Comprar",
+     "Comuns em Draetyr; raros só com Rotas 2+ na cidade, por Shakal ou de viajante"
+    ],
+    [
+     "Trocar",
+     "Lotes por lotes, ou peça por material"
+    ],
+    [
+     "Expedição",
+     "Ação: o Trazix vai buscar; vira missão da guilda ou cena"
+    ],
+    [
+     "Invocar",
+     "O Miguelito invoca matéria: 1 lote comum por semana; Faísca +1"
+    ],
+    [
+     "Contrabando",
+     "Um trabalho do Felnun pode trazer 1 raro"
+    ]
+   ]
+  },
+  "met": {
+   "titulo": "Método do caderno de fenômenos",
+   "colunas": [
+    "Passo",
+    "Como",
+    "Teste"
+   ],
+   "linhas": [
+    [
+     "👁️ Observar",
+     "Em sessão, o Trazix vê o fenômeno acontecer: uma magia, um poder de criatura, um item. O Mestre diz o círculo equivalente.",
+     "Sem teste"
+    ],
+    [
+     "🧠 Entender",
+     "Ação: estudar as anotações.",
+     "Arcanismo · CD 10 + 2 × círculo"
+    ],
+    [
+     "🔩 Desmontar",
+     "Ação: precisa de uma amostra (resíduo, item ou um raro ligado ao fenômeno).",
+     "Investigação · CD 10 + 2 × círculo"
+    ],
+    [
+     "⚙️ Reconstruir",
+     "Ação na forja: o protótipo. Gasta 1 raro.",
+     "Forja · CD 12 + 2 × círculo"
+    ]
+   ]
+  },
+  "vistos": {
+   "titulo": "Fenômenos já vistos",
+   "colunas": [
+    "Fenômenos que ele já viu",
+    "Onde"
+   ],
+   "linhas": [
+    [
+     "Magia de sangue que reconstruiu o corpo dele",
+     "Simon · Sessão 05"
+    ],
+    [
+     "A mão da Mandy transformada em som",
+     "Mandy · Sessão 05"
+    ],
+    [
+     "A troca de lugar pela capa",
+     "Lucas · Sessão 05"
+    ],
+    [
+     "A tranca de mana do quarto do Ignatus",
+     "Sessão 07"
+    ],
+    [
+     "A magia do espelho do Ignatus",
+     "Sessão 07"
+    ]
+   ]
+  },
+  "teto": {
+   "titulo": "Relógio do Teto · gatilhos",
+   "colunas": [
+    "Avança",
+    "Quando"
+   ],
+   "linhas": [
+    [
+     "+1",
+     "Um fenômeno de 5º círculo reconstruído"
+    ],
+    [
+     "+1",
+     "Um Avanço usado numa peça ★★★★★"
+    ],
+    [
+     "+1",
+     "Observar um fenômeno de 6º círculo ou mais"
+    ],
+    [
+     "+1",
+     "Uma cena em que o Mestre diga que o Trazix chegou perto"
+    ]
+   ]
+  },
+  "trilha": {
+   "titulo": "Trilha do Miguelito",
+   "colunas": [
+    "Nível",
+    "O que abre"
+   ],
+   "linhas": [
+    [
+     "0 · Ajudante",
+     "+2 jornadas; nada sozinho"
+    ],
+    [
+     "1 · Mão firme",
+     "Faz ★ sozinho quando o Trazix viaja"
+    ],
+    [
+     "2 · Ferreiro",
+     "Faz até ★★ sozinho; +3 jornadas"
+    ],
+    [
+     "3 · Artesão",
+     "Invoca 2 lotes comuns por semana"
+    ],
+    [
+     "4 · Mestre de bancada",
+     "Faz até ★★★ sozinho; +4 jornadas; cuida da oficina"
+    ],
+    [
+     "5 · O melhor ferreiro de Draetyr",
+     "O Bertran e o Mestre decidem o que isso quer dizer"
+    ]
+   ]
+  },
+  "func": {
+   "titulo": "Funções da equipe",
+   "colunas": [
+    "Função",
+    "O que faz"
+   ],
+   "linhas": [
+    [
+     "🔨 Forja",
+     "+1 jornada; só ★"
+    ],
+    [
+     "🏪 Balcão",
+     "+50 PO no limite de venda"
+    ],
+    [
+     "🛡️ Guarda",
+     "Furtos não afetam a oficina"
+    ],
+    [
+     "📦 Entregas",
+     "Pedidos de outra zona não atrasam pela viagem"
+    ]
+   ]
+  },
+  "quem": {
+   "titulo": "Quem aparece para trabalhar (d10)",
+   "colunas": [
+    "d10",
+    "Quem aparece"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Ex-bandido que quer ficar de vez"
+    ],
+    [
+     "2",
+     "Kobold fugido de uma mina"
+    ],
+    [
+     "3",
+     "Anão aposentado de Kroka"
+    ],
+    [
+     "4",
+     "Refugiada que era ourives"
+    ],
+    [
+     "5",
+     "Gnomo de Elduran curioso com o método"
+    ],
+    [
+     "6",
+     "Ferreiro da guarda dispensado"
+    ],
+    [
+     "7",
+     "Carpinteiro de rodas"
+    ],
+    [
+     "8",
+     "Ajudante de forja da era de ouro de Draetyr"
+    ],
+    [
+     "9",
+     "Alquimista meio louco: +1 jornada e Faísca +1 por semana"
+    ],
+    [
+     "10",
+     "Espião que finge ser aprendiz: Cobiça +1 por semana"
+    ]
+   ]
+  },
+  "ren": {
+   "titulo": "Renome",
+   "colunas": [
+    "Nível",
+    "Estado",
+    "Abre"
+   ],
+   "linhas": [
+    [
+     "0",
+     "Desconhecido",
+     "Pedidos só de Draetyr"
+    ],
+    [
+     "1",
+     "A rua conhece",
+     "—"
+    ],
+    [
+     "2",
+     "Conhecido em Draetyr",
+     "Pedidos de Lykh"
+    ],
+    [
+     "3",
+     "Mestre-artífice",
+     "Pedidos do mundo; +1 marca em Notoriedade de Draetyr a cada 4 semanas"
+    ],
+    [
+     "4",
+     "Nome em Kroka e Elduran",
+     "Contratar com vantagem"
+    ],
+    [
+     "5",
+     "Lenda da forja",
+     "Convites de outros continentes (Mestre)"
+    ]
+   ]
+  },
+  "pal": {
+   "titulo": "Palavra",
+   "colunas": [
+    "Nível",
+    "Estado",
+    "Abre"
+   ],
+   "linhas": [
+    [
+     "0",
+     "Desconfiança",
+     "O cliente só paga na entrega"
+    ],
+    [
+     "1",
+     "Promessa",
+     "—"
+    ],
+    [
+     "2",
+     "Palavra dada",
+     "Metade adiantada"
+    ],
+    [
+     "3",
+     "Palavra de ferreiro",
+     "1 semana de atraso sem perder marca"
+    ],
+    [
+     "4",
+     "Garantia",
+     "O nome dele vale como garantia de contrato em Lykh"
+    ],
+    [
+     "5",
+     "Vale ouro",
+     "Clientes pagam ×1,25 e esperam o que for"
+    ]
+   ]
+  },
+  "rel": {
+   "titulo": "Relógios da oficina",
+   "colunas": [
+    "Relógio",
+    "Avança 1",
+    "Recua 1",
+    "Cheio"
+   ],
+   "linhas": [
+    [
+     "💥 Faísca",
+     "O Miguelito invoca matéria · falha por 5+ na forja · eventos",
+     "Supervisionar · uma semana de testes no campo, longe da cidade",
+     "Explosão: a oficina para 1 semana e perde 2d6 × 10 PO de estoque; um anel do Miguelito pode ser usado"
+    ],
+    [
+     "🧩 O Esquema",
+     "O Miguelito trabalha no esquema do braço · eventos",
+     "Não recua",
+     "O Mestre revela uma parte do braço e do esquema"
+    ],
+    [
+     "🕵️ Cobiça",
+     "Renome sobe · peça ★★★★ ou mais entregue · sigilo vazado · espião",
+     "Um trabalho do Felnun descobre quem cobiça (−2)",
+     "Alguém tenta roubar um projeto ou levar o Miguelito: vira cena ou missão"
+    ]
+   ]
+  },
+  "ev": {
+   "titulo": "Eventos da forja (d20)",
+   "colunas": [
+    "d20",
+    "Acontece"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Explosão no fundo da oficina: Faísca +2"
+    ],
+    [
+     "2",
+     "Um ex-bandido some com ferramentas: −1 lote comum"
+    ],
+    [
+     "3",
+     "Falta carvão na cidade: −2 jornadas"
+    ],
+    [
+     "4",
+     "Cliente devolve uma peça com defeito: 1 jornada para consertar, ou −1 marca em Palavra"
+    ],
+    [
+     "5",
+     "A guarda inspeciona atrás de material proibido: Persuasão CD 14, ou a oficina fecha 1 semana"
+    ],
+    [
+     "6",
+     "Carta do Baldrek Martel: um aprendiz anão da Barba de Ferro; contrate sem teste"
+    ],
+    [
+     "7",
+     "Semana comum"
+    ],
+    [
+     "8",
+     "A gosma vermelho-bege numa rachadura da forja: só o Trazix vê; o Mestre decide o que ela faz"
+    ],
+    [
+     "9",
+     "O Miguelito acorda com uma parte nova do esquema: O Esquema +1"
+    ],
+    [
+     "10",
+     "Carta do Darrin Marteluz, de Kroka: 1 raro de Kroka pelo preço de um comum"
+    ],
+    [
+     "11",
+     "O Koren passa na oficina: o próximo teste de forja com vantagem"
+    ],
+    [
+     "12",
+     "Aventureiro da guilda precisa de conserto urgente: +30 × (E + 1) PO"
+    ],
+    [
+     "13",
+     "Mercador de Kroka passa por Draetyr: pode levar a mensagem à tribo"
+    ],
+    [
+     "14",
+     "Sucata de uma ruína da cidade: +2 lotes comuns"
+    ],
+    [
+     "15",
+     "Gnomo de Elduran desafia o método: Arcanismo CD 15; sucesso, +1 marca em Renome e 1 passo num fenômeno"
+    ],
+    [
+     "16",
+     "Bardo quer um instrumento que toque sozinho: pedido ★★; pode tocar na rádio"
+    ],
+    [
+     "17",
+     "Obra da cidade pede engrenagens: +100 × (E + 1) PO e +1 marca em Economia de Draetyr"
+    ],
+    [
+     "18",
+     "Fenômeno estranho na cidade: o Trazix pode Observar (Mestre)"
+    ],
+    [
+     "19",
+     "Encomenda grande de outra zona (Renome 2+): pedido ★★★ com valor ×1,5; +1 marca em Rotas na entrega"
+    ],
+    [
+     "20",
+     "Visita que muda tudo (Mestre)"
+    ]
+   ]
+  },
+  "acoes": {
+   "titulo": "Ações da oficina",
+   "colunas": [
+    "Ação",
+    "Teste",
+    "Resultado"
+   ],
+   "linhas": [
+    [
+     "🧺 Abastecer",
+     "Persuasão ou Investigação · CD 12",
+     "Comprar ou trocar lotes"
+    ],
+    [
+     "🗺️ Expedição",
+     "Sobrevivência · CD do Mestre",
+     "1d4 raros; ou vira missão ou cena"
+    ],
+    [
+     "📓 Estudar um fenômeno",
+     "Pelo passo · ver o caderno",
+     "+1 passo no fenômeno"
+    ],
+    [
+     "🧑‍🏫 Ensinar o Miguelito",
+     "Sem teste",
+     "+1 marca na trilha"
+    ],
+    [
+     "👀 Supervisionar",
+     "Sem teste",
+     "Faísca −1"
+    ],
+    [
+     "👷 Contratar",
+     "Persuasão · CD 10 + equipe",
+     "Pessoa nova na equipe"
+    ],
+    [
+     "📣 Anunciar na rádio",
+     "Sem teste · rádio da Mandy no Estágio 2+",
+     "+1 marca em Renome"
+    ],
+    [
+     "🔧 Ferramentas para a cidade",
+     "3 jornadas",
+     "Palavra e Economia ou Moral"
+    ],
+    [
+     "🔥 Lição com o Koren",
+     "1 a cada 4 semanas",
+     "Próximo Reconstruir com vantagem, ou o selo do Koren num pedido"
+    ]
+   ]
+  },
+  "liga": {
+   "titulo": "Ligações",
+   "colunas": [
+    "Na oficina",
+    "Fora dela (frentes de Draetyr e outras mecânicas)"
+   ],
+   "linhas": [
+    [
+     "Estágio 4 · Indústria",
+     "Projeto \"Rodas e Engrenagens e indústria\" concluído: +2 marcas em Economia; depois, +1 a cada 4 semanas"
+    ],
+    [
+     "Ferramentas para a cidade",
+     "+1 marca em Economia, ou em Moral com os refugiados"
+    ],
+    [
+     "Renome 3+",
+     "+1 marca em Notoriedade a cada 4 semanas"
+    ],
+    [
+     "Pedido entregue em outra zona",
+     "+1 marca em Rotas"
+    ],
+    [
+     "Equipar um grupo da guilda (2 jornadas)",
+     "+1 na missão; 1 grupo por semana"
+    ],
+    [
+     "Pedras transmissoras e aparelhos",
+     "Abrem o Estágio 1 da rádio da Mandy (Distribuição), com o Koren"
+    ],
+    [
+     "ECLIPSE e SOLARIS",
+     "O par de pistolas do Felnun"
+    ],
+    [
+     "Utensílios encantados",
+     "Pedido ★★ para a cozinha do Caldeirão do Chopp"
+    ],
+    [
+     "Trabalho do Felnun",
+     "1 raro de contrabando, ou Cobiça −2"
+    ]
+   ]
+  },
+  "fila": {
+   "titulo": "Fila de pedidos de hoje",
+   "colunas": [
+    "Pedido",
+    "Cliente",
+    "★",
+    "O que é",
+    "Prazo"
+   ],
+   "linhas": [
+    [
+     "ECLIPSE e SOLARIS",
+     "Felnun",
+     "★★★ (proposta)",
+     "Pistolas +1, 18/54 m, com cargas; em fabricação",
+     "Em aberto"
+    ],
+    [
+     "Arma acima do lendário",
+     "Pelo Koren",
+     "Fora da escala",
+     "O Mestre define o trabalho",
+     "A confirmar"
+    ],
+    [
+     "Pedras e aparelhos da rádio",
+     "Mandy, com o Koren",
+     "A definir",
+     "Previsto no projeto da torre",
+     "A confirmar"
+    ]
+   ]
+  },
+  "hoje": {
+   "titulo": "Estado de hoje (texto)",
+   "colunas": [
+    "Medida",
+    "Valor"
+   ],
+   "linhas": [
+    [
+     "Estágio",
+     "2 · Rodas e Engrenagens (a confirmar)"
+    ],
+    [
+     "Renome",
+     "1 (proposta)"
+    ],
+    [
+     "Palavra",
+     "1 (proposta)"
+    ],
+    [
+     "Miguelito",
+     "1 · Mão firme (proposta)"
+    ],
+    [
+     "Equipe",
+     "Miguelito; ex-bandidos (quantos, a confirmar)"
+    ],
+    [
+     "Guarda",
+     "Ooze blindado, com o Miguelito"
+    ],
+    [
+     "Materiais e caixa",
+     "a confirmar"
+    ],
+    [
+     "Caderno",
+     "0 Avanços; 5 fenômenos vistos"
+    ],
+    [
+     "Relógios",
+     "Faísca 2/6 · Esquema 2/6 · Cobiça 1/6 · Teto 0/8"
+    ],
+    [
+     "O Trazix",
+     "em Lavenya, com o grupo"
+    ]
+   ]
+  }
+ }
+}

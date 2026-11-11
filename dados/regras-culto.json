@@ -1,0 +1,2197 @@
+{
+ "frente": "culto",
+ "nome": "Culto do Simon",
+ "dono": "Pedro (Simon)",
+ "pdf": "referencia/Culto_do_Simon_Mecanica_completa.pdf",
+ "semana": [
+  "Renda e Manutenção: some a Renda, pague a Manutenção. Sem pagar: Fé −1.",
+  "Humor dos fiéis: role d6 (tabela abaixo).",
+  "Obras: até o limite do estágio, cada uma com um líder diferente.",
+  "Evento da semana: role d100 uma vez, para o culto inteiro. O Mestre define onde acontece.",
+  "Complicações: role d20 quando uma Obra tirar 1 natural ou o evento mandar.",
+  "Maré Pública: d20 + Reputação − Revelação.",
+  "Cisma: teste se Fé 2 ou menos.",
+  "Fechamento: calcule o Estágio, anote Propósito, suba a Comunhão se puder."
+ ],
+ "tabelas": {
+  "niv": {
+   "titulo": "Níveis de Fiéis, Raízes e Tesouro",
+   "colunas": [
+    "Nível",
+    "Fiéis",
+    "Raízes (soma das regiões)",
+    "Tesouro (Recursos em caixa)"
+   ],
+   "linhas": [
+    [
+     "1",
+     "1–20",
+     "0–2",
+     "0–4"
+    ],
+    [
+     "2",
+     "21–60",
+     "3–5",
+     "5–14"
+    ],
+    [
+     "3",
+     "61–150",
+     "6–9",
+     "15–34"
+    ],
+    [
+     "4",
+     "151–400",
+     "10–14",
+     "35–74"
+    ],
+    [
+     "5",
+     "401+",
+     "15+",
+     "75+"
+    ]
+   ]
+  },
+  "est": {
+   "titulo": "Estágios do culto",
+   "colunas": [
+    "Estágio",
+    "Dado de Coro",
+    "Escala da CD",
+    "Obras por semana",
+    "Renda",
+    "Manut.",
+    "Comunhão máx.",
+    "Revelação mín.",
+    "Líderes regionais",
+    "Captação"
+   ],
+   "linhas": [
+    [
+     "1 · Célula",
+     "d4",
+     "+0",
+     "1",
+     "+1",
+     "0",
+     "2",
+     "0",
+     "0",
+     "×1"
+    ],
+    [
+     "2 · Capítulo",
+     "d6",
+     "+2",
+     "2",
+     "+2",
+     "1",
+     "3",
+     "1",
+     "1",
+     "×2"
+    ],
+    [
+     "3 · Congregação",
+     "d8",
+     "+4",
+     "3",
+     "+4",
+     "2",
+     "4",
+     "2",
+     "2",
+     "×3"
+    ],
+    [
+     "4 · Igreja",
+     "d10",
+     "+6",
+     "4",
+     "+6",
+     "3",
+     "5",
+     "3",
+     "4",
+     "×5"
+    ],
+    [
+     "5 · Movimento",
+     "d12",
+     "+8",
+     "5",
+     "+10",
+     "5",
+     "5",
+     "4",
+     "6",
+     "×8"
+    ]
+   ]
+  },
+  "alc": {
+   "titulo": "Alcance por estágio",
+   "colunas": [
+    "Estágio",
+    "Política e presença",
+    "Itens",
+    "Exposição"
+   ],
+   "linhas": [
+    [
+     "1 · Célula",
+     "Uma casa, um porão. Ouvir onde houver Raiz 1.",
+     "Comuns",
+     "Quase invisível"
+    ],
+    [
+     "2 · Capítulo",
+     "Casas seguras; Abrigar e Financiar; primeiro líder regional.",
+     "Incomuns pela rede",
+     "Rumores e curiosos"
+    ],
+    [
+     "3 · Congregação",
+     "Rede nos ofícios; Interceder (menor) e Infiltrar; oficina de sangue.",
+     "Obter raros; produzir incomuns",
+     "Padres e guardas perguntam"
+    ],
+    [
+     "4 · Igreja",
+     "Patronos com cargo; Interceder (médio) e Testemunhar; santuários.",
+     "Produzir raros",
+     "Força-tarefa do Ignatus de olho"
+    ],
+    [
+     "5 · Movimento",
+     "Bastiões; Pressionar e Interceder (maior); presença em várias regiões.",
+     "Muito raros com a Bênção",
+     "Impossível esconder"
+    ]
+   ]
+  },
+  "cd": {
+   "titulo": "CDs de referência",
+   "colunas": [
+    "Dificuldade (D&D 5e)",
+    "CD"
+   ],
+   "linhas": [
+    [
+     "Muito fácil",
+     "5"
+    ],
+    [
+     "Fácil",
+     "10"
+    ],
+    [
+     "Média",
+     "15"
+    ],
+    [
+     "Difícil",
+     "20"
+    ],
+    [
+     "Muito difícil",
+     "25"
+    ],
+    [
+     "Quase impossível",
+     "30"
+    ]
+   ]
+  },
+  "van": {
+   "titulo": "Vantagem e desvantagem",
+   "colunas": [
+    "",
+    "Quando"
+   ],
+   "linhas": [
+    [
+     "Vantagem",
+     "Simon presente na semana (inspiração do escolhido): 1 Obra · Fé 8+: Acolher e Pregar · rito Acolhida · líder com dom na perícia · evento que concede"
+    ],
+    [
+     "Desvantagem",
+     "Fé 2 ou menos · Revelação 7+: Acolher e Pregar · líder com Lealdade 8 ou menos · Amálgama liderando Obra social · complicação ativa na região"
+    ]
+   ]
+  },
+  "obras": {
+   "titulo": "Obras",
+   "colunas": [
+    "Obra",
+    "O que faz",
+    "Tabela"
+   ],
+   "linhas": [
+    [
+     "Acolher",
+     "Ganhar fiéis por uma tática de captação",
+     "Parte II"
+    ],
+    [
+     "Pregar",
+     "Subir a Raiz de uma região",
+     "Parte II"
+    ],
+    [
+     "Prover",
+     "Ganhar Recursos por uma fonte de renda",
+     "Parte III"
+    ],
+    [
+     "Encobrir",
+     "Revelação −1 (−2 no sucesso por 5+)",
+     "Parte III"
+    ],
+    [
+     "Articular",
+     "Uma ação política",
+     "Parte III"
+    ],
+    [
+     "Produzir ou Obter",
+     "Fazer ou achar um item",
+     "Parte III"
+    ],
+    [
+     "Guardar",
+     "A Amálgama protege um local: Abrigar ali sem teste",
+     "Parte I"
+    ]
+   ]
+  },
+  "lid": {
+   "titulo": "Líderes",
+   "colunas": [
+    "Líder",
+    "Lidera melhor",
+    "Bônus no teste",
+    "Lealdade",
+    "Observação"
+   ],
+   "linhas": [
+    [
+     "Simon",
+     "Qualquer Obra, quando presente",
+     "Modificadores da ficha + proficiência",
+     "—",
+     "Presente: 1 Obra com vantagem"
+    ],
+    [
+     "Anão Solitário",
+     "Obras sociais e de fé",
+     "+5 Persuasão · +5 Religião · +3 Intuição",
+     "18",
+     "Dá as ordens com a Amálgama quando o Simon não está"
+    ],
+    [
+     "A Amálgama",
+     "Guardar, Encobrir, Intimidar",
+     "Os da ficha de guerreiro nível 7 (proficiência +3)",
+     "15 proposta",
+     "Obra social: desvantagem. Liderar em público: Revelação +1"
+    ],
+    [
+     "Líder regional",
+     "Obras da sua região",
+     "+4 (Estágio 2–3) · +6 (Estágio 4–5)",
+     "2d6 + 6",
+     "Surge com Raiz 3 na região (gerador, Parte IV)"
+    ],
+    [
+     "Fiel notável",
+     "Uma Obra, se faltar líder",
+     "+3 no dom",
+     "2d6 + 4",
+     "Pode virar líder regional"
+    ]
+   ]
+  },
+  "leal": {
+   "titulo": "Lealdade",
+   "colunas": [
+    "Regra",
+    "Como funciona"
+   ],
+   "linhas": [
+    [
+     "Teste de Lealdade",
+     "d20 ≤ Lealdade + Comunhão: o líder mantém a linha. Falha: menos uma Obra na semana. Falha por 10+: role Cisma."
+    ],
+    [
+     "Sobe 1",
+     "Obra liderada com sucesso por 5+ · reconhecimento do Simon em cena · Provação cumprida"
+    ],
+    [
+     "Desce 1",
+     "Falha grave · ordem contra a doutrina · líder ignorado numa decisão"
+    ],
+    [
+     "Ordens sem o Simon",
+     "Anão Solitário e Amálgama decidem juntos. Se discordarem (evento), cada um testa Lealdade; quem falhar cede."
+    ]
+   ]
+  },
+  "ama_fic": {
+   "titulo": "A Amálgama · ficha",
+   "colunas": [
+    "Campo",
+    "A Amálgama"
+   ],
+   "linhas": [
+    [
+     "Ficha",
+     "Guerreiro nível 7 (ficha padrão). Proficiência +3."
+    ],
+    [
+     "Vidas",
+     "12. Se morrer, volta. Cada volta gasta uma vida."
+    ],
+    [
+     "Origem",
+     "Cerca de 12 anões amalgamados num corpo só, por um evento específico. O Simon não pode replicar."
+    ],
+    [
+     "No culto",
+     "Monstro do culto: não conta como fiel e não entra no Estágio. Dá as ordens com o Anão Solitário quando o Simon não está."
+    ]
+   ]
+  },
+  "ama_uso": {
+   "titulo": "A Amálgama · usos",
+   "colunas": [
+    "Uso",
+    "Efeito",
+    "Exposição"
+   ],
+   "linhas": [
+    [
+     "Guardar",
+     "Protege um local: Abrigar ali sem teste.",
+     "—"
+    ],
+    [
+     "Liderar uma Obra",
+     "Usa os bônus da ficha de guerreiro.",
+     "Obra social com desvantagem; em público, Revelação +1"
+    ],
+    [
+     "Intimidar",
+     "Vantagem em Intimidação contra quem a vê.",
+     "Revelação +1"
+    ],
+    [
+     "Ser vista em público",
+     "—",
+     "Revelação +2"
+    ],
+    [
+     "Morrer e voltar diante de testemunhas",
+     "—",
+     "Revelação +3 e role Complicação"
+    ],
+    [
+     "Manutenção",
+     "1 Recurso por semana.",
+     "—"
+    ]
+   ]
+  },
+  "raiz": {
+   "titulo": "Raízes",
+   "colunas": [
+    "Raiz",
+    "Presença",
+    "O que libera ali",
+    "CD de Pregar"
+   ],
+   "linhas": [
+    [
+     "0",
+     "Ninguém",
+     "Só Pregar",
+     "10"
+    ],
+    [
+     "1",
+     "Um fiel, uma família",
+     "Ouvir",
+     "12"
+    ],
+    [
+     "2",
+     "Uma casa segura",
+     "Abrigar · Financiar na região",
+     "14"
+    ],
+    [
+     "3",
+     "Rede nos ofícios e nas guildas",
+     "Interceder (menor) · Infiltrar · líder regional · rito Santuário",
+     "16"
+    ],
+    [
+     "4",
+     "Patronos com cargo",
+     "Interceder (médio) · Testemunhar · Mecenas",
+     "18"
+    ],
+    [
+     "5",
+     "Bastião",
+     "Interceder (maior) · Pressionar",
+     "20"
+    ]
+   ]
+  },
+  "com": {
+   "titulo": "Comunhão",
+   "colunas": [
+    "Grau",
+    "Propósito",
+    "Usos/sem.",
+    "Rito novo",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "1",
+     "—",
+     "1",
+     "Acolhida",
+     "Vantagem em uma Obra"
+    ],
+    [
+     "2",
+     "5",
+     "2",
+     "Dor Partilhada",
+     "Os fiéis dividem 1 nível de exaustão ou até 2d6 de dano de alguém acolhido"
+    ],
+    [
+     "3",
+     "10",
+     "3",
+     "Voz do Coro",
+     "Vantagem em Intuição ou Investigação do Simon onde há Raiz 2+"
+    ],
+    [
+     "4",
+     "15",
+     "4",
+     "Santuário",
+     "Local com Raiz 3+ protege os acolhidos como a magia Santuário (CD 8 + proficiência do líder + Comunhão)"
+    ],
+    [
+     "5",
+     "20",
+     "5",
+     "Bênção da Patrona",
+     "Molrartipus responde. Decisão do Mestre, sem rolagem"
+    ]
+   ]
+  },
+  "prop": {
+   "titulo": "Propósito",
+   "colunas": [
+    "Ganho",
+    "Quando"
+   ],
+   "linhas": [
+    [
+     "+1",
+     "Cena em que a dor de um fiel ganha propósito"
+    ],
+    [
+     "+1",
+     "Rodas de dor ou Acolher com sucesso por 5+"
+    ],
+    [
+     "+1",
+     "Evento ou sinal que conceda"
+    ],
+    [
+     "+2",
+     "Provação cumprida (além de liberar o grau)"
+    ]
+   ]
+  },
+  "d10": {
+   "titulo": "Flagelados · o que fazem (d10)",
+   "colunas": [
+    "d10",
+    "O que fazem"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Humilham um fiel em público: Fé −1, Revelação +1"
+    ],
+    [
+     "2",
+     "Roubam fiéis: −1d4 × C"
+    ],
+    [
+     "3",
+     "Denunciam o culto: Revelação +1"
+    ],
+    [
+     "4",
+     "Pregam no mesmo lugar: Pregar CD +2 ali por 2 semanas"
+    ],
+    [
+     "5",
+     "Provocam: Fé −1, ou Disputar fiéis (Obra) com vantagem"
+    ],
+    [
+     "6",
+     "Ignoram: nada"
+    ],
+    [
+     "7",
+     "Pedem abrigo: Abrigar dá Relação +1"
+    ],
+    [
+     "8",
+     "Trocam saberes: um item comum ou incomum"
+    ],
+    [
+     "9",
+     "Propõem encontro: Persuasão CD 12 dá Relação +1"
+    ],
+    [
+     "10",
+     "Oferecem aliança: aceitar dá Relação +1 e Revelação +1"
+    ]
+   ]
+  },
+  "d8": {
+   "titulo": "Cisma (d8)",
+   "colunas": [
+    "d8",
+    "Cisma"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Debandada: perde 25% dos fiéis"
+    ],
+    [
+     "2",
+     "Saque do caixa: Tesouro −50%"
+    ],
+    [
+     "3",
+     "Seita rival: um líder regional leva a região (Raiz −2 ali)"
+    ],
+    [
+     "4",
+     "Delação: Revelação +3"
+    ],
+    [
+     "5",
+     "Fuga para os Flagelados: −1d6 × C fiéis; Relação −1"
+    ],
+    [
+     "6",
+     "Disputa entre o Anão Solitário e a Amálgama: uma Obra a menos por 2 semanas"
+    ],
+    [
+     "7",
+     "Heresia interna: a Comunhão não sobe até resolver em cena"
+    ],
+    [
+     "8",
+     "Reconciliação: cisma evitado; Fé +1 e Propósito +1"
+    ]
+   ]
+  },
+  "prov": {
+   "titulo": "Provações",
+   "colunas": [
+    "Grau",
+    "Provação",
+    "Como se cumpre",
+    "Recompensa"
+   ],
+   "linhas": [
+    [
+     "2",
+     "Primeiro sangue partilhado",
+     "O culto divide a dor de alguém de fora numa crise real, em cena.",
+     "Fé +1"
+    ],
+    [
+     "3",
+     "A dor sem máscara",
+     "O Simon conta a um fiel uma dor verdadeira dele, sem disfarce.",
+     "Lealdade +2 desse fiel; Propósito +2"
+    ],
+    [
+     "4",
+     "Recusar o preço",
+     "O culto recusa um atalho fácil: dinheiro sujo, patrono suspeito, um pacto.",
+     "Reputação +1; Fé +1"
+    ],
+    [
+     "5",
+     "Ordem sem presença",
+     "Os fiéis cumprem uma ordem do Simon com risco real, sem ele presente.",
+     "Libera pedir a Bênção"
+    ],
+    [
+     "Bênção",
+     "Provar-se a Ela",
+     "O Simon cumpre o que Molrartipus pedir, até onde a moral dele permitir. Decisão do Mestre.",
+     "A Patrona responde"
+    ]
+   ]
+  },
+  "rel": {
+   "titulo": "Relação com os Flagelados",
+   "colunas": [
+    "Relação",
+    "Estado",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "−3",
+     "Guerra aberta",
+     "Pregar CD +4 onde os dois têm Raiz; d10 dos Flagelados com −3"
+    ],
+    [
+     "−2",
+     "Hostis",
+     "Pregar CD +2 onde os dois têm Raiz"
+    ],
+    [
+     "−1",
+     "Desconfiança",
+     "Acolher fiéis deles sem penalidade extra"
+    ],
+    [
+     "0",
+     "Indiferença",
+     "Nada"
+    ],
+    [
+     "+1",
+     "Contato",
+     "Ouvir com vantagem onde eles têm presença"
+    ],
+    [
+     "+2",
+     "Pacto",
+     "Trocam fiéis e saberes: Obter itens com vantagem; Abrigar sem custo"
+    ],
+    [
+     "+3",
+     "Comunhão de fés",
+     "Podem se unir: +2d10 × Captação fiéis, Fé −2 e Revelação +2"
+    ]
+   ]
+  },
+  "enc": {
+   "titulo": "Obras com os Flagelados",
+   "colunas": [
+    "Obra",
+    "Perícia · CD",
+    "Sucesso",
+    "Risco"
+   ],
+   "linhas": [
+    [
+     "Encontro",
+     "Persuasão · 14",
+     "Relação +1",
+     "Falha por 5+: Relação −1"
+    ],
+    [
+     "Disputar fiéis",
+     "Persuasão · 13",
+     "Eles perdem fiéis para vocês: +1d6 × Captação",
+     "Relação −1 sempre"
+    ],
+    [
+     "Espionar",
+     "Furtividade ou Enganação · 15",
+     "Ouvir sobre eles com vantagem por 2 semanas",
+     "Falha: Relação −1"
+    ]
+   ]
+  },
+  "art": {
+   "titulo": "Articular",
+   "colunas": [
+    "Ação",
+    "Raiz",
+    "Teste · CD",
+    "Custo",
+    "Efeito no sucesso",
+    "Risco"
+   ],
+   "linhas": [
+    [
+     "Ouvir",
+     "1",
+     "Investigação ou Intuição · 12",
+     "—",
+     "Um rumor verdadeiro sobre pessoa, lugar ou plano na região.",
+     "1 natural: Revelação +1"
+    ],
+    [
+     "Abrigar",
+     "2",
+     "Enganação · 13",
+     "1 Recurso",
+     "Esconde até 3 pessoas por uma semana.",
+     "Falha: Revelação +2"
+    ],
+    [
+     "Infiltrar",
+     "3",
+     "Enganação · 14",
+     "2 Rec., 2 sem.",
+     "Um fiel entra numa instituição; Ouvir ali com vantagem.",
+     "Falha por 5+: fiel identificado"
+    ],
+    [
+     "Interceder (menor)",
+     "3",
+     "Persuasão · 13",
+     "1 Recurso",
+     "Papel liberado, multa perdoada, porta aberta.",
+     "—"
+    ],
+    [
+     "Interceder (médio)",
+     "4",
+     "Persuasão · 16",
+     "3 Recursos",
+     "Audiência com autoridade regional, licença, adiamento, transferência.",
+     "Falha: Revelação +1"
+    ],
+    [
+     "Interceder (maior)",
+     "5",
+     "Persuasão · 19",
+     "6 Recursos",
+     "Favor de um lorde regional ou do clero alto.",
+     "Sempre Revelação +1"
+    ],
+    [
+     "Testemunhar",
+     "4",
+     "Persuasão · 15",
+     "2 Recursos",
+     "Defende um fiel num processo local: vantagem num teste social.",
+     "Revelação 5+: pesa contra"
+    ],
+    [
+     "Pressionar",
+     "5",
+     "Atuação ou Persuasão · 15",
+     "2 Recursos",
+     "Vigília ou procissão pacífica obriga a autoridade a responder.",
+     "Revelação +1; Reputação ±1"
+    ],
+    [
+     "Financiar",
+     "2",
+     "—",
+     "X Recursos",
+     "Paga projeto, compra ou favor.",
+     "Mais de 2 × Estágio de uma vez: Revelação +1"
+    ]
+   ]
+  },
+  "fon": {
+   "titulo": "Fontes de renda (Prover)",
+   "colunas": [
+    "Fonte",
+    "Perícia · CD",
+    "Recursos",
+    "Risco",
+    "Exige"
+   ],
+   "linhas": [
+    [
+     "Dízimo e oferendas",
+     "Persuasão · 10",
+     "+Estágio",
+     "—",
+     "—"
+    ],
+    [
+     "Ofícios dos fiéis",
+     "Ferramenta de artesão · 12",
+     "+Estágio + 1",
+     "—",
+     "Fiéis nível 2"
+    ],
+    [
+     "Serviços de cura",
+     "Medicina · 14",
+     "+2 × Estágio",
+     "1 natural: Revelação +1",
+     "Comunhão 2"
+    ],
+    [
+     "Venda de consumíveis",
+     "Persuasão · 12",
+     "+2 × Estágio",
+     "—",
+     "Oficina de sangue"
+    ],
+    [
+     "Mecenas",
+     "Persuasão · 16",
+     "+3 × Estágio",
+     "Falha por 5+: o mecenas cobra um favor (Complicação)",
+     "Raiz 4"
+    ],
+    [
+     "Contrabando",
+     "Enganação · 15",
+     "+3 × Estágio",
+     "Falha: Revelação +2",
+     "Raiz 2"
+    ]
+   ]
+  },
+  "proj": {
+   "titulo": "Projetos do culto",
+   "colunas": [
+    "Projeto",
+    "Recursos",
+    "Semanas",
+    "Exige",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "Casa segura",
+     "3",
+     "1",
+     "Raiz 1",
+     "Raiz +1 na região (até 2); Abrigar ali sem custo"
+    ],
+    [
+     "Abrigo dos que sofrem",
+     "5",
+     "2",
+     "Raiz 2",
+     "Acolher com vantagem na região; Reputação +1"
+    ],
+    [
+     "Rede de mensageiros",
+     "5",
+     "1",
+     "Raiz 2 em duas regiões",
+     "Ouvir com +2 em toda região com Raiz 2+"
+    ],
+    [
+     "Cripta da Amálgama",
+     "4",
+     "1",
+     "Raiz 2",
+     "A Amálgama guardada ali não gera Revelação"
+    ],
+    [
+     "Fachada comercial",
+     "6",
+     "2",
+     "Raiz 2",
+     "Encobrir +2 na região; +1 Recurso por semana sem Obra"
+    ],
+    [
+     "Oficina de sangue",
+     "6",
+     "2",
+     "Raiz 2 · Comunhão 2",
+     "Libera produzir itens (próxima página)"
+    ],
+    [
+     "Santuário",
+     "10",
+     "3",
+     "Raiz 3 · Comunhão 4",
+     "O rito Santuário fica ativo ali sem gastar uso"
+    ]
+   ]
+  },
+  "prod": {
+   "titulo": "Produzir ou obter itens",
+   "colunas": [
+    "Raridade",
+    "Estágio",
+    "Produzir: tempo",
+    "Produzir: custo",
+    "Produzir: exige",
+    "Obter: CD · preço"
+   ],
+   "linhas": [
+    [
+     "Comum",
+     "1",
+     "1 semana",
+     "50 PO · 1 Recurso",
+     "Comunhão 1",
+     "CD 10 · 50–100 PO"
+    ],
+    [
+     "Incomum",
+     "2",
+     "2 semanas",
+     "200 PO · 4 Recursos",
+     "Oficina de sangue",
+     "CD 13 · 101–500 PO"
+    ],
+    [
+     "Raro",
+     "3 obter · 4 produzir",
+     "10 semanas",
+     "2.000 PO · 40 Recursos",
+     "Oficina + Comunhão 4",
+     "CD 16 · 501–5.000 PO"
+    ],
+    [
+     "Muito raro",
+     "5",
+     "25 semanas",
+     "20.000 PO · 400 Recursos",
+     "Bênção da Patrona",
+     "CD 19 · 5.001–50.000 PO"
+    ]
+   ]
+  },
+  "iten": {
+   "titulo": "Itens",
+   "colunas": [
+    "Item",
+    "Raridade",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "Frasco de sangue partilhado",
+     "Comum",
+     "Para um fiel, funciona como Poção de Cura (2d4 + 2). Quem não é fiel faz TR de Constituição CD 12 ou fica envenenado por 1 hora."
+    ],
+    [
+     "Tinta carmim",
+     "Comum",
+     "Vale como 25 PO de componente material para glifos e hemomancia."
+    ],
+    [
+     "Cordão da dor",
+     "Incomum",
+     "Reação, 1 vez por dia: ao sofrer dano, reduz 1d10. O portador sente a dor depois: desvantagem no próximo teste."
+    ],
+    [
+     "Véu do Coro",
+     "Incomum",
+     "Vantagem em Enganação para esconder a fé. Encobrir +1 quando o líder usa."
+    ],
+    [
+     "Relicário de sangue",
+     "Raro (sintonização)",
+     "3 cargas. 1 carga: rerrolar um teste de resistência de Constituição. Recupera 1d3 cargas ao amanhecer."
+    ],
+    [
+     "Cálice da Patrona",
+     "Raro (sintonização, líder)",
+     "Uma vez por semana, uma Obra rola o dado de Coro duas vezes e usa o maior."
+    ]
+   ]
+  },
+  "rev": {
+   "titulo": "Revelação",
+   "colunas": [
+    "Nível",
+    "Consequência"
+   ],
+   "linhas": [
+    [
+     "0 a 2",
+     "Rumores, nada formal"
+    ],
+    [
+     "3 a 4",
+     "Curiosos: padres e guardas perguntam"
+    ],
+    [
+     "5 a 6",
+     "Escrutínio da força-tarefa do Ignatus"
+    ],
+    [
+     "7 a 8",
+     "Denúncia à Coroa"
+    ],
+    [
+     "9 a 10",
+     "Perseguição, com heresia declarada"
+    ]
+   ]
+  },
+  "rep": {
+   "titulo": "Reputação",
+   "colunas": [
+    "Nível",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "−5 a −4",
+     "Acolher CD +4; Prover −1; Maré −2"
+    ],
+    [
+     "−3 a −2",
+     "Acolher CD +2"
+    ],
+    [
+     "−1 a +1",
+     "Nada"
+    ],
+    [
+     "+2 a +3",
+     "Acolher CD −2"
+    ],
+    [
+     "+4 a +5",
+     "Acolher CD −2; Prover +1; Maré +2"
+    ]
+   ]
+  },
+  "mar": {
+   "titulo": "Maré pública",
+   "colunas": [
+    "Resultado",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "0 ou menos",
+     "Incidente: denúncia ou interrogatório (role Complicação)"
+    ],
+    [
+     "1 a 5",
+     "Rumor: Revelação +1 na próxima falha"
+    ],
+    [
+     "6 a 14",
+     "Nada acontece"
+    ],
+    [
+     "15 a 19",
+     "Simpatia: +1 Recurso ou +1d4 fiéis"
+    ],
+    [
+     "20 ou mais",
+     "Um patrono ou um convite"
+    ]
+   ]
+  },
+  "exs": {
+   "titulo": "Exposição por estágio (Encobrir)",
+   "colunas": [
+    "Estágio",
+    "CD de Encobrir (já com a Escala)",
+    "Maré Pública"
+   ],
+   "linhas": [
+    [
+     "1",
+     "10 + Revelação",
+     "Uma vez"
+    ],
+    [
+     "2",
+     "12 + Revelação",
+     "Uma vez"
+    ],
+    [
+     "3",
+     "14 + Revelação",
+     "Em cada região com Raiz 3+"
+    ],
+    [
+     "4",
+     "16 + Revelação",
+     "Em cada região com Raiz 3+"
+    ],
+    [
+     "5",
+     "18 + Revelação",
+     "Em cada região com Raiz 3+"
+    ]
+   ]
+  },
+  "hum": {
+   "titulo": "Humor dos fiéis (d6)",
+   "colunas": [
+    "d6",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "1 ou menos",
+     "Fé −1"
+    ],
+    [
+     "2 a 5",
+     "Nada"
+    ],
+    [
+     "6 ou mais",
+     "Fé +1"
+    ]
+   ]
+  },
+  "d20": {
+   "titulo": "Complicação (d20)",
+   "colunas": [
+    "d20",
+    "Complicação"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Nada: o culto escapa por pouco. Propósito +1"
+    ],
+    [
+     "2",
+     "Família de um fiel reclama: Reputação −1 na região"
+    ],
+    [
+     "3",
+     "Briga interna: Fé −1"
+    ],
+    [
+     "4",
+     "Guarda pede propina: 1 Recurso ou Revelação +1"
+    ],
+    [
+     "5",
+     "Líder doente: lidera uma Obra a menos na próxima semana"
+    ],
+    [
+     "6",
+     "Recursos roubados: −1d4 × E"
+    ],
+    [
+     "7",
+     "Padre local prega contra: Pregar com desvantagem por 2 semanas na região"
+    ],
+    [
+     "8",
+     "Dívida antiga cobrada: −2 Recursos"
+    ],
+    [
+     "9",
+     "Fiel quer sair e ameaça contar: Persuasão CD 14 ou Revelação +1"
+    ],
+    [
+     "10",
+     "Os Flagelados reivindicam o mérito: Relação −1"
+    ],
+    [
+     "11",
+     "Testemunha viu hemomancia: Revelação +1"
+    ],
+    [
+     "12",
+     "Panfleto contra o culto: Reputação −1"
+    ],
+    [
+     "13",
+     "Fiel preso: Abrigar ou Interceder para soltar, ou ele fala (Revelação +2)"
+    ],
+    [
+     "14",
+     "Casa segura descoberta: Raiz −1 na região"
+    ],
+    [
+     "15",
+     "Rumor de que o Simon é o chefe: Revelação +1"
+    ],
+    [
+     "16",
+     "Força-tarefa interroga um líder: Lealdade; falha, Revelação +2"
+    ],
+    [
+     "17",
+     "Amálgama vista: Revelação +2"
+    ],
+    [
+     "18",
+     "Fiel desmaia num rito diante de testemunha: Fé −1, Revelação +1"
+    ],
+    [
+     "19",
+     "Fogo na sede: perde um projeto da região"
+    ],
+    [
+     "20",
+     "Batida: role duas vezes e aplique as duas"
+    ]
+   ]
+  },
+  "d12": {
+   "titulo": "Sinal (d12)",
+   "colunas": [
+    "d12",
+    "Sinal"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Silêncio: nada"
+    ],
+    [
+     "2",
+     "Sonho comum entre os fiéis: Fé +1"
+    ],
+    [
+     "3",
+     "Sangue que não coagula no altar: Propósito +1"
+    ],
+    [
+     "4",
+     "Uma voz ao Simon: pista de uma Provação"
+    ],
+    [
+     "5",
+     "Tentáculos espectrais: Fé +2, Revelação +1"
+    ],
+    [
+     "6",
+     "Um fiel fala em línguas: +1 uso de rito nesta semana"
+    ],
+    [
+     "7",
+     "Lua vermelha: Pregar com vantagem"
+    ],
+    [
+     "8",
+     "Exigência: uma Provação nova ou mais difícil"
+    ],
+    [
+     "9",
+     "Recompensa: +1d4 × E Recursos aparecem"
+    ],
+    [
+     "10",
+     "Ira: Fé −1, ou o Simon paga em PV (2d6) para evitar"
+    ],
+    [
+     "11",
+     "Visão do futuro: o Mestre dá uma pista"
+    ],
+    [
+     "12",
+     "Bênção menor: vantagem em todas as Obras da próxima semana"
+    ]
+   ]
+  },
+  "g6": {
+   "titulo": "Gerador de líder · estilo (d6)",
+   "colunas": [
+    "d6",
+    "Estilo",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Pastor manso",
+     "Rodas de dor com vantagem"
+    ],
+    [
+     "2",
+     "Organizador",
+     "Prover +1 Recurso"
+    ],
+    [
+     "3",
+     "Pregador inflamado",
+     "Pregar com vantagem; Revelação +1 quando prega"
+    ],
+    [
+     "4",
+     "Discreto",
+     "Encobrir +2 na região"
+    ],
+    [
+     "5",
+     "Ambicioso",
+     "+1 Obra por semana na região; Lealdade −2"
+    ],
+    [
+     "6",
+     "Devoto da Patrona",
+     "Propósito +1 por semana com Fé 6+"
+    ]
+   ]
+  },
+  "fic": {
+   "titulo": "Estado de hoje (texto)",
+   "colunas": [
+    "Medida",
+    "Valor"
+   ],
+   "linhas": [
+    [
+     "Estágio",
+     "1 · Célula"
+    ],
+    [
+     "Fiéis",
+     "1 (o Anão Solitário)"
+    ],
+    [
+     "Líderes",
+     "Anão Solitário · A Amálgama"
+    ],
+    [
+     "A Amálgama",
+     "Guerreiro nível 7 · 12 vidas"
+    ],
+    [
+     "Raízes",
+     "0 em todas as regiões"
+    ],
+    [
+     "Tesouro",
+     "2 Recursos"
+    ],
+    [
+     "Fé",
+     "5"
+    ],
+    [
+     "Comunhão",
+     "1 · Propósito 0"
+    ],
+    [
+     "Reputação",
+     "0"
+    ],
+    [
+     "Revelação",
+     "1"
+    ],
+    [
+     "Flagelados",
+     "Relação 0"
+    ]
+   ]
+  },
+  "cap": {
+   "titulo": "Táticas de captação (Acolher)",
+   "colunas": [
+    "Tática",
+    "Perícia · CD",
+    "Fiéis ganhos",
+    "Vantagem",
+    "Risco",
+    "Exige"
+   ],
+   "linhas": [
+    [
+     "Rodas de dor",
+     "Intuição ou Medicina · 12",
+     "1d4",
+     "Sucesso por 5+: Propósito +1",
+     "1 natural: Revelação +1",
+     "—"
+    ],
+    [
+     "Pão e abrigo",
+     "Persuasão · 10",
+     "1d6",
+     "Sucesso por 5+: Reputação +1",
+     "Falha: aproveitadores levam 1 Recurso",
+     "1 Recurso"
+    ],
+    [
+     "Velar os mortos",
+     "Religião · 13",
+     "1d6",
+     "Vantagem na semana de evento de funeral",
+     "Falha: a igreja da Morte se ofende (Revelação +1)",
+     "Raiz 1"
+    ],
+    [
+     "Cura pelo sangue",
+     "Medicina ou Arcanismo · 14",
+     "2d4",
+     "Reputação +1",
+     "Sempre Revelação +1; falha: a cura não pega e a família desconfia (Reputação −1)",
+     "Comunhão 2"
+    ],
+    [
+     "Acolher os rejeitados",
+     "Persuasão · 11",
+     "1d8",
+     "Barato e rápido",
+     "Ganhou 6+: Fé −1 (gente em crise); 1 natural: Reputação −1",
+     "—"
+    ],
+    [
+     "Propósito aos feridos",
+     "Persuasão ou Medicina · 13",
+     "1d6",
+     "Vantagem em região com guerra recente",
+     "Falha por 5+: fiéis violentos (Fé −1)",
+     "—"
+    ],
+    [
+     "Ofício aos pobres",
+     "Ferramenta de artesão · 12",
+     "1d6",
+     "+1 Recurso na semana seguinte",
+     "Falha: uma guilda local reclama (Reputação −1)",
+     "Fiéis nível 2"
+    ],
+    [
+     "Laços de sangue",
+     "Persuasão · 13",
+     "1d6",
+     "Famílias inteiras: sucesso por 5+, Fé +1",
+     "Falha: um parente denuncia (Revelação +1)",
+     "Fiéis nível 2"
+    ],
+    [
+     "Perdão de dívidas",
+     "Persuasão · 12",
+     "1d6",
+     "Gratidão: ganhou 4+, Fé +1",
+     "Credores cobram: role d20; 5 ou menos, Complicação",
+     "2 Recursos"
+    ],
+    [
+     "Pregar nas prisões",
+     "Persuasão · 14",
+     "1d8",
+     "Fiéis duros: vantagem no próximo teste de Cisma",
+     "Falha: um guarda descobre (Revelação +1)",
+     "Raiz 2"
+    ],
+    [
+     "Mostrar a regeneração",
+     "Atuação · 14",
+     "2d4",
+     "Vantagem com feridos e mutilados",
+     "Sempre Revelação +1",
+     "Comunhão 2"
+    ],
+    [
+     "Salões e nobres",
+     "Atuação ou Enganação · 15",
+     "1d4",
+     "+1d4 Recursos no sucesso",
+     "Falha: escândalo (Reputação −1)",
+     "2 Recursos"
+    ],
+    [
+     "Converter um figurão",
+     "Persuasão · 17",
+     "1 + 2d4 seguidores",
+     "Raiz +1 na região dele",
+     "Falha: denúncia (Revelação +2)",
+     "Raiz 2"
+    ],
+    [
+     "Roubar fiéis de outra fé",
+     "Enganação · 16",
+     "1d10",
+     "Grande ganho",
+     "Relação com os Flagelados −1; falha: Revelação +1",
+     "Raiz 2"
+    ],
+    [
+     "Testemunho de milagre",
+     "Atuação · 15",
+     "3d6",
+     "Propósito +1",
+     "Sempre Revelação +3",
+     "Comunhão 3"
+    ],
+    [
+     "Sermão no cadafalso",
+     "Atuação · 16",
+     "2d6",
+     "A multidão de uma execução pública",
+     "Sempre Revelação +2",
+     "Raiz 1"
+    ],
+    [
+     "Sonhos de sangue",
+     "Arcanismo · 15",
+     "1d8",
+     "Funciona à distância, numa região com Raiz 1+",
+     "Falha: os pesadelos viram boato (Revelação +1)",
+     "Comunhão 3"
+    ],
+    [
+     "Desafio da dor",
+     "Atletismo ou Constituição · 13",
+     "1d6",
+     "+1 Recurso das apostas",
+     "Falha: um ferido grave (Reputação −1)",
+     "—"
+    ],
+    [
+     "Salário de fé",
+     "Sem teste",
+     "1 por Recurso gasto (não multiplica)",
+     "Imediato e garantido",
+     "Gastou mais de 2 × Estágio na semana: Fé −1",
+     "Recursos"
+    ],
+    [
+     "Chantagem",
+     "Intimidação ou Enganação · 13",
+     "1 + 1d4",
+     "Gente com cargo: Interceder com vantagem por 2 semanas",
+     "Fé −1; falha: Revelação +2",
+     "Um segredo obtido com Ouvir"
+    ],
+    [
+     "Medo e dívida",
+     "Intimidação · 12",
+     "1d6",
+     "Rápido e sem custo",
+     "Fé −2; nunca dá Propósito; Revelação +1",
+     "—"
+    ]
+   ]
+  },
+  "d100": {
+   "titulo": "Evento da semana (d100)",
+   "colunas": [
+    "d100",
+    "Grupo",
+    "Evento",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Olhos sobre o culto",
+     "Denúncia anônima",
+     "Revelação +1."
+    ],
+    [
+     "2",
+     "Olhos sobre o culto",
+     "Patrulha dobrada",
+     "Encobrir CD 12; falha, Revelação +1."
+    ],
+    [
+     "3",
+     "Olhos sobre o culto",
+     "A força-tarefa do Ignatus pergunta por um fiel",
+     "Enganação CD 14; falha, Revelação +2."
+    ],
+    [
+     "4",
+     "Olhos sobre o culto",
+     "Cânticos ouvidos à noite",
+     "Reputação −1 na região."
+    ],
+    [
+     "5",
+     "Olhos sobre o culto",
+     "Édito contra hereges",
+     "Acolher com desvantagem nesta semana."
+    ],
+    [
+     "6",
+     "Olhos sobre o culto",
+     "Sangue achado num beco",
+     "Encobrir CD 13; falha, Revelação +1."
+    ],
+    [
+     "7",
+     "Olhos sobre o culto",
+     "Aprendiz curioso segue um fiel",
+     "Persuasão CD 10: +1 fiel; falha, Reputação −1."
+    ],
+    [
+     "8",
+     "Olhos sobre o culto",
+     "Interrogatório de rotina",
+     "Um líder testa Lealdade; falha, Revelação +1."
+    ],
+    [
+     "9",
+     "Olhos sobre o culto",
+     "Espião infiltrado",
+     "Intuição CD 15; falha, Revelação +2 na próxima semana."
+    ],
+    [
+     "10",
+     "Olhos sobre o culto",
+     "Testemunha viu a regeneração",
+     "Persuasão CD 13: +1 fiel; falha, Revelação +1."
+    ],
+    [
+     "11",
+     "Olhos sobre o culto",
+     "Cartaz com o rosto de um fiel",
+     "Ele não lidera Obras por 2 semanas."
+    ],
+    [
+     "12",
+     "Olhos sobre o culto",
+     "Médico da cidade estuda um curado",
+     "Enganação CD 15; falha, Revelação +1."
+    ],
+    [
+     "13",
+     "Olhos sobre o culto",
+     "Fiscal na fachada",
+     "Enganação CD 13; falha, −2 Recursos."
+    ],
+    [
+     "14",
+     "Olhos sobre o culto",
+     "Fiel bêbado fala demais",
+     "Revelação +1 e Reputação −1."
+    ],
+    [
+     "15",
+     "Olhos sobre o culto",
+     "Carta interceptada",
+     "Investigação CD 14; falha, Revelação +1 e Complicação."
+    ],
+    [
+     "16",
+     "Dentro do culto",
+     "Fiel em crise",
+     "Intuição CD 13: Propósito +1; falha, Fé −1."
+    ],
+    [
+     "17",
+     "Dentro do culto",
+     "Líder em dúvida",
+     "Um líder testa Lealdade."
+    ],
+    [
+     "18",
+     "Dentro do culto",
+     "O Anão e a Amálgama discordam",
+     "Os dois testam Lealdade; quem falhar perde a Obra."
+    ],
+    [
+     "19",
+     "Dentro do culto",
+     "Veteranos contra novatos",
+     "Fé −1; uma Roda de dor nesta semana anula."
+    ],
+    [
+     "20",
+     "Dentro do culto",
+     "Heresia sussurrada",
+     "A Comunhão não sobe nesta semana."
+    ],
+    [
+     "21",
+     "Dentro do culto",
+     "Casamento entre fiéis",
+     "Fé +1."
+    ],
+    [
+     "22",
+     "Dentro do culto",
+     "Fiel confessa um segredo grave",
+     "Abrigar para protegê-lo, ou Fé −1."
+    ],
+    [
+     "23",
+     "Dentro do culto",
+     "Fiel notável surge",
+     "Role o gerador."
+    ],
+    [
+     "24",
+     "Dentro do culto",
+     "Um fiel pede para liderar",
+     "Role o gerador; Lealdade +2."
+    ],
+    [
+     "25",
+     "Dentro do culto",
+     "Vigília espontânea",
+     "Propósito +1."
+    ],
+    [
+     "26",
+     "Dentro do culto",
+     "Fiel endividado pede ajuda",
+     "Dar 1d4 Recursos, ou Fé −1."
+    ],
+    [
+     "27",
+     "Dentro do culto",
+     "Fiel some sem aviso",
+     "Investigação CD 13; falha, Revelação +1."
+    ],
+    [
+     "28",
+     "Dentro do culto",
+     "Fiel antigo volta",
+     "+1 fiel e Fé +1."
+    ],
+    [
+     "29",
+     "Dentro do culto",
+     "Dois fiéis brigam por uma tarefa",
+     "Uma Obra com desvantagem."
+    ],
+    [
+     "30",
+     "Dentro do culto",
+     "Promessa cumprida",
+     "Lealdade +1 de um líder."
+    ],
+    [
+     "31",
+     "A cidade e o dinheiro",
+     "Doação inesperada",
+     "+1d4 × E Recursos."
+    ],
+    [
+     "32",
+     "A cidade e o dinheiro",
+     "Escassez",
+     "Manutenção +1 (+2 no Estágio 4+)."
+    ],
+    [
+     "33",
+     "A cidade e o dinheiro",
+     "Contrato de um mercador",
+     "Persuasão CD 14: +2 × E Recursos."
+    ],
+    [
+     "34",
+     "A cidade e o dinheiro",
+     "Oferta de um patrono",
+     "Aceitar: +2d6 × E Recursos e chantagem (d20 ≤ 5 por semana). Recusar: Provação 4."
+    ],
+    [
+     "35",
+     "A cidade e o dinheiro",
+     "Herança de um fiel",
+     "+1d6 Recursos."
+    ],
+    [
+     "36",
+     "A cidade e o dinheiro",
+     "Incêndio no bairro",
+     "Pão e abrigo com vantagem; ajudar dá Reputação +1."
+    ],
+    [
+     "37",
+     "A cidade e o dinheiro",
+     "Peste no bairro",
+     "Cura pelo sangue com vantagem; usar dá Revelação +1."
+    ],
+    [
+     "38",
+     "A cidade e o dinheiro",
+     "Funeral importante",
+     "Velar os mortos com vantagem e ganho dobrado."
+    ],
+    [
+     "39",
+     "A cidade e o dinheiro",
+     "Feira na cidade",
+     "Prover com vantagem."
+    ],
+    [
+     "40",
+     "A cidade e o dinheiro",
+     "Guilda cobra taxa",
+     "1 Recurso, ou Reputação −1."
+    ],
+    [
+     "41",
+     "A cidade e o dinheiro",
+     "Inverno de fome",
+     "Pão e abrigo custa o dobro e ganha o dobro."
+    ],
+    [
+     "42",
+     "A cidade e o dinheiro",
+     "Leilão de um item raro",
+     "Obter com vantagem nesta semana."
+    ],
+    [
+     "43",
+     "A cidade e o dinheiro",
+     "Aluguel da sede sobe",
+     "Manutenção +1 por 2 semanas."
+    ],
+    [
+     "44",
+     "A cidade e o dinheiro",
+     "Encomenda grande aos ofícios",
+     "Prover por ofícios com ganho dobrado."
+    ],
+    [
+     "45",
+     "A cidade e o dinheiro",
+     "Moeda falsa no caixa",
+     "−1d4 Recursos; Investigação CD 13 recupera metade."
+    ],
+    [
+     "46",
+     "Crescer",
+     "Peregrino de longe",
+     "+1 fiel; Raiz 1 numa região nova."
+    ],
+    [
+     "47",
+     "Crescer",
+     "Família inteira bate à porta",
+     "+1d4 × C fiéis."
+    ],
+    [
+     "48",
+     "Crescer",
+     "Conversão em massa",
+     "+2d6 × C fiéis; Revelação +1."
+    ],
+    [
+     "49",
+     "Crescer",
+     "Ex-sacerdote se converte",
+     "+1 fiel notável, dom em Religião."
+    ],
+    [
+     "50",
+     "Crescer",
+     "Soldados voltam da guerra",
+     "Propósito aos feridos com vantagem."
+    ],
+    [
+     "51",
+     "Crescer",
+     "Boato favorável",
+     "Reputação +1."
+    ],
+    [
+     "52",
+     "Crescer",
+     "Curandeiro rival falha",
+     "Reputação +1 e +1d4 × C fiéis."
+    ],
+    [
+     "53",
+     "Crescer",
+     "Um figurão pede audiência",
+     "Converter um figurão com vantagem."
+    ],
+    [
+     "54",
+     "Crescer",
+     "Convite a um salão nobre",
+     "Salões e nobres sem custo."
+    ],
+    [
+     "55",
+     "Crescer",
+     "Prisão superlotada",
+     "Pregar nas prisões com vantagem."
+    ],
+    [
+     "56",
+     "Crescer",
+     "Cidade vizinha pede pregador",
+     "Pregar numa região nova com vantagem."
+    ],
+    [
+     "57",
+     "Crescer",
+     "Fiéis de outra fé desiludidos",
+     "+1d6 × C fiéis."
+    ],
+    [
+     "58",
+     "Crescer",
+     "Execução pública marcada",
+     "Sermão no cadafalso com vantagem."
+    ],
+    [
+     "59",
+     "Crescer",
+     "Semana tranquila",
+     "A primeira Obra tem vantagem."
+    ],
+    [
+     "60",
+     "Crescer",
+     "Fiel distante funda um círculo",
+     "Raiz +1 numa região com Raiz 1."
+    ],
+    [
+     "61",
+     "Flagelados e outras fés",
+     "Movimento dos Flagelados",
+     "Role d10 dos Flagelados."
+    ],
+    [
+     "62",
+     "Flagelados e outras fés",
+     "Um Flagelado deserta",
+     "+1 fiel notável; Relação −1."
+    ],
+    [
+     "63",
+     "Flagelados e outras fés",
+     "Os dois cultos no mesmo funeral",
+     "Religião CD 13: Relação +1; falha, Revelação +1."
+    ],
+    [
+     "64",
+     "Flagelados e outras fés",
+     "Procissão dos Flagelados",
+     "Encobrir CD 12; falha, Revelação +1."
+    ],
+    [
+     "65",
+     "Flagelados e outras fés",
+     "Flagelado ferido pede ajuda",
+     "Ajudar: Relação +1 e Revelação +1."
+    ],
+    [
+     "66",
+     "Flagelados e outras fés",
+     "Clareira dos Flagelados descoberta",
+     "Avisar: Relação +1 e Revelação +1."
+    ],
+    [
+     "67",
+     "Flagelados e outras fés",
+     "Igreja abre sopa dos pobres",
+     "Pão e abrigo com desvantagem."
+    ],
+    [
+     "68",
+     "Flagelados e outras fés",
+     "Debate com um sacerdote",
+     "Religião CD 15: Reputação +1; falha, Revelação +1."
+    ],
+    [
+     "69",
+     "Flagelados e outras fés",
+     "Nova seita na região",
+     "Raiz −1 ali, ou Disputar fiéis com vantagem."
+    ],
+    [
+     "70",
+     "Flagelados e outras fés",
+     "O clero reclama dos ritos de luto",
+     "Sem Velar os mortos por 1 semana."
+    ],
+    [
+     "71",
+     "Flagelados e outras fés",
+     "Monge errante debate a dor",
+     "Intuição CD 14: Propósito +1."
+    ],
+    [
+     "72",
+     "Flagelados e outras fés",
+     "Fiel de outra fé pede proteção",
+     "Abrigar: +1 fiel e Reputação +1."
+    ],
+    [
+     "73",
+     "Sangue e Patrona",
+     "Sinal da Patrona",
+     "Role d12 de sinais."
+    ],
+    [
+     "74",
+     "Sangue e Patrona",
+     "A Patrona observa",
+     "Role 2d12 de sinais e escolha."
+    ],
+    [
+     "75",
+     "Sangue e Patrona",
+     "Milagre do sangue",
+     "Propósito +2, Fé +1, Revelação +1."
+    ],
+    [
+     "76",
+     "Sangue e Patrona",
+     "Regeneração espontânea",
+     "Propósito +1, Revelação +1."
+    ],
+    [
+     "77",
+     "Sangue e Patrona",
+     "Hemomancia desperta num fiel",
+     "+1 fiel notável, dom em Medicina."
+    ],
+    [
+     "78",
+     "Sangue e Patrona",
+     "O altar transborda sem ferida",
+     "Fé +1; Encobrir CD 13 ou Revelação +1."
+    ],
+    [
+     "79",
+     "Sangue e Patrona",
+     "Rito sai do controle",
+     "Arcanismo CD 14; falha, Fé −1 e um fiel exausto."
+    ],
+    [
+     "80",
+     "Sangue e Patrona",
+     "Marca de sangue no Simon",
+     "Propósito +1; vista, Revelação +1."
+    ],
+    [
+     "81",
+     "Sangue e Patrona",
+     "A Amálgama inquieta",
+     "Lealdade; falha, sai à noite (Revelação +2)."
+    ],
+    [
+     "82",
+     "Sangue e Patrona",
+     "A Amálgama protege um fiel",
+     "Fé +1 e Revelação +1."
+    ],
+    [
+     "83",
+     "Sangue e Patrona",
+     "As doze vozes cantam juntas",
+     "Rodas de dor com vantagem."
+    ],
+    [
+     "84",
+     "Sangue e Patrona",
+     "Oferta de sangue ao altar",
+     "+1 uso de rito; Lealdade +1 de um líder."
+    ],
+    [
+     "85",
+     "Sangue e Patrona",
+     "Sangue de fiel cura um estranho",
+     "+1d4 × C fiéis; Revelação +1."
+    ],
+    [
+     "86",
+     "Sangue e Patrona",
+     "Cheiro de ferro na sede",
+     "Encobrir CD 12; falha, Revelação +1."
+    ],
+    [
+     "87",
+     "Sangue e Patrona",
+     "Provação adiantada",
+     "A próxima Provação pode ser cumprida já."
+    ],
+    [
+     "88",
+     "Sangue e Patrona",
+     "Silêncio da Patrona",
+     "Sem ritos nesta semana; Fé −1."
+    ],
+    [
+     "89",
+     "Viradas",
+     "Traição",
+     "Revelação +1d3; Encobrir CD 15 contém."
+    ],
+    [
+     "90",
+     "Viradas",
+     "Traidor entre os líderes",
+     "Lealdade com desvantagem; falha, Revelação +3."
+    ],
+    [
+     "91",
+     "Viradas",
+     "Relíquia do culto some",
+     "Investigação CD 15; falha, Fé −1."
+    ],
+    [
+     "92",
+     "Viradas",
+     "Alguém quer conhecer o Simon",
+     "Intuição CD 14 revela a intenção (Mestre)."
+    ],
+    [
+     "93",
+     "Viradas",
+     "Líder regional quer independência",
+     "Lealdade com desvantagem; falha, Raiz −2 ali."
+    ],
+    [
+     "94",
+     "Viradas",
+     "Ofertório generoso",
+     "Fé +1 e +1d4 Recursos."
+    ],
+    [
+     "95",
+     "Viradas",
+     "Um perseguidor se converte",
+     "+1 fiel notável; Revelação −1."
+    ],
+    [
+     "96",
+     "Viradas",
+     "Brecha política",
+     "Articular com vantagem nesta semana."
+    ],
+    [
+     "97",
+     "Viradas",
+     "Notícia de guerra",
+     "Feridos com vantagem por 2 semanas; Manutenção +1."
+    ],
+    [
+     "98",
+     "Viradas",
+     "Pânico na cidade",
+     "Fé −1; Acolher os rejeitados com ganho dobrado."
+    ],
+    [
+     "99",
+     "Viradas",
+     "Dia de festa no culto",
+     "Fé +2 e Propósito +1."
+    ],
+    [
+     "100",
+     "Viradas",
+     "Visita da Patrona",
+     "Evento maior: decisão do Mestre."
+    ]
+   ]
+  }
+ },
+ "cisma": [
+  "Quando: no fim da semana, se Fé 2 ou menos, ou se um líder falhou Lealdade por 10+.",
+  "Teste: d20 + Fé + Comunhão contra CD 10 + Estágio.",
+  "Sucesso: nada acontece. Sucesso por 5+: Fé +1. Falha: role na tabela abaixo."
+ ]
+}

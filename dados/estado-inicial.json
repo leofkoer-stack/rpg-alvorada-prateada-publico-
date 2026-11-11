@@ -1,0 +1,134 @@
+{
+ "_leia": "Estado da semana 1. Valor null = a definir pelo dono da frente na primeira abertura. Campos com 'proposta': true ainda aguardam o jogador ou o Mestre e devem aparecer com um selo 'proposta' na tela.",
+ "semana": 1,
+ "cidade": {
+  "frentes": {
+   "populacao": {"nivel": 0, "marcas": 0, "nota": "cerca de 1.000 habitantes"},
+   "economia": {"nivel": 0, "marcas": 0, "nota": "escambo"},
+   "rotas": {"nivel": 1, "marcas": 0, "nota": "um fio aberto com Svenya"},
+   "influencia": {"nivel": 0, "marcas": 0, "nota": "sem lorde"},
+   "notoriedade": {"nivel": 0, "marcas": 0, "nota": "fora dos mapas novos"},
+   "seguranca": {"nivel": 1, "marcas": 0},
+   "moral": {"nivel": 1, "marcas": 0}
+  },
+  "governo": "regime_especial",
+  "conduz_sem_pjs": {"nome": "Alberon", "bonus": 5},
+  "pjs_em_draetyr": false,
+  "pjs_onde": "Lavenya",
+  "relogios": {
+   "atencao_do_inferno": {"valor": 0, "tamanho": 6},
+   "oposicao": {"valor": 1, "tamanho": 6},
+   "desconfianca_da_capital": {"valor": 2, "tamanho": 6}
+  },
+  "cofre_po": null,
+  "projetos": [],
+  "projetos_disponiveis": "tabela proj de regras-cidade.json"
+ },
+ "guilda": {
+  "cofre": {"valor": 12000, "moeda": "PL", "uso": "a confirmar"},
+  "taxa_percentual": 20,
+  "manutencao_po_semana": 50,
+  "instalacoes": [],
+  "equipe": ["Alberon", "Jô (Joselina)", "Pinpin", "Angélica"],
+  "elenco": [
+   {"grupo": "Grupo dos PJs", "membros": "Mandy, Simon, Trazix, Felnun, Chopp e Hrasvelge", "rank": "prata", "nota": "Prata alto; jogam as missões em sessão, sem rolar"},
+   {"grupo": "Grupo do Gael", "membros": "Gael, Adena, Romeu, Marina, Conan, Theodore, TK, Mike e Ryan Goslin", "rank": null},
+   {"grupo": "Tendres", "membros": "Bárbaro humano, atua sozinho", "rank": null},
+   {"grupo": "Ailin e Andrey", "membros": "Dupla humana", "rank": null}
+  ],
+  "quadro": []
+ },
+ "culto": {
+  "fieis": 1,
+  "raizes_por_zona": {},
+  "tesouro_recursos": 2,
+  "fe": 5,
+  "comunhao": 1,
+  "proposito": 0,
+  "reputacao": 0,
+  "revelacao": 1,
+  "flagelados_relacao": 0,
+  "lideres": [
+   {"nome": "Simon", "bonus": null, "lealdade": null, "nota": "modificadores da ficha + proficiência; presente: 1 Obra com vantagem"},
+   {"nome": "Anão Solitário", "bonus": {"Persuasão": 5, "Religião": 5, "Intuição": 3}, "lealdade": 18},
+   {"nome": "A Amálgama", "bonus": "ficha de guerreiro nível 7 (proficiência +3)", "lealdade": 15, "proposta": true, "vidas": 12, "vidas_max": 12}
+  ],
+  "provacoes_cumpridas": [],
+  "projetos": [],
+  "itens": []
+ },
+ "radio": {
+  "estagio": 0,
+  "audiencia": {"nivel": 0, "marcas": 0},
+  "influencia": {
+   "guildas": {"nivel": 0, "marcas": 0},
+   "nobreza": {"nivel": 0, "marcas": 0},
+   "clero": {"nivel": 0, "marcas": 0},
+   "povo": {"nivel": 0, "marcas": 0}
+  },
+  "sinal_por_zona": {},
+  "integridade": 8,
+  "relogios": {"pressao": {"valor": 0, "tamanho": 6}, "bardos": {"valor": 0, "tamanho": 6}},
+  "caixa_po": null,
+  "portfolio": [],
+  "fontes_iniciais": "tabela ini de regras-radio.json (estado de cada uma a confirmar)",
+  "bonus_mandy": {"Persuasão": 9, "Intuição": 7, "Atuação": 9}
+ },
+ "submundo": {
+  "respeito": {"nivel": 1, "marcas": 0},
+  "rede_por_zona": {"draetyr": 2},
+  "contatos": [
+   {"nome": "Os assassinos de Draetyr", "nivel": 3, "confianca": 2, "base": "Draetyr", "estado": "investigam o contrato do Lucas"},
+   {"nome": "Os sobreviventes da Garra Silenciosa", "nivel": 3, "confianca": 3, "base": null, "estado": "onde estão: a confirmar"}
+  ],
+  "favores": {"a_receber": 0, "devidos": 0},
+  "bolsa_po": null,
+  "relogios": {"exposicao": {"valor": 1, "tamanho": 6}, "cacadores": {"valor": 1, "tamanho": 6}},
+  "rastros": [
+   {"nome": "O contrato do Lucas", "valor": 0, "tamanho": 6},
+   {"nome": "O Rob", "valor": 0, "tamanho": 6},
+   {"nome": "As pistolas de família", "valor": 0, "tamanho": 6},
+   {"nome": "A máscara original", "valor": 0, "tamanho": 4},
+   {"nome": "Quem estava por trás do sequestro", "valor": 0, "tamanho": 8}
+  ],
+  "bonus_felnun": {"atributos": {"DES": 5, "SAB": 3}, "proficiencia": 4, "pericias_proficientes": null}
+ },
+ "caldeirao": {
+  "estagio": 0,
+  "pertencimento": {"nivel": 0, "marcas": 0},
+  "fama": {"nivel": 0, "marcas": 0},
+  "receitas": [],
+  "despensa": {"frescas": 0, "comuns": 0, "raras": 0, "nota": "material do Peixe Gigante: se vai para a cozinha, a confirmar"},
+  "fundos": [
+   {"nome": "Curral", "producao_porcoes": 4, "tipo": "frescas"},
+   {"nome": "Aquários", "producao_porcoes": 3, "tipo": "frescas"},
+   {"nome": "Horta", "producao_porcoes": 3, "tipo": "ervas"}
+  ],
+  "equipe": [],
+  "caixa_po": null,
+  "relogios": {"paladar": {"valor": 1, "tamanho": 6}, "fome": {"valor": 2, "tamanho": 6}},
+  "bonus_chopp": {"Cozinha": 9},
+  "proposta": true
+ },
+ "forja": {
+  "estagio": 2,
+  "renome": {"nivel": 1, "marcas": 0},
+  "palavra": {"nivel": 1, "marcas": 0},
+  "miguelito": {"nivel": 1, "marcas": 0},
+  "fila": [
+   {"pedido": "ECLIPSE e SOLARIS", "cliente": "Felnun", "estrelas": 3, "jornadas_feitas": 0, "jornadas_total": 12, "prazo": null, "nota": "pistolas +1, 18/54 m, com cargas"},
+   {"pedido": "Arma acima do lendário", "cliente": "pelo Koren", "estrelas": null, "jornadas_total": null, "nota": "fora da escala; o Mestre define"},
+   {"pedido": "Pedras transmissoras e aparelhos da rádio", "cliente": "Mandy, com o Koren", "estrelas": null, "jornadas_total": null, "nota": "previsto no projeto da torre"}
+  ],
+  "entregues": ["Anel de alerta do Felnun", "Três anéis do Miguelito"],
+  "equipe": [{"nome": "Miguelito", "funcao": "aprendiz"}, {"nome": "Ex-bandidos", "quantos": null, "funcao": "balcão"}],
+  "guarda": "Ooze blindado, com o Miguelito",
+  "materiais": {"comuns": null, "raros": null, "lendarios": null},
+  "caixa_po": null,
+  "estoque_po": 0,
+  "caderno": {"avancos": [], "fenomenos": "tabela vistos de regras-forja.json, todos no passo Observar"},
+  "relogios": {"faisca": {"valor": 2, "tamanho": 6}, "esquema": {"valor": 2, "tamanho": 6}, "cobica": {"valor": 1, "tamanho": 6}, "teto": {"valor": 0, "tamanho": 8}},
+  "bonus_trazix": {"Forja": 13, "Arcanismo": 9, "Investigação": 9},
+  "proposta": true
+ }
+}

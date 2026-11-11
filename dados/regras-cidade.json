@@ -1,0 +1,1460 @@
+{
+ "frente": "cidade",
+ "nome": "Draetyr — cidade e guilda",
+ "dono": "Mestre (Lucca)",
+ "pdf": "referencia/Draetyr_Gestao_da_Cidade.pdf",
+ "semana": [
+  "Cofres: a cidade recebe a renda e paga a manutenção; a guilda recebe a taxa e paga a dela.",
+  "Ações da cidade: até o limite do estágio, cada uma com quem conduz.",
+  "Guilda: gere o quadro, despache os grupos e role as missões que terminam.",
+  "Projetos: conte as semanas; aplique os efeitos de quem concluiu.",
+  "Evento da semana: role d100.",
+  "Relógios: avance ou recue; relógio cheio vira crise.",
+  "Fechamento: marcas viram níveis; recalcule o Estágio."
+ ],
+ "tabelas": {
+  "lv": {
+   "titulo": "Níveis das 7 frentes",
+   "colunas": [
+    "Nível",
+    "População",
+    "Economia",
+    "Rotas",
+    "Influência",
+    "Notoriedade",
+    "Segurança",
+    "Moral"
+   ],
+   "linhas": [
+    [
+     "0",
+     "Abandonada · cerca de 1.000",
+     "Escambo",
+     "Isolada",
+     "Ignorada",
+     "Esquecida",
+     "Sem lei",
+     "Desesperança"
+    ],
+    [
+     "1",
+     "Vila · até 5.000",
+     "Moeda local",
+     "Estrada segura",
+     "Ouvida",
+     "Lembrada",
+     "Vigiada",
+     "Resignação"
+    ],
+    [
+     "2",
+     "Cidade pequena · até 20.000",
+     "Comércio regional",
+     "Uma rota regional",
+     "Representada",
+     "Conhecida na região",
+     "Guarda mínima",
+     "Esperança"
+    ],
+    [
+     "3",
+     "Cidade · até 60.000",
+     "Mercado ativo",
+     "Várias rotas",
+     "Respeitada",
+     "Destino de visitantes",
+     "Patrulhada",
+     "Orgulho"
+    ],
+    [
+     "4",
+     "Grande cidade · até 150.000",
+     "Polo comercial",
+     "Rota marítima",
+     "Peso no reino",
+     "Famosa",
+     "Segura",
+     "Entusiasmo"
+    ],
+    [
+     "5",
+     "Auge · 200.000",
+     "Centro de riqueza",
+     "Rota continental",
+     "Voz em Lykh",
+     "Lendária",
+     "Fortaleza",
+     "Fervor"
+    ]
+   ]
+  },
+  "est": {
+   "titulo": "Estágios da cidade",
+   "colunas": [
+    "Estágio",
+    "Ações por semana",
+    "Renda base do cofre",
+    "Missões no quadro",
+    "Marca"
+   ],
+   "linhas": [
+    [
+     "0 · Abandonada",
+     "2",
+     "0",
+     "1d4",
+     "Hoje: escambo, população sem peso, fora dos mapas novos"
+    ],
+    [
+     "1 · Vila",
+     "2",
+     "50 PO",
+     "1d4",
+     "Moeda volta a circular"
+    ],
+    [
+     "2 · Em reconstrução",
+     "2",
+     "200 PO",
+     "1d4 + 1",
+     "Missões locais passam a pagar em PO"
+    ],
+    [
+     "3 · Cidade viva",
+     "3",
+     "500 PO",
+     "1d6 + 1",
+     "Ganhos e perdas dos eventos valem 1 marca a mais"
+    ],
+    [
+     "4 · Cidade próspera",
+     "3",
+     "1.500 PO",
+     "1d6 + 2",
+     "Rota marítima possível"
+    ],
+    [
+     "5 · Era de ouro",
+     "4",
+     "4.000 PO",
+     "2d4 + 2",
+     "Como antes da queda"
+    ]
+   ]
+  },
+  "gov": {
+   "titulo": "Governo",
+   "colunas": [
+    "Governo",
+    "Quando",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "Regime especial",
+     "Hoje",
+     "O Alberon governa de fato, sem papelada. Influência não passa de 2."
+    ],
+    [
+     "Lorde aliado",
+     "A história decide",
+     "Influência +1 nível ao chegar; Articular com vantagem."
+    ],
+    [
+     "Lorde neutro",
+     "A história decide",
+     "Nada muda."
+    ],
+    [
+     "Lorde hostil",
+     "A história decide",
+     "Articular com desvantagem; −1 marca em Economia a cada 4 semanas."
+    ],
+    [
+     "Isolamento",
+     "A história decide",
+     "Sem lorde nenhum. Influência não passa de 1; −1 nível em Rotas ao começar."
+    ]
+   ]
+  },
+  "rel": {
+   "titulo": "Relógios da cidade",
+   "colunas": [
+    "Relógio",
+    "Avança 1",
+    "Recua 1",
+    "Cheio"
+   ],
+   "linhas": [
+    [
+     "🔥 Atenção do Inferno",
+     "Notoriedade sobe de nível · evento",
+     "Missão de ameaça demoníaca com sucesso",
+     "Crise demoníaca: −1 nível em Segurança e em Moral"
+    ],
+    [
+     "🗡️ Oposição",
+     "População ou Economia sobem de nível · evento",
+     "Organizar a defesa com sucesso por 5+",
+     "Sabotagem: −1 nível numa frente (o Mestre escolhe)"
+    ],
+    [
+     "👑 Desconfiança da capital",
+     "Escândalo · falha por 5+ em Articular · evento",
+     "Articular com sucesso por 5+",
+     "Sanção: −1 nível em Influência, ou multa de 1.000 × (E + 1) PO"
+    ]
+   ]
+  },
+  "acoes": {
+   "titulo": "Ações da cidade",
+   "colunas": [
+    "Ação",
+    "Frente",
+    "Perícia",
+    "Custo (cofre da cidade)"
+   ],
+   "linhas": [
+    [
+     "Atrair moradores",
+     "👥 População",
+     "Persuasão ou Atuação",
+     "100 × (nível + 1) PO"
+    ],
+    [
+     "Organizar o comércio",
+     "💰 Economia",
+     "Persuasão ou ferramenta de ofício",
+     "100 × (nível + 1) PO"
+    ],
+    [
+     "Abrir uma rota",
+     "🛣️ Rotas",
+     "Sobrevivência ou Persuasão",
+     "100 × (nível + 1) PO"
+    ],
+    [
+     "Articular",
+     "🏛️ Influência",
+     "Persuasão ou Enganação",
+     "—"
+    ],
+    [
+     "Divulgar",
+     "📣 Notoriedade",
+     "Atuação ou Persuasão",
+     "50 × (nível + 1) PO"
+    ],
+    [
+     "Organizar a defesa",
+     "🛡️ Segurança",
+     "Atletismo, Intimidação ou Percepção",
+     "100 × (nível + 1) PO"
+    ],
+    [
+     "Cuidar do povo",
+     "❤️ Moral",
+     "Persuasão, Atuação ou Medicina",
+     "50 × (nível + 1) PO"
+    ],
+    [
+     "Começar uma obra",
+     "Projeto",
+     "Sem teste",
+     "O custo do projeto"
+    ]
+   ]
+  },
+  "resa": {
+   "titulo": "Resultado das ações da cidade",
+   "colunas": [
+    "Resultado",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "Sucesso por 5+",
+     "+2 marcas"
+    ],
+    [
+     "Sucesso",
+     "+1 marca"
+    ],
+    [
+     "Falha",
+     "Nada; o custo foi gasto"
+    ],
+    [
+     "Falha por 5+",
+     "−1 marca"
+    ],
+    [
+     "20 natural",
+     "+2 marcas e o custo volta ao cofre"
+    ],
+    [
+     "1 natural",
+     "Um relógio de ameaça avança 1 (o Mestre escolhe)"
+    ]
+   ]
+  },
+  "proj": {
+   "titulo": "Projetos",
+   "colunas": [
+    "Projeto",
+    "Frente",
+    "Custo e prazo",
+    "Ao concluir",
+    "Depois"
+   ],
+   "linhas": [
+    [
+     "Torre de rádio e gravadora",
+     "📣 Notoriedade",
+     "do projeto",
+     "+2 marcas",
+     "Divulgar com vantagem"
+    ],
+    [
+     "Restaurante Caldeirão Trovejante",
+     "❤️ Moral",
+     "do jogador",
+     "+2 marcas",
+     "+1 marca a cada 4 semanas"
+    ],
+    [
+     "Banco",
+     "💰 Economia",
+     "do jogador",
+     "+2 marcas",
+     "Organizar o comércio com vantagem"
+    ],
+    [
+     "Rodas e Engrenagens e indústria",
+     "💰 Economia",
+     "do jogador",
+     "+2 marcas",
+     "+1 marca a cada 4 semanas"
+    ],
+    [
+     "Véu Rubro e mariposas",
+     "📣 Notoriedade",
+     "do jogador",
+     "+2 marcas",
+     "+1 marca a cada 4 semanas"
+    ],
+    [
+     "Reativar o Coliseu",
+     "📣 Notoriedade · ❤️ Moral",
+     "50.000 PO · 12 sem.",
+     "+1 nível em Notoriedade",
+     "O Mestre define o que a obra desperta"
+    ],
+    [
+     "Reabrir a biblioteca ao público",
+     "📣 Notoriedade · 🏛️ Influência",
+     "acordo com o guardião",
+     "+1 nível em Notoriedade",
+     "Articular com vantagem"
+    ],
+    [
+     "Reativar o porto",
+     "🛣️ Rotas · 💰 Economia",
+     "20.000 PO · 8 sem.",
+     "Libera Rotas 4+; +2 marcas em Rotas",
+     "+1 marca em Economia a cada 4 semanas"
+    ],
+    [
+     "Moradias num bairro vazio",
+     "👥 População",
+     "5.000 PO · 4 sem.",
+     "+2 marcas",
+     "—"
+    ],
+    [
+     "Guarda da cidade",
+     "🛡️ Segurança",
+     "3.000 PO · 2 sem.",
+     "+2 marcas",
+     "Organizar a defesa com vantagem; 100 PO por semana"
+    ],
+    [
+     "Mercado central",
+     "💰 Economia · ❤️ Moral",
+     "8.000 PO · 4 sem.",
+     "+1 marca em cada",
+     "+1 marca em Economia a cada 4 semanas"
+    ]
+   ]
+  },
+  "inst": {
+   "titulo": "Instalações da sede da guilda",
+   "colunas": [
+    "Instalação",
+    "Custo e prazo",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "Enfermaria das águas termais",
+     "3.000 PO · 2 sem.",
+     "Grupo ferido volta 1 semana antes"
+    ],
+    [
+     "Arsenal no terceiro sótão",
+     "4.000 PO · 2 sem.",
+     "+2 em Caça a monstro e Proteção"
+    ],
+    [
+     "Sala de mapas",
+     "2.000 PO · 1 sem.",
+     "+2 em Exploração e Investigação"
+    ],
+    [
+     "Salão de treino",
+     "3.000 PO · 2 sem.",
+     "Grupos Bronze rolam com +2"
+    ]
+   ]
+  },
+  "ele": {
+   "titulo": "Elenco da guilda",
+   "colunas": [
+    "Grupo",
+    "Quem",
+    "Rank",
+    "Nota"
+   ],
+   "linhas": [
+    [
+     "Grupo dos PJs",
+     "Mandy, Simon, Trazix, Felnun, Chopp e Hrasvelge",
+     "Prata alto",
+     "Jogam as missões em sessão"
+    ],
+    [
+     "Grupo do Gael",
+     "Gael, Adena, Romeu, Marina, Conan, Theodore, TK, Mike e Ryan Goslin",
+     "a confirmar",
+     "—"
+    ],
+    [
+     "Tendres",
+     "Bárbaro humano, atua sozinho",
+     "a confirmar",
+     "—"
+    ],
+    [
+     "Ailin e Andrey",
+     "Dupla humana",
+     "a confirmar",
+     "—"
+    ]
+   ]
+  },
+  "rk": {
+   "titulo": "Ranks da guilda",
+   "colunas": [
+    "Rank",
+    "Níveis",
+    "Bônus de missão"
+   ],
+   "linhas": [
+    [
+     "🥉 Bronze",
+     "1 a 5",
+     "+3"
+    ],
+    [
+     "🥈 Prata",
+     "6 a 10",
+     "+5"
+    ],
+    [
+     "🥇 Ouro",
+     "11 a 15",
+     "+7"
+    ],
+    [
+     "💎 Platina",
+     "16 a 19",
+     "+9"
+    ],
+    [
+     "🔷 Adamantina",
+     "20+",
+     "+11"
+    ]
+   ]
+  },
+  "staff": {
+   "titulo": "Equipe da guilda",
+   "colunas": [
+    "Equipe",
+    "Função"
+   ],
+   "linhas": [
+    [
+     "Alberon",
+     "Mestre da guilda, aposentado; governa a cidade de fato"
+    ],
+    [
+     "Jô (Joselina)",
+     "Atendente"
+    ],
+    [
+     "Pinpin",
+     "Função a confirmar"
+    ],
+    [
+     "Angélica",
+     "Filha adotiva e sucessora do Alberon; eremita"
+    ]
+   ]
+  },
+  "mp": {
+   "titulo": "Patamar das missões",
+   "colunas": [
+    "Patamar",
+    "d20 + Notoriedade",
+    "CD",
+    "Recompensa"
+   ],
+   "linhas": [
+    [
+     "🥉 Bronze",
+     "10 ou menos",
+     "12",
+     "1d4 × 50 PO"
+    ],
+    [
+     "🥈 Prata",
+     "11 a 16",
+     "15",
+     "2d6 × 100 PO"
+    ],
+    [
+     "🥇 Ouro",
+     "17 a 20",
+     "18",
+     "2d6 × 500 PO"
+    ],
+    [
+     "💎 Platina",
+     "21 a 23",
+     "21",
+     "2d6 × 2.000 PO"
+    ],
+    [
+     "🔷 Adamantina",
+     "24 ou mais",
+     "24",
+     "2d6 × 10.000 PO"
+    ]
+   ]
+  },
+  "alc": {
+   "titulo": "Alcance da missão (d6)",
+   "colunas": [
+    "d6",
+    "Alcance",
+    "Pagamento"
+   ],
+   "linhas": [
+    [
+     "1–3",
+     "Local",
+     "Em Draetyr. Com Economia 0 ou 1, paga em espécie, favor ou terra"
+    ],
+    [
+     "4–5",
+     "Regional",
+     "Outra cidade do sul de Lykh; paga em PO"
+    ],
+    [
+     "6",
+     "Continental",
+     "A \"missão de ouro\". Só com Notoriedade 3+; senão, regional. Recompensa ×2"
+    ]
+   ]
+  },
+  "tipo": {
+   "titulo": "Tipo de missão (d12)",
+   "colunas": [
+    "d12",
+    "Tipo",
+    "Frente"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Escolta de carga ou pessoa",
+     "🛣️ Rotas"
+    ],
+    [
+     "2",
+     "Caça a monstro",
+     "🛡️ Segurança"
+    ],
+    [
+     "3",
+     "Investigação",
+     "🛡️ Segurança"
+    ],
+    [
+     "4",
+     "Resgate",
+     "❤️ Moral"
+    ],
+    [
+     "5",
+     "Proteção de obra ou evento",
+     "💰 Economia"
+    ],
+    [
+     "6",
+     "Exploração de ruína",
+     "📣 Notoriedade"
+    ],
+    [
+     "7",
+     "Recuperar um item",
+     "💰 Economia"
+    ],
+    [
+     "8",
+     "Entrega urgente",
+     "🛣️ Rotas"
+    ],
+    [
+     "9",
+     "Ameaça demoníaca",
+     "🛡️ Segurança"
+    ],
+    [
+     "10",
+     "Limpeza de prédios e subterrâneos",
+     "👥 População"
+    ],
+    [
+     "11",
+     "Diplomacia ou mensagem",
+     "🏛️ Influência"
+    ],
+    [
+     "12",
+     "Pedido de morador",
+     "❤️ Moral"
+    ]
+   ]
+  },
+  "det": {
+   "titulo": "Detalhe da missão (d8)",
+   "colunas": [
+    "d8",
+    "Detalhe"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Missão limpa"
+    ],
+    [
+     "2",
+     "O contratante esconde algo"
+    ],
+    [
+     "3",
+     "Prazo curto: CD +2, recompensa ×1,5"
+    ],
+    [
+     "4",
+     "Rival na mesma missão"
+    ],
+    [
+     "5",
+     "Pagamento em espécie"
+    ],
+    [
+     "6",
+     "Informação errada: CD +2"
+    ],
+    [
+     "7",
+     "O alvo não é o vilão (Mestre)"
+    ],
+    [
+     "8",
+     "Gancho: vira cena se os PJs quiserem"
+    ]
+   ]
+  },
+  "res": {
+   "titulo": "Resultado das missões",
+   "colunas": [
+    "Resultado",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "Sucesso por 5+",
+     "Recompensa + achado (d6) · +2 marcas na frente da missão"
+    ],
+    [
+     "Sucesso",
+     "Recompensa · +1 marca na frente da missão"
+    ],
+    [
+     "Falha por até 4",
+     "Metade da recompensa · grupo ferido 1 semana"
+    ],
+    [
+     "Falha por 5+",
+     "Sem recompensa · grupo ferido 2 semanas · −1 marca na frente"
+    ],
+    [
+     "20 natural",
+     "Como sucesso por 5+, e conta para o grupo subir de rank"
+    ],
+    [
+     "1 natural",
+     "Role Revés (d8)"
+    ]
+   ]
+  },
+  "ach": {
+   "titulo": "Achado (d6)",
+   "colunas": [
+    "d6",
+    "Achado"
+   ],
+   "linhas": [
+    [
+     "1–3",
+     "Recompensa +50%"
+    ],
+    [
+     "4–5",
+     "Um item comum ou incomum"
+    ],
+    [
+     "6",
+     "+1 marca em Rotas: um contato novo"
+    ]
+   ]
+  },
+  "rev": {
+   "titulo": "Revés (d8)",
+   "colunas": [
+    "d8",
+    "Revés"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Ferido grave: fora 1d4 + 1 semanas"
+    ],
+    [
+     "2",
+     "Equipamento perdido: −1d4 × 100 PO da guilda"
+    ],
+    [
+     "3",
+     "Calote: o contratante não paga"
+    ],
+    [
+     "4",
+     "Inimigo novo (o Mestre anota)"
+    ],
+    [
+     "5",
+     "Escândalo: −1 marca em Notoriedade; Desconfiança da capital +1"
+    ],
+    [
+     "6",
+     "Alguém quer sair: o grupo fica fora até uma cena"
+    ],
+    [
+     "7",
+     "Armadilha: os PJs são chamados para o resgate (vira cena)"
+    ],
+    [
+     "8",
+     "Multa do órgão regulador: −500 PO da guilda"
+    ]
+   ]
+  },
+  "hoje": {
+   "titulo": "Estado de hoje (texto)",
+   "colunas": [
+    "Medida",
+    "Valor"
+   ],
+   "linhas": [
+    [
+     "👥 População",
+     "0 · cerca de 1.000 habitantes (divergência J9)"
+    ],
+    [
+     "💰 Economia",
+     "0 · escambo"
+    ],
+    [
+     "🛣️ Rotas",
+     "1 · um fio aberto com Svenya"
+    ],
+    [
+     "🏛️ Influência",
+     "0 · sem lorde"
+    ],
+    [
+     "📣 Notoriedade",
+     "0 · fora dos mapas novos"
+    ],
+    [
+     "🛡️ Segurança",
+     "1"
+    ],
+    [
+     "❤️ Moral",
+     "1"
+    ],
+    [
+     "🏙️ Estágio",
+     "0 · Abandonada"
+    ],
+    [
+     "Governo",
+     "Regime especial · Alberon de fato"
+    ],
+    [
+     "Relógios",
+     "Inferno 0/6 · Oposição 1/6 · Capital 2/6"
+    ],
+    [
+     "Cofre da cidade",
+     "a definir"
+    ],
+    [
+     "Guilda",
+     "12.000 PL (uso a confirmar) · elenco na Parte III"
+    ],
+    [
+     "PJs",
+     "em Lavenya"
+    ]
+   ]
+  },
+  "d100": {
+   "titulo": "Evento da semana (d100)",
+   "colunas": [
+    "d100",
+    "Grupo",
+    "Evento",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "1",
+     "👥 População",
+     "Família vai embora",
+     "−1 marca em População."
+    ],
+    [
+     "2",
+     "👥 População",
+     "Prédio desaba num bairro vazio",
+     "−1 marca em Segurança; missão de Limpeza."
+    ],
+    [
+     "3",
+     "👥 População",
+     "Doença entre os pobres",
+     "Medicina CD 13; falha, −1 marca em População."
+    ],
+    [
+     "4",
+     "👥 População",
+     "Inverno duro",
+     "−1 marca em Moral, ou 100 × (E + 1) PO em lenha."
+    ],
+    [
+     "5",
+     "👥 População",
+     "Jovens partem para a capital",
+     "−1 marca em População."
+    ],
+    [
+     "6",
+     "👥 População",
+     "Briga por casa ocupada",
+     "Persuasão CD 12; falha, −1 marca em Moral."
+    ],
+    [
+     "7",
+     "👥 População",
+     "Caravana de refugiados",
+     "+1 marca em População; −1 marca em Segurança."
+    ],
+    [
+     "8",
+     "👥 População",
+     "Antigos moradores voltam",
+     "+1 marca em População e em Moral."
+    ],
+    [
+     "9",
+     "👥 População",
+     "Casamentos e nascimentos",
+     "+1 marca em Moral."
+    ],
+    [
+     "10",
+     "👥 População",
+     "Artesão de fora quer se mudar",
+     "+1 marca em População."
+    ],
+    [
+     "11",
+     "👥 População",
+     "Bairro vazio reocupado",
+     "+1 marca em População."
+    ],
+    [
+     "12",
+     "👥 População",
+     "Peregrinos param na cidade",
+     "+1 marca em Notoriedade."
+    ],
+    [
+     "13",
+     "👥 População",
+     "Família rica compra um casarão",
+     "+1 marca em Economia."
+    ],
+    [
+     "14",
+     "👥 População",
+     "Onda de chegadas",
+     "+2 marcas em População; −1 marca em Segurança."
+    ],
+    [
+     "15",
+     "💰 Economia",
+     "Colheita fraca",
+     "−1 marca em Economia."
+    ],
+    [
+     "16",
+     "💰 Economia",
+     "Mercador desiste da cidade",
+     "−1 marca em Rotas."
+    ],
+    [
+     "17",
+     "💰 Economia",
+     "Roubo no depósito",
+     "−100 × (E + 1) PO do cofre."
+    ],
+    [
+     "18",
+     "💰 Economia",
+     "Moeda falsa circula",
+     "Investigação CD 14; falha, −1 marca em Economia."
+    ],
+    [
+     "19",
+     "💰 Economia",
+     "Preços sobem",
+     "Manutenção +50% nesta semana."
+    ],
+    [
+     "20",
+     "💰 Economia",
+     "Dívida antiga da cidade cobrada",
+     "−200 × (E + 1) PO, ou −1 marca em Influência."
+    ],
+    [
+     "21",
+     "💰 Economia",
+     "Feira espontânea",
+     "+1 marca em Economia."
+    ],
+    [
+     "22",
+     "💰 Economia",
+     "Boa colheita na região",
+     "+1 marca em Economia."
+    ],
+    [
+     "23",
+     "💰 Economia",
+     "Investidor de fora",
+     "+500 × (E + 1) PO, se aceitar uma condição (Mestre)."
+    ],
+    [
+     "24",
+     "💰 Economia",
+     "Achado num prédio vazio",
+     "+200 × (E + 1) PO."
+    ],
+    [
+     "25",
+     "💰 Economia",
+     "Ofício novo na cidade",
+     "+1 marca em Economia."
+    ],
+    [
+     "26",
+     "💰 Economia",
+     "Encomenda grande de fora",
+     "+1 marca em Economia e em Rotas."
+    ],
+    [
+     "27",
+     "💰 Economia",
+     "A troca vira moeda",
+     "Com Economia 0: +2 marcas em Economia."
+    ],
+    [
+     "28",
+     "💰 Economia",
+     "Taxa nova da coroa",
+     "Articular CD 15; falha, −1 marca em Economia."
+    ],
+    [
+     "29",
+     "🛣️ Rotas",
+     "Ponte caída na estrada",
+     "−1 marca em Rotas; missão de Proteção de obra."
+    ],
+    [
+     "30",
+     "🛣️ Rotas",
+     "Bandidos na estrada",
+     "−1 marca em Rotas; missão de Escolta."
+    ],
+    [
+     "31",
+     "🛣️ Rotas",
+     "Tempestade fecha a estrada",
+     "Sem ação de Rotas nesta semana."
+    ],
+    [
+     "32",
+     "🛣️ Rotas",
+     "Carga perdida",
+     "−100 × (E + 1) PO."
+    ],
+    [
+     "33",
+     "🛣️ Rotas",
+     "Pedágio de um senhor vizinho",
+     "Articular CD 14; falha, −1 marca em Rotas."
+    ],
+    [
+     "34",
+     "🛣️ Rotas",
+     "Monstro numa rota",
+     "Missão de Caça; até resolver, −1 marca em Rotas por semana."
+    ],
+    [
+     "35",
+     "🛣️ Rotas",
+     "Mensageiro regular começa a passar",
+     "+1 marca em Rotas."
+    ],
+    [
+     "36",
+     "🛣️ Rotas",
+     "Caravana pede pouso",
+     "+1 marca em Rotas."
+    ],
+    [
+     "37",
+     "🛣️ Rotas",
+     "Estrada antiga redescoberta",
+     "+1 marca em Rotas."
+    ],
+    [
+     "38",
+     "🛣️ Rotas",
+     "Cidade vizinha propõe troca",
+     "Persuasão CD 13: +2 marcas em Rotas."
+    ],
+    [
+     "39",
+     "🛣️ Rotas",
+     "Navio avistado ao largo",
+     "Porto ativo: +1 marca em Rotas; senão, +1 em Notoriedade."
+    ],
+    [
+     "40",
+     "🛣️ Rotas",
+     "Mapa antigo de rotas",
+     "A próxima ação de Rotas tem vantagem."
+    ],
+    [
+     "41",
+     "🛣️ Rotas",
+     "Guia local se oferece",
+     "+1 marca em Rotas."
+    ],
+    [
+     "42",
+     "🛣️ Rotas",
+     "Contrato de transporte",
+     "+1 marca em Rotas; missão de Entrega."
+    ],
+    [
+     "43",
+     "🏛️ Influência",
+     "Carta fria da capital",
+     "−1 marca em Influência."
+    ],
+    [
+     "44",
+     "🏛️ Influência",
+     "Boato de que a cidade abriga criminosos",
+     "Desconfiança da capital +1."
+    ],
+    [
+     "45",
+     "🏛️ Influência",
+     "Inspetor da coroa",
+     "Persuasão CD 15; falha, Desconfiança +1."
+    ],
+    [
+     "46",
+     "🏛️ Influência",
+     "Disputa de território com vizinhos",
+     "Articular CD 15; falha, −1 marca em Influência."
+    ],
+    [
+     "47",
+     "🏛️ Influência",
+     "Tributo atrasado cobrado",
+     "−300 × (E + 1) PO, ou Desconfiança +1."
+    ],
+    [
+     "48",
+     "🏛️ Influência",
+     "Convite ignorado por descuido",
+     "−1 marca em Influência."
+    ],
+    [
+     "49",
+     "🏛️ Influência",
+     "Nobre de passagem",
+     "Persuasão CD 14: +1 marca em Influência."
+    ],
+    [
+     "50",
+     "🏛️ Influência",
+     "Vila próxima pede aliança",
+     "+1 marca em Influência e em População."
+    ],
+    [
+     "51",
+     "🏛️ Influência",
+     "Pedem mediação de uma disputa",
+     "Intuição CD 13: +2 marcas em Influência."
+    ],
+    [
+     "52",
+     "🏛️ Influência",
+     "Carta de apoio de um lorde",
+     "+1 marca em Influência."
+    ],
+    [
+     "53",
+     "🏛️ Influência",
+     "Audiência concedida",
+     "A próxima ação de Influência tem vantagem."
+    ],
+    [
+     "54",
+     "🏛️ Influência",
+     "Antigo aliado lembra da cidade",
+     "+1 marca em Influência."
+    ],
+    [
+     "55",
+     "🏛️ Influência",
+     "Registro antigo prova um direito",
+     "+1 marca em Influência; Desconfiança −1."
+    ],
+    [
+     "56",
+     "🏛️ Influência",
+     "Delegação de fora visita",
+     "Atuação CD 14: +1 marca em Influência e em Notoriedade."
+    ],
+    [
+     "57",
+     "📣 Notoriedade",
+     "Boato de maldição",
+     "−1 marca em Notoriedade."
+    ],
+    [
+     "58",
+     "📣 Notoriedade",
+     "Mapa novo omite a cidade",
+     "−1 marca em Notoriedade."
+    ],
+    [
+     "59",
+     "📣 Notoriedade",
+     "Visitante sai decepcionado",
+     "−1 marca em Notoriedade."
+    ],
+    [
+     "60",
+     "📣 Notoriedade",
+     "Escândalo vira assunto",
+     "−1 marca em Notoriedade; Desconfiança +1."
+    ],
+    [
+     "61",
+     "📣 Notoriedade",
+     "Bardo de passagem canta a cidade",
+     "+1 marca em Notoriedade."
+    ],
+    [
+     "62",
+     "📣 Notoriedade",
+     "Viajante escreve sobre as ruínas",
+     "+1 marca em Notoriedade."
+    ],
+    [
+     "63",
+     "📣 Notoriedade",
+     "Grupo de curiosos",
+     "+1 marca em Notoriedade; +50 × (E + 1) PO."
+    ],
+    [
+     "64",
+     "📣 Notoriedade",
+     "Feito de um morador corre a região",
+     "+1 marca em Notoriedade e em Moral."
+    ],
+    [
+     "65",
+     "📣 Notoriedade",
+     "Festa atrai vizinhos",
+     "+1 marca em Notoriedade."
+    ],
+    [
+     "66",
+     "📣 Notoriedade",
+     "Estudiosos querem ver os monumentos",
+     "+1 marca em Notoriedade e em Influência."
+    ],
+    [
+     "67",
+     "📣 Notoriedade",
+     "Torneio improvisado",
+     "Atletismo CD 13: +2 marcas em Notoriedade."
+    ],
+    [
+     "68",
+     "📣 Notoriedade",
+     "Lenda antiga volta a circular",
+     "+1 marca em Notoriedade; Atenção do Inferno +1."
+    ],
+    [
+     "69",
+     "📣 Notoriedade",
+     "A cidade num quadro da capital",
+     "+1 marca em Notoriedade."
+    ],
+    [
+     "70",
+     "📣 Notoriedade",
+     "A fama chega longe",
+     "+2 marcas em Notoriedade; Atenção do Inferno +1."
+    ],
+    [
+     "71",
+     "🛡️ Segurança",
+     "Furtos na feira",
+     "−1 marca em Segurança."
+    ],
+    [
+     "72",
+     "🛡️ Segurança",
+     "Briga vira tumulto",
+     "−1 marca em Segurança."
+    ],
+    [
+     "73",
+     "🛡️ Segurança",
+     "Criatura no porão de um prédio",
+     "Missão de Caça; −1 marca em Segurança até resolver."
+    ],
+    [
+     "74",
+     "🛡️ Segurança",
+     "Incêndio num quarteirão",
+     "Atletismo CD 14; falha, −1 marca em População."
+    ],
+    [
+     "75",
+     "🛡️ Segurança",
+     "Sabotagem numa obra",
+     "Oposição +1; um projeto atrasa 1 semana."
+    ],
+    [
+     "76",
+     "🛡️ Segurança",
+     "Sinais de demônio menor",
+     "Atenção do Inferno +1; missão de Ameaça demoníaca."
+    ],
+    [
+     "77",
+     "🛡️ Segurança",
+     "Contrabando em prédios vazios",
+     "−1 marca em Segurança; missão de Investigação."
+    ],
+    [
+     "78",
+     "🛡️ Segurança",
+     "Desaparecido no bairro velho",
+     "Missão de Resgate; se falhar, −1 marca em Moral."
+    ],
+    [
+     "79",
+     "🛡️ Segurança",
+     "Ameaça anônima a quem reconstrói",
+     "Oposição +1."
+    ],
+    [
+     "80",
+     "🛡️ Segurança",
+     "Voluntários para a vigia",
+     "+1 marca em Segurança."
+    ],
+    [
+     "81",
+     "🛡️ Segurança",
+     "Ex-soldados se oferecem",
+     "+1 marca em Segurança."
+    ],
+    [
+     "82",
+     "🛡️ Segurança",
+     "Ronda noturna funciona",
+     "+1 marca em Segurança e em Moral."
+    ],
+    [
+     "83",
+     "🛡️ Segurança",
+     "Bandido preso entrega o bando",
+     "+2 marcas em Segurança; Oposição −1."
+    ],
+    [
+     "84",
+     "🛡️ Segurança",
+     "Portão antigo restaurado",
+     "+1 marca em Segurança."
+    ],
+    [
+     "85",
+     "❤️ Moral",
+     "Luto na cidade",
+     "−1 marca em Moral."
+    ],
+    [
+     "86",
+     "❤️ Moral",
+     "Promessa da reconstrução falha",
+     "−1 marca em Moral."
+    ],
+    [
+     "87",
+     "❤️ Moral",
+     "Antigos contra novos moradores",
+     "Persuasão CD 13; falha, −1 marca em Moral."
+    ],
+    [
+     "88",
+     "❤️ Moral",
+     "Boato de que a cidade cai de novo",
+     "−1 marca em Moral."
+    ],
+    [
+     "89",
+     "❤️ Moral",
+     "Rumor contra os líderes",
+     "Desconfiança +1, ou −1 marca em Moral."
+    ],
+    [
+     "90",
+     "❤️ Moral",
+     "Festival antigo retomado",
+     "+1 marca em Moral e em Notoriedade."
+    ],
+    [
+     "91",
+     "❤️ Moral",
+     "Mutirão limpa uma praça",
+     "+1 marca em Moral."
+    ],
+    [
+     "92",
+     "❤️ Moral",
+     "Primeira loja reaberta num bairro",
+     "+1 marca em Moral e em Economia."
+    ],
+    [
+     "93",
+     "❤️ Moral",
+     "Crianças voltam a brincar na rua",
+     "+1 marca em Moral."
+    ],
+    [
+     "94",
+     "❤️ Moral",
+     "Música à noite na praça",
+     "+1 marca em Moral."
+    ],
+    [
+     "95",
+     "❤️ Moral",
+     "Homenagem aos caídos da queda",
+     "+2 marcas em Moral."
+    ],
+    [
+     "96",
+     "❤️ Moral",
+     "Discurso inspira a cidade",
+     "Atuação CD 14: +2 marcas em Moral."
+    ],
+    [
+     "97",
+     "❤️ Moral",
+     "Templo ganha fiéis",
+     "+1 marca em Moral."
+    ],
+    [
+     "98",
+     "❤️ Moral",
+     "A esperança contagia",
+     "+1 marca em Moral e em População."
+    ],
+    [
+     "99",
+     "⚡ Viradas",
+     "Grande oportunidade",
+     "+2 marcas na frente mais baixa."
+    ],
+    [
+     "100",
+     "⚡ Viradas",
+     "Grande crise",
+     "O relógio mais cheio enche; o Mestre narra a crise."
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,738 @@
+{
+ "frente": "caldeirao",
+ "nome": "Caldeirão Trovejante do Chopp",
+ "dono": "Fábio (Chopp)",
+ "pdf": "referencia/Chopp_Caldeirao_Trovejante.pdf",
+ "semana": [
+  "Fundos: a produção entra na despensa; frescos da semana anterior estragam.",
+  "Ações: até o limite do estágio.",
+  "Serviço: escolha o cardápio e role.",
+  "Caixa: receita, escambo e pagamento da equipe.",
+  "Evento do salão: role d20.",
+  "Relógios: Paladar e Fome.",
+  "Fechamento: marcas viram níveis; confira se o estágio sobe."
+ ],
+ "tabelas": {
+  "est": {
+   "titulo": "Estágios do Caldeirão",
+   "colunas": [
+    "Estágio",
+    "O que é",
+    "Ações por semana",
+    "Receita base",
+    "Para chegar aqui"
+   ],
+   "linhas": [
+    [
+     "0 · Portas fechadas",
+     "Mobiliado, sem serviço.",
+     "2",
+     "—",
+     "—"
+    ],
+    [
+     "1 · Cozinha de família",
+     "Abre para amigos, guilda e vizinhos; até 12 lugares.",
+     "2",
+     "20 PO",
+     "Despensa com 10 porções e alguém nos fundos"
+    ],
+    [
+     "2 · Casa aberta",
+     "Os 48 lugares do salão; cardápio fixo.",
+     "3",
+     "60 PO",
+     "Equipe de 2 e 3 receitas"
+    ],
+    [
+     "3 · Mesa de Draetyr",
+     "Referência na cidade; eventos e encomendas.",
+     "3",
+     "150 PO",
+     "Pertencimento 2 e 5 receitas"
+    ],
+    [
+     "4 · Destino",
+     "Viajantes desviam a rota por ele.",
+     "4",
+     "400 PO",
+     "Fama 3 e um prato ★★★★"
+    ],
+    [
+     "5 · Caldeirão lendário",
+     "Nome em Lykh e além.",
+     "4",
+     "1.000 PO",
+     "Fama 4, Pertencimento 4 e um prato ★★★★★"
+    ]
+   ]
+  },
+  "salao": {
+   "titulo": "O salão",
+   "colunas": [
+    "Parte",
+    "O que tem"
+   ],
+   "linhas": [
+    [
+     "Mesas",
+     "16 mesas: 8 de 4 lugares e 8 de 2, estofadas; 48 lugares"
+    ],
+    [
+     "Conforto",
+     "4 sofás, 6 poltronas, 1 mesa baixa central, 4 mesas de bebidas"
+    ],
+    [
+     "Ambiente",
+     "3 lustres de ferro, 6 lanternas, 8 candelabros, 3 tapetes grossos, 8 cortinas, o brasão do caldeirão com raios"
+    ],
+    [
+     "Entrada",
+     "3 cabideiros para capas e armas; estante com livros de culinária"
+    ],
+    [
+     "Cozinha",
+     "4 balcões reforçados, 12 prateleiras, 4 baús ornamentados"
+    ]
+   ]
+  },
+  "fundos": {
+   "titulo": "Os fundos",
+   "colunas": [
+    "Fundos",
+    "O que tem",
+    "Produção por semana"
+   ],
+   "linhas": [
+    [
+     "🐖 Curral",
+     "4 porcos, 6 galinhas, 2 vacas e 1 boi",
+     "+4 porções frescas"
+    ],
+    [
+     "🐟 Aquários",
+     "3, com peixes de água doce e salgada",
+     "+3 porções frescas"
+    ],
+    [
+     "🌿 Horta (2º andar)",
+     "Ervas medicinais e venenosas",
+     "+3 porções de ervas"
+    ]
+   ]
+  },
+  "ingr": {
+   "titulo": "Ingredientes por continente",
+   "colunas": [
+    "De onde",
+    "O que vem",
+    "Tipo",
+    "Preço"
+   ],
+   "linhas": [
+    [
+     "Lykh",
+     "Agropecuária: carnes, grãos e laticínios",
+     "Comum",
+     "2 PO a porção"
+    ],
+    [
+     "O porto e o mar",
+     "Peixes e frutos do mar",
+     "Comum",
+     "2 PO a porção"
+    ],
+    [
+     "Núk",
+     "Ervas e plantas que não existem em outro lugar",
+     "Raro",
+     "50 PO"
+    ],
+    [
+     "Yvril",
+     "Carne de monstro, da caça",
+     "Raro",
+     "50 PO"
+    ],
+    [
+     "Kroka",
+     "Sal de rocha e fermentos (proposta)",
+     "Raro",
+     "50 PO"
+    ],
+    [
+     "Shakal",
+     "Grãos e especiarias de exportação (proposta)",
+     "Raro",
+     "50 PO"
+    ],
+    [
+     "Elduran",
+     "Utensílios de cozinha encantados",
+     "Equipamento",
+     "500 PO"
+    ]
+   ]
+  },
+  "obter": {
+   "titulo": "Como obter ingredientes",
+   "colunas": [
+    "Como obter",
+    "Como funciona"
+   ],
+   "linhas": [
+    [
+     "Comprar",
+     "Comuns em Draetyr; raros só com Rotas 2+ na cidade ou de viajante (evento)"
+    ],
+    [
+     "Trocar",
+     "Porções por porções, ou comida por trabalho"
+    ],
+    [
+     "Expedição",
+     "Ação: o Chopp vai buscar; vira missão da guilda ou cena"
+    ],
+    [
+     "Contrabando",
+     "Um trabalho do Felnun pode trazer raros"
+    ]
+   ]
+  },
+  "tipos": {
+   "titulo": "Tipos de receita",
+   "colunas": [
+    "Tipo",
+    "O que é",
+    "★",
+    "Ingredientes"
+   ],
+   "linhas": [
+    [
+     "🍞 Prato do dia",
+     "Comida simples e farta",
+     "★ a ★★",
+     "1 porção comum por 5 clientes"
+    ],
+    [
+     "🍲 Prato da casa",
+     "A assinatura do Caldeirão",
+     "★★ a ★★★★",
+     "Comuns e frescos"
+    ],
+    [
+     "🍺 Bebida",
+     "Kit de Cervejeiro",
+     "★ a ★★★",
+     "Grãos e ervas"
+    ],
+    [
+     "🌿 Remédio de ervas",
+     "Kit de Herbalismo, com a horta",
+     "★ a ★★★",
+     "Ervas"
+    ],
+    [
+     "🥘 Banquete",
+     "Para eventos e encomendas",
+     "★★★ a ★★★★★",
+     "1 raro ou mais"
+    ],
+    [
+     "⚡ Prato do Fluxo",
+     "Só o Chopp faz: a comida carrega um elemento",
+     "★★★★ e ★★★★★",
+     "1 raro; 1 por semana"
+    ]
+   ]
+  },
+  "fluxo": {
+   "titulo": "Pratos do Fluxo",
+   "colunas": [
+    "Prato do Fluxo",
+    "Quem come ganha"
+   ],
+   "linhas": [
+    [
+     "🔥 Fogo",
+     "Resistência a frio por 8 horas"
+    ],
+    [
+     "💧 Água",
+     "Vantagem em salvaguardas contra veneno por 8 horas"
+    ],
+    [
+     "🌪️ Ar",
+     "+3 m de deslocamento por 8 horas"
+    ],
+    [
+     "🪨 Terra",
+     "PV temporários iguais ao nível do Chopp"
+    ]
+   ]
+  },
+  "card": {
+   "titulo": "Cardápio do serviço",
+   "colunas": [
+    "Cardápio",
+    "CD",
+    "Consome",
+    "Receita"
+   ],
+   "linhas": [
+    [
+     "Simples",
+     "10",
+     "5 × Estágio porções comuns",
+     "×1"
+    ],
+    [
+     "Caprichado",
+     "15",
+     "5 × Estágio, com frescos e um prato da casa",
+     "×1,5"
+    ],
+    [
+     "Ousado",
+     "20",
+     "5 × Estágio e 1 raro",
+     "×2"
+    ]
+   ]
+  },
+  "res": {
+   "titulo": "Resultado do serviço",
+   "colunas": [
+    "Resultado",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "Sucesso por 5+",
+     "Casa cheia: receita ×1,5 · +1 marca em Pertencimento · +1 em Fama"
+    ],
+    [
+     "Sucesso",
+     "Receita normal · +1 marca em Pertencimento (Caprichado ou Ousado: também +1 em Fama)"
+    ],
+    [
+     "Falha",
+     "Meia casa: receita ×0,5"
+    ],
+    [
+     "Falha por 5+",
+     "Noite ruim: −1 marca em Fama; metade das porções se perde"
+    ],
+    [
+     "20 natural",
+     "Prato memorável: um prato do cardápio ganha +1 ★"
+    ],
+    [
+     "1 natural",
+     "Incidente: role o evento 1 a 5 (d6, com 6 = nada)"
+    ]
+   ]
+  },
+  "func": {
+   "titulo": "Funções da equipe",
+   "colunas": [
+    "Função",
+    "O que faz"
+   ],
+   "linhas": [
+    [
+     "🔪 Cozinha",
+     "+1 no serviço; cozinha quando o Chopp viaja (+5)"
+    ],
+    [
+     "🍽️ Salão",
+     "+1 no serviço"
+    ],
+    [
+     "🐓 Fundos",
+     "Os fundos produzem sem o Chopp"
+    ],
+    [
+     "🍺 Bar",
+     "Bebidas da casa sem gastar ação"
+    ],
+    [
+     "🎻 Música",
+     "+1 marca em Fama por semana com a casa aberta"
+    ]
+   ]
+  },
+  "quem": {
+   "titulo": "Quem aparece para trabalhar (d10)",
+   "colunas": [
+    "d10",
+    "Quem aparece"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Refugiado anão que cozinhava em Kroka"
+    ],
+    [
+     "2",
+     "Cozinheira da era de ouro de Draetyr"
+    ],
+    [
+     "3",
+     "Pescador do porto"
+    ],
+    [
+     "4",
+     "Aprendiz que quer ser cozinheiro"
+    ],
+    [
+     "5",
+     "Bardo que toca por comida"
+    ],
+    [
+     "6",
+     "Ex-soldado que só sabe descascar"
+    ],
+    [
+     "7",
+     "Herbalista"
+    ],
+    [
+     "8",
+     "Cervejeiro"
+    ],
+    [
+     "9",
+     "Fazendeiro"
+    ],
+    [
+     "10",
+     "Alguém que ninguém quer contratar"
+    ]
+   ]
+  },
+  "pert": {
+   "titulo": "Pertencimento",
+   "colunas": [
+    "Nível",
+    "Estado",
+    "Abre"
+   ],
+   "linhas": [
+    [
+     "0",
+     "Casa vazia",
+     "—"
+    ],
+    [
+     "1",
+     "Os vizinhos entram",
+     "Contratar com vantagem"
+    ],
+    [
+     "2",
+     "Lugar de encontro",
+     "Mesa para todos custa metade"
+    ],
+    [
+     "3",
+     "Casa de todos",
+     "Refugiados, aventureiros e nobres à mesma mesa: +1 marca em Moral de Draetyr a cada 4 semanas"
+    ],
+    [
+     "4",
+     "Coração do bairro",
+     "Voluntários: +1 ação por semana"
+    ],
+    [
+     "5",
+     "Lar de Draetyr",
+     "Quem já comeu ali defende a casa"
+    ]
+   ]
+  },
+  "fama": {
+   "titulo": "Fama",
+   "colunas": [
+    "Nível",
+    "Estado",
+    "Abre"
+   ],
+   "linhas": [
+    [
+     "0",
+     "Ninguém sabe",
+     "—"
+    ],
+    [
+     "1",
+     "A vizinhança fala",
+     "—"
+    ],
+    [
+     "2",
+     "Conhecido em Draetyr",
+     "Aventureiros da guilda vêm comemorar"
+    ],
+    [
+     "3",
+     "Viajantes desviam a rota",
+     "+1 marca em Notoriedade de Draetyr a cada 4 semanas"
+    ],
+    [
+     "4",
+     "Comentado em Lykh",
+     "Nobres pedem reserva: receita ×1,5"
+    ],
+    [
+     "5",
+     "Lendário",
+     "Convites de outros continentes"
+    ]
+   ]
+  },
+  "rel": {
+   "titulo": "Relógios do Caldeirão",
+   "colunas": [
+    "Relógio",
+    "Avança 1",
+    "Recua 1",
+    "Cheio"
+   ],
+   "linhas": [
+    [
+     "👅 Paladar",
+     "Cada Prato do Fluxo servido · evento 18",
+     "Uma semana sem Prato do Fluxo, com Pertencimento 3+",
+     "Alguém poderoso percebe o que a comida do Chopp faz e vem provar (o Mestre decide quem)"
+    ],
+    [
+     "🥣 Fome",
+     "Inverno · Moral ou População de Draetyr caem · eventos",
+     "Mesa para todos",
+     "Crise de fome: −1 nível em Pertencimento e em Moral de Draetyr"
+    ]
+   ]
+  },
+  "ev": {
+   "titulo": "Eventos do salão (d20)",
+   "colunas": [
+    "d20",
+    "Acontece"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Fogo na cozinha: −1d6 porções; sem serviço se não for apagado (Atletismo CD 12)"
+    ],
+    [
+     "2",
+     "Fornecedor some: sem compras nesta semana"
+    ],
+    [
+     "3",
+     "Animal adoece no curral: fundos produzem metade por 2 semanas"
+    ],
+    [
+     "4",
+     "Cliente reclama alto: Persuasão CD 13, ou −1 marca em Fama"
+    ],
+    [
+     "5",
+     "Ladrão na despensa: −2d4 porções"
+    ],
+    [
+     "6",
+     "Cobrança inesperada: −50 × (E + 1) PO"
+    ],
+    [
+     "7",
+     "Briga no salão: o Chopp separa; sem ele, −1 marca em Pertencimento"
+    ],
+    [
+     "8",
+     "Semana comum"
+    ],
+    [
+     "9",
+     "Refugiados com fome à porta: Mesa para todos com o dobro do efeito"
+    ],
+    [
+     "10",
+     "Viajante paga com um mapa: pista de um ingrediente raro"
+    ],
+    [
+     "11",
+     "Aventureiros comemoram: +20 × (E + 1) PO"
+    ],
+    [
+     "12",
+     "Bardo pede para tocar: +1 marca em Fama; pode virar gravação da rádio"
+    ],
+    [
+     "13",
+     "Pescador traz algo estranho do mar: 1 ingrediente raro"
+    ],
+    [
+     "14",
+     "Crítico de outra cidade janta: serviço com CD +2; sucesso, +2 marcas em Fama"
+    ],
+    [
+     "15",
+     "Um rival culinário propõe duelo de cozinha: vencer dá +2 marcas em Fama"
+    ],
+    [
+     "16",
+     "Nobre de passagem reserva o salão: +200 × (E + 1) PO com cardápio Caprichado"
+    ],
+    [
+     "17",
+     "Casamento ou festa de bairro: +1 marca em Pertencimento e receita ×1,5"
+    ],
+    [
+     "18",
+     "Alguém que nunca sentiu gosto prova e sente: +1 marca em Fama; Paladar +1"
+    ],
+    [
+     "19",
+     "Encomenda de banquete para outra cidade (Fama 3+): +500 PO; +1 marca em Rotas de Draetyr"
+    ],
+    [
+     "20",
+     "Visita que muda tudo (Mestre)"
+    ]
+   ]
+  },
+  "acoes": {
+   "titulo": "Ações do Caldeirão",
+   "colunas": [
+    "Ação",
+    "Teste",
+    "Resultado"
+   ],
+   "linhas": [
+    [
+     "📖 Criar receita",
+     "Cozinha · CD 10 + 3 × ★",
+     "Prato novo no livro"
+    ],
+    [
+     "🧺 Abastecer",
+     "Persuasão ou Sobrevivência · CD 12",
+     "Comprar ou trocar ingredientes"
+    ],
+    [
+     "🗺️ Expedição",
+     "Sobrevivência · CD do Mestre",
+     "1d4 raros; ou vira missão ou cena"
+    ],
+    [
+     "🫕 Mesa para todos",
+     "Sem teste",
+     "Pertencimento e Fome"
+    ],
+    [
+     "👨‍🍳 Contratar",
+     "Persuasão · CD 10 + equipe",
+     "Pessoa nova na equipe"
+    ],
+    [
+     "🎉 Evento ou banquete",
+     "Cozinha · CD 15 · Estágio 3+",
+     "+2 marcas em Fama; receita ×2 na semana"
+    ],
+    [
+     "🌿 Cuidar dos fundos",
+     "Kit de Herbalismo ou Sobrevivência · CD 10",
+     "Fundos produzem o dobro"
+    ]
+   ]
+  },
+  "liga": {
+   "titulo": "Ligações",
+   "colunas": [
+    "No Caldeirão",
+    "Fora dele"
+   ],
+   "linhas": [
+    [
+     "Portas abertas (Estágio 2)",
+     "Projeto \"Caldeirão Trovejante\" da cidade: +2 marcas em Moral"
+    ],
+    [
+     "Pertencimento 3+",
+     "+1 marca em Moral a cada 4 semanas"
+    ],
+    [
+     "Fama 3+",
+     "+1 marca em Notoriedade a cada 4 semanas"
+    ],
+    [
+     "Mesa para todos com refugiados",
+     "+1 marca em Moral"
+    ],
+    [
+     "Encomenda para outra cidade",
+     "+1 marca em Rotas"
+    ],
+    [
+     "Grupo da guilda que come antes de sair",
+     "+1 na missão (1 por semana)"
+    ],
+    [
+     "Show ao vivo da rádio no salão",
+     "+1 marca em Fama do Caldeirão"
+    ]
+   ]
+  },
+  "hoje": {
+   "titulo": "Estado de hoje (texto)",
+   "colunas": [
+    "Medida",
+    "Valor"
+   ],
+   "linhas": [
+    [
+     "Estágio",
+     "0 · Portas fechadas (a confirmar)"
+    ],
+    [
+     "Pertencimento",
+     "0"
+    ],
+    [
+     "Fama",
+     "0"
+    ],
+    [
+     "Receitas",
+     "a definir com o Fábio"
+    ],
+    [
+     "Despensa",
+     "Peixe Gigante e temperos (se forem para a cozinha)"
+    ],
+    [
+     "Equipe",
+     "a confirmar"
+    ],
+    [
+     "Caixa",
+     "a definir"
+    ],
+    [
+     "Paladar",
+     "1/6 (a Mandy já sentiu gosto)"
+    ],
+    [
+     "Fome",
+     "2/6"
+    ],
+    [
+     "O Chopp",
+     "em Lavenya"
+    ]
+   ]
+  }
+ }
+}

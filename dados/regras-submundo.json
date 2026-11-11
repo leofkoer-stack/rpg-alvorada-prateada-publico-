@@ -1,0 +1,1000 @@
+{
+ "frente": "submundo",
+ "nome": "Contatos do submundo do Felnun",
+ "dono": "Kaio (Felnun)",
+ "pdf": "referencia/Felnun_Contatos_do_Submundo.pdf",
+ "semana": [
+  "Bolsa: receba os pagamentos e pague as dívidas em PO.",
+  "Quadro: role os trabalhos da semana.",
+  "Ações: até o limite do Respeito.",
+  "A noite: role d12.",
+  "Relógios: Exposição e Caçadores.",
+  "Fechamento: marcas viram níveis; anote favores a receber e devidos."
+ ],
+ "tabelas": {
+  "resp": {
+   "titulo": "Respeito",
+   "colunas": [
+    "Respeito",
+    "O que abre",
+    "Ações por semana"
+   ],
+   "linhas": [
+    [
+     "0 · Desconhecido",
+     "Só trabalhos ★",
+     "2"
+    ],
+    [
+     "1 · Rosto conhecido",
+     "Os ratos falam com ele; trabalhos até ★★",
+     "2"
+    ],
+    [
+     "2 · Confiável",
+     "Esconderijo em zona com Célula; trabalhos até ★★★",
+     "3"
+    ],
+    [
+     "3 · Nome respeitado",
+     "As guildas das sombras o tratam como par; pode repassar contratos",
+     "3"
+    ],
+    [
+     "4 · Voz das sombras",
+     "Media disputas entre guildas; 1 vez por mês uma guilda olha para o outro lado",
+     "4"
+    ],
+    [
+     "5 · Lenda",
+     "Uma palavra dele abre ou fecha a cidade para as sombras; trabalhos ★★★★★",
+     "4"
+    ]
+   ]
+  },
+  "zon": {
+   "titulo": "Zonas",
+   "colunas": [
+    "Zona",
+    "Onde",
+    "Rede hoje",
+    "Quem ele conhece"
+   ],
+   "linhas": [
+    [
+     "Draetyr",
+     "Lykh · sul",
+     "2 · Célula",
+     "Os assassinos de Draetyr com quem ele tem conexão"
+    ],
+    [
+     "Svenya",
+     "Lykh · sul",
+     "0",
+     "—"
+    ],
+    [
+     "Jura",
+     "Lykh · sul",
+     "0",
+     "—"
+    ],
+    [
+     "Jyviro",
+     "Lykh · sul",
+     "0",
+     "—"
+    ],
+    [
+     "Lavenya",
+     "Lykh · centro",
+     "0",
+     "—"
+    ],
+    [
+     "Khaev",
+     "Lykh · norte",
+     "0",
+     "—"
+    ],
+    [
+     "Raenya",
+     "Lykh · norte",
+     "0",
+     "—"
+    ],
+    [
+     "Tyra",
+     "Lykh · norte",
+     "0",
+     "—"
+    ],
+    [
+     "Kroka",
+     "continente",
+     "0",
+     "—"
+    ],
+    [
+     "Yvril",
+     "continente",
+     "0",
+     "—"
+    ],
+    [
+     "Núk",
+     "continente",
+     "0",
+     "—"
+    ],
+    [
+     "Elduran",
+     "continente",
+     "0",
+     "—"
+    ],
+    [
+     "Shakal",
+     "continente",
+     "0",
+     "—"
+    ]
+   ]
+  },
+  "rede": {
+   "titulo": "Rede por zona",
+   "colunas": [
+    "Rede",
+    "O que tem",
+    "Para abrir"
+   ],
+   "linhas": [
+    [
+     "0 · Nada",
+     "Nenhum contato ali.",
+     "—"
+    ],
+    [
+     "1 · Informante",
+     "Ouvir a rede ali.",
+     "1 favor ou 100 PO"
+    ],
+    [
+     "2 · Célula",
+     "Trabalhos dali chegam ao quadro; esconderijo; delegar sem viajar.",
+     "2 favores ou 500 PO"
+    ],
+    [
+     "3 · Ninho",
+     "Exposição ali sobe 1 a menos; +1 trabalho no quadro.",
+     "3 favores ou 2.000 PO; Respeito 3"
+    ]
+   ]
+  },
+  "manda": {
+   "titulo": "Quem manda nas sombras (d6)",
+   "colunas": [
+    "d6",
+    "Quem manda nas sombras da zona"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Ninguém: terreno livre"
+    ],
+    [
+     "2",
+     "Uma guilda de ladrões"
+    ],
+    [
+     "3",
+     "Uma guilda de assassinos"
+    ],
+    [
+     "4",
+     "Mercenários"
+    ],
+    [
+     "5",
+     "Um oficial corrupto"
+    ],
+    [
+     "6",
+     "Uma família criminosa"
+    ]
+   ]
+  },
+  "tier": {
+   "titulo": "Contatos por nível",
+   "colunas": [
+    "Nível",
+    "Quem é",
+    "CD para recrutar",
+    "Bônus num trabalho"
+   ],
+   "linhas": [
+    [
+     "★ Rato",
+     "Informante de rua",
+     "10",
+     "+3"
+    ],
+    [
+     "★★ Faca",
+     "Ladrão, contrabandista, falsário",
+     "13",
+     "+5"
+    ],
+    [
+     "★★★ Lâmina",
+     "Assassino ou mercenário veterano",
+     "16",
+     "+7"
+    ],
+    [
+     "★★★★ Mão",
+     "Chefe de célula, oficial de alto cargo",
+     "19",
+     "+9"
+    ],
+    [
+     "★★★★★ Garra",
+     "Mestre de uma guilda das sombras",
+     "22",
+     "+11"
+    ]
+   ]
+  },
+  "quem": {
+   "titulo": "Quem é o contato (d12)",
+   "colunas": [
+    "d12",
+    "Quem é"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Rato de porto"
+    ],
+    [
+     "2",
+     "Taberneiro que ouve tudo"
+    ],
+    [
+     "3",
+     "Falsário"
+    ],
+    [
+     "4",
+     "Guarda que fecha os olhos"
+    ],
+    [
+     "5",
+     "Ladra de telhados"
+    ],
+    [
+     "6",
+     "Mercenário aposentado"
+    ],
+    [
+     "7",
+     "Coveiro"
+    ],
+    [
+     "8",
+     "Agiota"
+    ],
+    [
+     "9",
+     "Contrabandista"
+    ],
+    [
+     "10",
+     "Envenenador de aluguel"
+    ],
+    [
+     "11",
+     "Mendigo que vê tudo"
+    ],
+    [
+     "12",
+     "Sobrevivente de uma guilda que ruiu"
+    ]
+   ]
+  },
+  "quer": {
+   "titulo": "O que o contato quer (d8)",
+   "colunas": [
+    "d8",
+    "O que quer"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Dinheiro"
+    ],
+    [
+     "2",
+     "Proteção"
+    ],
+    [
+     "3",
+     "Sair da cidade"
+    ],
+    [
+     "4",
+     "Vingança"
+    ],
+    [
+     "5",
+     "Um documento"
+    ],
+    [
+     "6",
+     "Que alguém suma (o Kaio decide)"
+    ],
+    [
+     "7",
+     "Respeito"
+    ],
+    [
+     "8",
+     "Nada agora: guarda o favor"
+    ]
+   ]
+  },
+  "jeito": {
+   "titulo": "Jeito do contato (d6)",
+   "colunas": [
+    "d6",
+    "Jeito"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Medroso"
+    ],
+    [
+     "2",
+     "Ganancioso"
+    ],
+    [
+     "3",
+     "Leal até o fim"
+    ],
+    [
+     "4",
+     "Fala demais"
+    ],
+    [
+     "5",
+     "Frio"
+    ],
+    [
+     "6",
+     "Tem dois patrões"
+    ]
+   ]
+  },
+  "fav": {
+   "titulo": "Favores",
+   "colunas": [
+    "Gasto",
+    "O que compra"
+   ],
+   "linhas": [
+    [
+     "1 favor",
+     "Um documento falso · um esconderijo por uma semana · uma informação específica"
+    ],
+    [
+     "2 favores",
+     "Tirar alguém de uma prisão comum · uma rota de fuga · apagar um registro (Exposição −1)"
+    ],
+    [
+     "3 favores",
+     "Uma guilda inteira olha para o outro lado · um contato Mão age por ele"
+    ]
+   ]
+  },
+  "ini": {
+   "titulo": "Contatos iniciais",
+   "colunas": [
+    "Contato",
+    "Nível",
+    "Confiança",
+    "Base",
+    "Estado"
+   ],
+   "linhas": [
+    [
+     "Os assassinos de Draetyr",
+     "★★★ Lâmina",
+     "2",
+     "Conexão pessoal; investigam o contrato do Lucas a pedido dele",
+     "a confirmar"
+    ],
+    [
+     "Os sobreviventes da Garra Silenciosa",
+     "★★★ Lâmina",
+     "3",
+     "\"São minha família\" (Kaio)",
+     "onde estão: a confirmar"
+    ]
+   ]
+  },
+  "trab": {
+   "titulo": "Trabalhos (d20)",
+   "colunas": [
+    "d20",
+    "Trabalho",
+    "Perícia",
+    "Exp."
+   ],
+   "linhas": [
+    [
+     "1",
+     "Achar alguém que sumiu",
+     "Investigação",
+     "0"
+    ],
+    [
+     "2",
+     "Vigiar alguém por uma semana",
+     "Furtividade",
+     "0"
+    ],
+    [
+     "3",
+     "Entregar uma mensagem cifrada",
+     "Furtividade",
+     "0"
+    ],
+    [
+     "4",
+     "Recuperar um objeto roubado",
+     "Investigação",
+     "+1"
+    ],
+    [
+     "5",
+     "Roubar um documento",
+     "Furtividade",
+     "+1"
+    ],
+    [
+     "6",
+     "Contrabando pela estrada ou pelo mar",
+     "Enganação",
+     "+1"
+    ],
+    [
+     "7",
+     "Escolta clandestina",
+     "Percepção",
+     "0"
+    ],
+    [
+     "8",
+     "Proteger uma testemunha",
+     "Intuição",
+     "0"
+    ],
+    [
+     "9",
+     "Tirar alguém da cidade sem ser visto",
+     "Furtividade",
+     "+1"
+    ],
+    [
+     "10",
+     "Intimidar um devedor",
+     "Intimidação",
+     "+1"
+    ],
+    [
+     "11",
+     "Sabotar um negócio",
+     "Furtividade",
+     "+1"
+    ],
+    [
+     "12",
+     "Plantar um boato",
+     "Enganação",
+     "0"
+    ],
+    [
+     "13",
+     "Desmascarar um traidor numa guilda",
+     "Intuição",
+     "0"
+    ],
+    [
+     "14",
+     "Resgatar um preso",
+     "Atletismo",
+     "+2"
+    ],
+    [
+     "15",
+     "Falsificar papéis",
+     "contato Faca",
+     "+1"
+    ],
+    [
+     "16",
+     "Infiltrar uma festa nobre",
+     "Enganação",
+     "+1"
+    ],
+    [
+     "17",
+     "Desmontar uma rede rival",
+     "combate",
+     "+2"
+    ],
+    [
+     "18",
+     "Despistar um caçador de recompensas",
+     "Furtividade",
+     "0"
+    ],
+    [
+     "19",
+     "Contrato de morte",
+     "o Kaio decide",
+     "+2"
+    ],
+    [
+     "20",
+     "Trabalho de um nome grande",
+     "Mestre",
+     "+2"
+    ]
+   ]
+  },
+  "pt": {
+   "titulo": "Nível do trabalho",
+   "colunas": [
+    "Nível",
+    "d20 + Respeito",
+    "CD",
+    "Pagamento"
+   ],
+   "linhas": [
+    [
+     "★",
+     "10 ou menos",
+     "10",
+     "1d4 × 20 PO"
+    ],
+    [
+     "★★",
+     "11 a 15",
+     "13",
+     "1d6 × 50 PO"
+    ],
+    [
+     "★★★",
+     "16 a 19",
+     "16",
+     "2d6 × 100 PO"
+    ],
+    [
+     "★★★★",
+     "20 a 22",
+     "19",
+     "2d6 × 300 PO"
+    ],
+    [
+     "★★★★★",
+     "23 ou mais",
+     "22",
+     "2d6 × 1.000 PO"
+    ]
+   ]
+  },
+  "res": {
+   "titulo": "Resultado do trabalho",
+   "colunas": [
+    "Resultado",
+    "Efeito"
+   ],
+   "linhas": [
+    [
+     "Sucesso por 5+",
+     "Pagamento + 1 favor · +1 marca em Respeito"
+    ],
+    [
+     "Sucesso",
+     "Pagamento · +1 marca em Respeito se ★★★ ou acima"
+    ],
+    [
+     "Falha",
+     "Sem pagamento · Exposição +1"
+    ],
+    [
+     "Falha por 5+",
+     "Sem pagamento · Exposição +2 · o contato envolvido perde 1 de confiança"
+    ],
+    [
+     "20 natural",
+     "Como sucesso por 5+, e um contato novo do nível do trabalho"
+    ],
+    [
+     "1 natural",
+     "Role Revés (d8)"
+    ]
+   ]
+  },
+  "rev": {
+   "titulo": "Revés (d8)",
+   "colunas": [
+    "d8",
+    "Revés"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Rosto visto: Exposição +2"
+    ],
+    [
+     "2",
+     "Contato preso: some até alguém tirá-lo (2 favores)"
+    ],
+    [
+     "3",
+     "Traição: um contato de confiança 1 vende o Felnun"
+    ],
+    [
+     "4",
+     "Ferido: fora 1 semana"
+    ],
+    [
+     "5",
+     "Dívida nova: deve 1 favor a quem o salvou"
+    ],
+    [
+     "6",
+     "Alguém próximo é ameaçado (Mestre)"
+    ],
+    [
+     "7",
+     "Os caçadores sentem o cheiro: Caçadores +2"
+    ],
+    [
+     "8",
+     "Vira cena: o Mestre leva o trabalho para a mesa"
+    ]
+   ]
+  },
+  "sus": {
+   "titulo": "Sussurros (d12)",
+   "colunas": [
+    "d12",
+    "Sussurro"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Fofoca de taverna: vale 20 PO, ou vira pauta Comum para a rádio"
+    ],
+    [
+     "2",
+     "Rota e horário da guarda: próximo trabalho na zona com vantagem"
+    ],
+    [
+     "3",
+     "Quem deve a quem: +1 favor a receber"
+    ],
+    [
+     "4",
+     "Carga chegando: um trabalho de contrabando ★★ entra no quadro"
+    ],
+    [
+     "5",
+     "Alguém procura alguém: trabalho ou ameaça (Mestre)"
+    ],
+    [
+     "6",
+     "Segredo de um nobre: vale 1 favor, ou vira desdobramento para a rádio"
+    ],
+    [
+     "7",
+     "Esconderijo de uma rede rival"
+    ],
+    [
+     "8",
+     "Plano de golpe ou atentado: vira missão no quadro da guilda"
+    ],
+    [
+     "9",
+     "Pista de um objeto perdido: +1 segmento num rastro de item"
+    ],
+    [
+     "10",
+     "Quem caça a linhagem: Caçadores −1"
+    ],
+    [
+     "11",
+     "Trabalho grande vindo: o próximo quadro tem um trabalho um nível acima"
+    ],
+    [
+     "12",
+     "Uma verdade (Mestre)"
+    ]
+   ]
+  },
+  "uso": {
+   "titulo": "Usos do sussurro",
+   "colunas": [
+    "Uso",
+    "Como"
+   ],
+   "linhas": [
+    [
+     "Vender",
+     "Em PO, para quem quer saber"
+    ],
+    [
+     "Trocar",
+     "Por 1 favor"
+    ],
+    [
+     "Dar à rádio",
+     "Vira pauta ou desdobramento; com a fonte reconhecível no ar, Exposição +1 e o contato perde 1 de confiança"
+    ],
+    [
+     "Dar à guilda",
+     "Vira missão no quadro"
+    ],
+    [
+     "Usar",
+     "O Felnun age com o que sabe"
+    ]
+   ]
+  },
+  "ras": {
+   "titulo": "Rastros",
+   "colunas": [
+    "Rastro",
+    "O que é",
+    "Segmentos",
+    "Estado"
+   ],
+   "linhas": [
+    [
+     "O contrato do Lucas",
+     "Achar e destruir o contrato que prende a alma do Lucas ao Ignatus",
+     "6",
+     "Em andamento com os assassinos de Draetyr"
+    ],
+    [
+     "O Rob",
+     "O alvo que ele declarou na Sessão 01",
+     "6",
+     "Aberto"
+    ],
+    [
+     "As pistolas de família",
+     "Confiscadas no sequestro e vendidas por terceiros",
+     "6",
+     "Aberto"
+    ],
+    [
+     "A máscara original",
+     "Roubada no sequestro",
+     "4",
+     "Aberto"
+    ],
+    [
+     "Quem estava por trás do sequestro",
+     "A guilda maior que avaliava os sequestradores",
+     "8",
+     "Aberto"
+    ]
+   ]
+  },
+  "rel": {
+   "titulo": "Relógios do submundo",
+   "colunas": [
+    "Relógio",
+    "Avança",
+    "Recua 1",
+    "Cheio"
+   ],
+   "linhas": [
+    [
+     "👁️ Exposição",
+     "Falha em trabalho · trabalho de Exp. +2 · fonte reconhecível no ar",
+     "Apagar rastros com sucesso · 2 favores",
+     "Queimado: −1 Rede numa zona, ou um contato preso, ou a guarda conhece a máscara (Mestre)"
+    ],
+    [
+     "🩸 Caçadores",
+     "Respeito sobe de nível · rede numa zona nova · evento",
+     "Proteger os seus com sucesso · sussurro 10",
+     "Emboscada: quem quer o sangue da linhagem ataca o Felnun ou alguém próximo; vira cena"
+    ]
+   ]
+  },
+  "noite": {
+   "titulo": "A noite (d12)",
+   "colunas": [
+    "d12",
+    "Acontece"
+   ],
+   "linhas": [
+    [
+     "1",
+     "Batida numa célula: Exposição +1; um contato some por 1 semana"
+    ],
+    [
+     "2",
+     "Um contato cobra um favor"
+    ],
+    [
+     "3",
+     "Briga entre guildas: mediar (Persuasão CD 15) dá +1 marca em Respeito"
+    ],
+    [
+     "4",
+     "Alguém usa o nome dele: −1 marca em Respeito, ou Exposição +1"
+    ],
+    [
+     "5",
+     "Recompensa pela cabeça de alguém: contrato de morte (o Kaio decide)"
+    ],
+    [
+     "6",
+     "Noite quieta"
+    ],
+    [
+     "7",
+     "Um rato traz algo de graça: um sussurro"
+    ],
+    [
+     "8",
+     "Rosto novo pergunta pela linhagem: Caçadores +1"
+    ],
+    [
+     "9",
+     "Guarda corrupto oferece acordo: Exposição −1 por 1 favor"
+    ],
+    [
+     "10",
+     "Alguém de uma guilda que ruiu aparece: contato ★★★ novo (Mestre)"
+    ],
+    [
+     "11",
+     "Mercadoria perdida: −1d4 × 50 PO"
+    ],
+    [
+     "12",
+     "Uma porta se abre: +1 marca de Rede numa zona"
+    ]
+   ]
+  },
+  "acoes": {
+   "titulo": "Ações do submundo",
+   "colunas": [
+    "Ação",
+    "Teste",
+    "Resultado"
+   ],
+   "linhas": [
+    [
+     "🕯️ Ouvir a rede",
+     "Investigação, Percepção ou Intuição · CD 12",
+     "Um sussurro"
+    ],
+    [
+     "🤝 Cultivar contato",
+     "Perícia livre · CD do nível",
+     "Contato novo ou +1 de confiança"
+    ],
+    [
+     "🕸️ Estender a rede",
+     "Persuasão ou Intimidação · CD 10 + 2 × nível",
+     "+1 marca de Rede numa zona"
+    ],
+    [
+     "📜 Pegar um trabalho",
+     "A perícia do trabalho",
+     "Pagamento, favor, Respeito"
+    ],
+    [
+     "🔎 Seguir um rastro",
+     "Perícia livre · CD 15",
+     "+1 segmento"
+    ],
+    [
+     "🧹 Apagar rastros",
+     "Furtividade ou Enganação · CD 13",
+     "Exposição −1"
+    ],
+    [
+     "🛡️ Proteger os seus",
+     "Percepção ou Intuição · CD 13",
+     "Caçadores −1"
+    ],
+    [
+     "🏟️ Treinar no Coliseu",
+     "Sem teste",
+     "Vantagem no próximo trabalho de combate"
+    ]
+   ]
+  },
+  "liga": {
+   "titulo": "Ligações",
+   "colunas": [
+    "Nas sombras",
+    "Fora delas"
+   ],
+   "linhas": [
+    [
+     "Sussurro dado à rádio",
+     "Pauta ou desdobramento da Mandy"
+    ],
+    [
+     "Plano de golpe ou atentado",
+     "Missão no quadro da guilda"
+    ],
+    [
+     "Desmontar uma rede rival em Draetyr",
+     "Oposição −1 e +1 marca em Segurança da cidade"
+    ],
+    [
+     "Contrabando que passa por Draetyr",
+     "+1 marca em Economia da cidade; Exposição +1"
+    ],
+    [
+     "Exposição cheia em Draetyr",
+     "Desconfiança da capital +1"
+    ]
+   ]
+  },
+  "hoje": {
+   "titulo": "Estado de hoje (texto)",
+   "colunas": [
+    "Medida",
+    "Valor"
+   ],
+   "linhas": [
+    [
+     "Respeito",
+     "1 · Rosto conhecido"
+    ],
+    [
+     "Rede",
+     "Draetyr 2 · demais 0"
+    ],
+    [
+     "Contatos",
+     "Assassinos de Draetyr · sobreviventes da Garra Silenciosa"
+    ],
+    [
+     "Favores",
+     "a receber 0 · devidos 0"
+    ],
+    [
+     "Bolsa",
+     "a definir"
+    ],
+    [
+     "Exposição",
+     "1/6"
+    ],
+    [
+     "Caçadores",
+     "1/6"
+    ],
+    [
+     "Rastros",
+     "Contrato do Lucas 0/6 · Rob 0/6 · Pistolas 0/6 · Máscara 0/4 · Sequestro 0/8"
+    ]
+   ]
+  }
+ }
+}
