@@ -64,7 +64,7 @@ function rolar(b: Banco, a: Acesso, p: any) {
   if (p.tipo === "teste") {
     const r = rolarTeste({ bonus: Number(p.bonus) || 0, cd: Number(p.cd) || 10, modo: (p.modo as Modo) ?? "normal", extras: p.extras ?? [], d20Fisico: p.fisico ?? undefined });
     const tabId = p.tabelaResultado ?? cfg.tabelaResultado;
-    const linha = tabId ? linhaDoResultado(cfg.regras.tabelas[tabId], r.classe) : null;
+    const linha = tabId && cfg.regras.tabelas[tabId] ? linhaDoResultado(cfg.regras.tabelas[tabId], r.classe) : null;
     return { rolagem: { ...r, linha, rotulo: p.rotulo ?? "Teste" }, motivo: `🎯 ${p.rotulo ?? "Teste"}: ${r.total} vs CD ${r.cd} → ${ROTULO_CLASSE[r.classe]}${linha ? ` · ${linha[1]}` : ""}` };
   }
   if (p.tipo === "livre") {
