@@ -21,6 +21,8 @@ export interface Pendente {
   criado_por: string;
   decidido_por?: string | null;
   motivo_decisao?: string | null;
+  /** criado pelo fechamento da semana (sai se a semana for reaberta) */
+  do_fechamento?: boolean;
 }
 
 export interface Alerta {
@@ -66,7 +68,7 @@ export function fecharSemana(entrada: Banco, autor = "Mestre"): ResultadoFechame
   const log = (frenteId: string, tipo: string, motivo: string, caminho?: string, antes?: any, depois?: any) =>
     eventos.push({ autor: "fechamento", semana, frente: frenteId, tipo, caminho, antes, depois, motivo });
   const pendente = (origem: string, ligacao_id: string | null, texto: string, efeitos: Efeito[], escolha: string | null = null) =>
-    pendentes.push({ id: id("p"), semana, origem, ligacao_id, texto, efeitos, escolha, status: "pendente", criado_por: autor });
+    pendentes.push({ id: id("p"), semana, origem, ligacao_id, texto, efeitos, escolha, status: "pendente", criado_por: autor, do_fechamento: true });
 
   // ---------- 1. marcas → níveis ----------
   const p1: string[] = [];
