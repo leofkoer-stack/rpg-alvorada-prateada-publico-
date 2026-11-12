@@ -13,11 +13,13 @@ export function PaginaAdmin({ token }: { token: string }) {
   );
 }
 
+const DICA_LINK = `\n\n📱 *Como guardar:*\n1. Abra o link no *navegador* (Chrome ou Safari).\n2. Toque nos *três pontinhos* (ou em *Compartilhar*, no iPhone).\n3. Toque em *Adicionar à tela inicial*.\nVira um ícone, como um aplicativo.\n\n🔒 *Não passe o link para ninguém*: quem tem o link entra como você. Se perder, me avise que eu gero outro.`;
+
 function textoZap(nome: string, papel: string, frenteId: string | null, link: string) {
-  if (papel === "mestre") return `🏙️ *Painel de Draetyr*\nOi, ${nome}! Este é o seu link do *painel do Mestre*:\n${link}\n\n🔒 Não passe para ninguém: quem tem o link entra como você.`;
-  if (papel === "admin") return `🔧 *Painel de Draetyr · admin*\n${nome}, este é o seu link de admin:\n${link}\n\n🔒 Guarde bem.`;
+  if (papel === "mestre") return `🏙️ *Painel de Draetyr*\nOi, ${nome}! Este é o seu link do *painel do Mestre*:\n${link}${DICA_LINK}`;
+  if (papel === "admin") return `🔧 *Painel de Draetyr · admin*\n${nome}, este é o seu link de *admin* (gera e revoga os links do grupo):\n${link}${DICA_LINK}`;
   const f = frente(frenteId!);
-  return `${f.emoji} *Painel de Draetyr*\nOi, ${nome}! Este é o link da sua frente: *${f.nome}* (${f.personagem}).\n${link}\n\n✅ Faça o turno e toque em *Turno pronto*.\n🔒 Não passe para ninguém: quem tem o link mexe na sua frente.`;
+  return `${f.emoji} *Painel de Draetyr*\nOi, ${nome}! Este é o link da sua frente: *${f.nome}* (${f.personagem}).\n${link}\n\n✅ Toda semana: faça o turno e toque em *Turno pronto*.${DICA_LINK}`;
 }
 
 function Conteudo() {
