@@ -20,19 +20,18 @@ Faça **um passo por vez**.
 2. Clique em **Add New → Project** e escolha o repositório `rpg-alvorada-prateada-publico-`.
 3. Em **Environment Variables**, adicione:
    - `SUPABASE_URL` = o Project URL;
-   - `SUPABASE_SERVICE_ROLE_KEY` = a chave service_role.
+   - `SUPABASE_SERVICE_ROLE_KEY` = a chave secreta (`sb_secret_...` ou service_role);
+   - `SENHA_INICIAL` = uma senha que **você inventa** (8 letras ou mais). Serve só para criar o primeiro link.
 4. Clique em **Deploy**. No fim, a Vercel mostra o endereço do site (ex.: `https://draetyr.vercel.app`).
 
-## Passo 3 · O primeiro link de admin
-O primeiro link nasce no computador, uma vez só.
-1. Num terminal, dentro da pasta do projeto:
-   ```
-   npm install
-   SUPABASE_URL=... SUPABASE_SERVICE_ROLE_KEY=... SITE_URL=https://draetyr.vercel.app npm run criar-admin -- "Leonardo"
-   ```
-2. O terminal mostra o **link de admin**. Guarde: ele **não aparece de novo**.
-3. Abra o link. Na tela de admin, gere os links do **Mestre**, dos **5 jogadores** e o **admin do Lucca**.
-4. Cada link vem com a mensagem pronta para o **WhatsApp**.
+## Passo 3 · O primeiro link de admin (pelo celular)
+1. Abra **`https://SEU-SITE.vercel.app/primeiro-acesso`**.
+2. Digite seu **nome** e a **SENHA_INICIAL** que você colocou na Vercel.
+3. Toque em **Criar meu link de admin** e **salve o link**. Ele **não aparece de novo**.
+4. Abra o link. Na tela de admin, gere os links do **Mestre**, dos **5 jogadores** e o **admin do Lucca**.
+5. Cada link vem com a mensagem pronta para o **WhatsApp**.
+
+Essa página só funciona **uma vez**: depois que existe um admin, ela recusa.
 
 ## Rodar no próprio computador (sem conta nenhuma)
 ```
